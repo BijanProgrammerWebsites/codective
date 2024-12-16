@@ -1,0 +1,63 @@
+.hero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 4rem;
+
+  margin-block: 6rem;
+
+  .writings {
+    display: grid;
+    gap: 2rem;
+
+    h1 {
+      display: grid;
+      justify-items: start;
+      gap: 0.5rem;
+
+      line-height: 1.2;
+
+      .subtitle {
+        background-color: var(--color-gray-20);
+        color: var(--color-gray-90);
+
+        padding: 0.25rem 0.5rem;
+
+        border-radius: 999rem;
+
+        font-size: 1.25rem;
+        font-weight: 300;
+      }
+
+      .title {
+        font-size: 4rem;
+        font-weight: 300;
+
+        .highlight {
+          margin-inline-end: 0.5ch;
+
+          font-weight: 700;
+        }
+      }
+    }
+
+    .description {
+      display: grid;
+      gap: 1rem;
+
+      p {
+        color: var(--color-gray-70);
+
+        max-inline-size: 60ch;
+
+        font-size: 1.25rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .visuals {
+    display: grid;
+    justify-items: end;
+  }
+}

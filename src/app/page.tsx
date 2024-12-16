@@ -1,3 +1,11 @@
+import HeroComponent from "@/components/hero/hero.component";
+
+import styles from "./page.module.css";
+
 export default function Home() {
-  return <h1>سلام، رفیق!</h1>;
+  return (
+    <div className={styles.home}>
+      <HeroComponent />
+    </div>
+  );
 }
