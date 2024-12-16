@@ -6,7 +6,6 @@ on:
 
 jobs:
   deploy:
-    needs: migrate
     uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-nextjs.yml@master
     with:
       process-name: codective
