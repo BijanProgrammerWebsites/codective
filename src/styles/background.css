@@ -1,0 +1,42 @@
+body {
+  &::before {
+    --line-color: hsl(200deg 12% 20% / 20%);
+
+    content: "";
+
+    background-image: radial-gradient(
+        at center,
+        transparent,
+        var(--color-gray-10) 80%
+      ),
+      linear-gradient(
+        var(--line-color) 1px,
+        transparent 1px,
+        transparent 99px,
+        var(--line-color) 99px
+      ),
+      linear-gradient(
+        90deg,
+        var(--line-color) 1px,
+        transparent 1px,
+        transparent 99px,
+        var(--line-color) 99px
+      );
+    background-position:
+      center,
+      50px 50px,
+      50px 50px;
+    background-size:
+      100vw 100vh,
+      100px 100px,
+      100px 100px;
+    background-repeat: no-repeat, repeat, repeat;
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    block-size: 100vh;
+    inline-size: 100vw;
+  }
+}
