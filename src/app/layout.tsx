@@ -1,5 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Vazirmatn } from "next/font/google";
+
+import HeaderComponent from "@/components/header/header.component";
+
+import "@/styles/button.css";
+
 import "./globals.css";
 
 const vazirmatn = Vazirmatn({
@@ -47,7 +52,10 @@ export default function RootLayout({
       prefix="og: http://ogp.me/ns#"
       className={vazirmatn.className}
     >
-      <body>{children}</body>
+      <body>
+        <HeaderComponent />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
