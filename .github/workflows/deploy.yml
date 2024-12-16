@@ -5,12 +5,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  migrate:
-    uses: BijanProgrammerWebsites/hub/.github/workflows/migrate-prisma.yml@master
-    with:
-      process-name: codective
-    secrets: inherit
-
   deploy:
     needs: migrate
     uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-nextjs.yml@master
