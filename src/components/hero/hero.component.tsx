@@ -8,7 +8,7 @@ import styles from "./hero.module.css";
 
 export default function HeroComponent(): ReactElement {
   return (
-    <div className={styles.hero}>
+    <div id="intro" className={styles.hero}>
       <div className={styles.writings}>
         <h1>
           <span className={styles.subtitle}>فقط تو 2 ماه</span>
