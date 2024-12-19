@@ -58,6 +58,13 @@
 
   .visuals {
     display: grid;
-    justify-items: end;
+    place-items: center;
+    justify-content: end;
+
+    font-size: 6rem;
+
+    > * {
+      grid-area: 1 / 2 / 1 / 2;
+    }
   }
 }
