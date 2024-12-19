@@ -3,6 +3,7 @@ import FeaturesComponent from "@/components/features/features.component";
 
 import ReactLogo from "@/logo/react.logo";
 
+import "./palette.css";
 import styles from "./page.module.css";
 
 export default function Page() {
