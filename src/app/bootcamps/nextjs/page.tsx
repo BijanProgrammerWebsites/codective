@@ -3,12 +3,11 @@ import FeaturesComponent from "@/components/features/features.component";
 
 import NextLogo from "@/logo/next.logo";
 
-import "./palette.css";
 import styles from "./page.module.css";
 
 export default function Page() {
   return (
-    <div className={styles.page}>
+    <div id="next" className={styles.page}>
       <HeroComponent subject="Next.js" logo={<NextLogo />} />
       <FeaturesComponent />
     </div>
