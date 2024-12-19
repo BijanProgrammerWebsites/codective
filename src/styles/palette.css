@@ -11,24 +11,24 @@
   --color-gray-12: hsl(120deg 4% 12%);
   --color-gray-10: hsl(120deg 4% 10%);
 
-  --color-primary: hsl(120deg 35% 40%);
-  --color-primary-fade: hsl(120deg 35% 96%);
-  --color-primary-lighter: hsl(120deg 35% 46%);
-  --color-primary-darker: hsl(120deg 35% 34%);
+  --color-primary: hsl(120deg 50% 40%);
+  --color-primary-fade: hsl(120deg 50% 96%);
+  --color-primary-lighter: hsl(120deg 50% 46%);
+  --color-primary-darker: hsl(120deg 50% 34%);
   --color-primary-opposite: var(--color-gray-98);
 
   &:has(#react) {
-    --color-gray-98: hsl(191deg 12% 98%);
-    --color-gray-90: hsl(191deg 30% 90%);
-    --color-gray-80: hsl(191deg 30% 80%);
-    --color-gray-70: hsl(191deg 30% 70%);
-    --color-gray-40: hsl(191deg 30% 40%);
-    --color-gray-30: hsl(191deg 30% 30%);
-    --color-gray-20: hsl(191deg 30% 20%);
-    --color-gray-16: hsl(191deg 30% 16%);
-    --color-gray-14: hsl(191deg 30% 14%);
-    --color-gray-12: hsl(191deg 30% 12%);
-    --color-gray-10: hsl(191deg 30% 10%);
+    --color-gray-98: hsl(191deg 4% 98%);
+    --color-gray-90: hsl(191deg 4% 90%);
+    --color-gray-80: hsl(191deg 4% 80%);
+    --color-gray-70: hsl(191deg 4% 70%);
+    --color-gray-40: hsl(191deg 16% 40%);
+    --color-gray-30: hsl(191deg 16% 30%);
+    --color-gray-20: hsl(191deg 16% 20%);
+    --color-gray-16: hsl(191deg 16% 16%);
+    --color-gray-14: hsl(191deg 16% 14%);
+    --color-gray-12: hsl(191deg 16% 12%);
+    --color-gray-10: hsl(191deg 16% 10%);
 
     --color-primary: hsl(191deg 65% 60%);
     --color-primary-fade: hsl(191deg 65% 96%);
