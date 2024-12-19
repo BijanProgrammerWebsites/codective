@@ -25,7 +25,7 @@ export default function HeroComponent({ subject, logo }: Props): ReactElement {
         <div className={styles.description}>
           <p>
             تو این بوت‌کمپ،
-            {subject}
+            {" " + subject + " "}
             رو از پایه یاد می‌گیریم و یه سایت کامل توسعه میدیم. هر هفته دو جلسه
             تدریس آنلاین و یک جلسه رفع اشکال داریم.
           </p>

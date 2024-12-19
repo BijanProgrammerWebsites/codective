@@ -20,8 +20,8 @@
   --color-primary-darker: hsl(200deg 40% 52%);
   --color-primary-opposite: var(--color-gray-98);
 
-  --color-react-background: rgb(88 196 220);
-  --color-next-background: hsl(0deg 0% 0%);
+  --color-react: rgb(88 196 220);
+  --color-next: hsl(0deg 0% 0%);
 
   --color-box-shadow-subtle: hsl(0deg 0% 10% / 12%);
   --box-shadow-subtle: 0 0.2rem 0.5rem 0 var(--color-box-shadow-subtle);

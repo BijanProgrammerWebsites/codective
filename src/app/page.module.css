@@ -64,13 +64,13 @@
 
       &.react {
         .visuals {
-          background-color: var(--color-react-background);
+          background-color: var(--color-react);
         }
       }
 
       &.next {
         .visuals {
-          background-color: var(--color-next-background);
+          background-color: var(--color-next);
         }
       }
     }
