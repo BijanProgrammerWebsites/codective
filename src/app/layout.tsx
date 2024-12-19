@@ -53,10 +53,7 @@ export default function RootLayout({
       prefix="og: http://ogp.me/ns#"
       className={vazirmatn.className}
     >
-      <body>
-        <HeaderComponent />
-        <main>{children}</main>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

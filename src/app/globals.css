@@ -6,6 +6,9 @@
   --color-gray-40: hsl(200deg 12% 40%);
   --color-gray-30: hsl(200deg 12% 30%);
   --color-gray-20: hsl(200deg 12% 20%);
+  --color-gray-16: hsl(200deg 12% 16%);
+  --color-gray-14: hsl(200deg 12% 14%);
+  --color-gray-12: hsl(200deg 12% 12%);
   --color-gray-10: hsl(200deg 12% 10%);
 
   --color-default-background: var(--color-gray-98);
@@ -16,6 +19,9 @@
   --color-primary-lighter: hsl(200deg 40% 60%);
   --color-primary-darker: hsl(200deg 40% 52%);
   --color-primary-opposite: var(--color-gray-98);
+
+  --color-react-background: rgb(88 196 220);
+  --color-next-background: hsl(0deg 0% 0%);
 
   --color-box-shadow-subtle: hsl(0deg 0% 10% / 12%);
   --box-shadow-subtle: 0 0.2rem 0.5rem 0 var(--color-box-shadow-subtle);
@@ -70,6 +76,12 @@ a {
 body {
   background-color: var(--color-gray-10);
   color: var(--color-gray-98);
+
+  display: flex;
+  flex-direction: column;
+
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
 
   > * {
     padding-inline: var(--full-width-padding-inline);
