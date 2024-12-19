@@ -16,7 +16,13 @@ export default function HeaderComponent(): ReactElement {
             <Link href="#">معرفی</Link>
           </li>
           <li>
-            <Link href="#features">مزایا</Link>
+            <Link href="#features">ویژگی‌ها</Link>
+          </li>
+          <li>
+            <Link href="#prerequisites">پیش‌نیازها</Link>
+          </li>
+          <li>
+            <Link href="#outline">محتوا</Link>
           </li>
           <li>
             <Link href="#roadmap">نقشه راه</Link>
