@@ -8,19 +8,45 @@
 
     background-color: var(--color-gray-14);
 
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
 
     border-radius: var(--border-radius);
 
     font-size: 1.25rem;
-    font-weight: 300;
+    font-weight: 400;
 
     text-align: center;
+    line-height: 1;
+
+    cursor: default;
 
     transition: background-color 0.2s ease-in-out;
 
-    &:hover {
-      background-color: var(--color-gray-20);
+    &[data-highlight] {
+      background-color: var(--color-primary);
+      color: var(--color-primary-opposite);
+    }
+  }
+
+  &:not(.hollow) {
+    > li {
+      &:hover {
+        background-color: var(--color-gray-20);
+      }
+
+      &[data-highlight] {
+        &:hover {
+          background-color: var(--color-primary-darker);
+        }
+      }
+    }
+  }
+
+  &.hollow {
+    > li {
+      background-color: transparent;
+
+      border: 3px solid var(--color-gray-14);
     }
   }
 }
