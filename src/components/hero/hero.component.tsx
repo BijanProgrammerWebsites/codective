@@ -8,7 +8,7 @@ import styles from "./hero.module.css";
 
 export default function HeroComponent(): ReactElement {
   return (
-    <div id="intro" className={styles.hero}>
+    <section id="intro" className={styles.hero}>
       <div className={styles.writings}>
         <h1>
           <span className={styles.subtitle}>فقط تو 2 ماه</span>
@@ -34,6 +34,6 @@ export default function HeroComponent(): ReactElement {
       <div className={styles.visuals}>
         <Image src={heroImage} alt="" height={300} loading="eager" />
       </div>
-    </div>
+    </section>
   );
 }
