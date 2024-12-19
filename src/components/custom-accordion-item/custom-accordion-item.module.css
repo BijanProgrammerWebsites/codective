@@ -1,6 +1,6 @@
 .item {
-  --transition-duration: 250ms;
-  --transition: 0.25s cubic-bezier(0, 0, 0, 1);
+  --transition-duration: 500ms;
+  --transition: var(--transition-duration) ease-in-out;
 
   background-color: var(--color-gray-12);
 

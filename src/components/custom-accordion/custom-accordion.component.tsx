@@ -14,7 +14,7 @@ export default function CustomAccordionComponent({
     <Accordion
       className={styles.accordion}
       transition
-      transitionTimeout={250}
+      transitionTimeout={500}
       {...otherProps}
     >
       {children}
