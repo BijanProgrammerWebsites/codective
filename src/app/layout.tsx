@@ -1,8 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Vazirmatn } from "next/font/google";
 
-import HeaderComponent from "@/components/header/header.component";
-
 import "@/styles/background.css";
 import "@/styles/button.css";
 
