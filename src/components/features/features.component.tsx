@@ -1,12 +1,14 @@
 import { ReactElement } from "react";
 
+import AsymmetricListComponent from "@/components/asymmetric-list/asymmetric-list.component";
+
 import styles from "./features.module.css";
 
 export default function FeaturesComponent(): ReactElement {
   return (
     <section id="features" className={styles.features}>
       <h2>ویژگی‌ها</h2>
-      <ul>
+      <AsymmetricListComponent>
         <li>مدت دوره: 8 هفته</li>
         <li>2 جلسه تدریس آنلاین در هفته</li>
         <li>1 جلسه رفع اشکال در هفته</li>
@@ -19,7 +21,7 @@ export default function FeaturesComponent(): ReactElement {
         <li>منتورینگ حرفه‌ای</li>
         <li>بررسی دقیق کدها</li>
         <li>پروژه‌های قابل‌ارائه در رزومه</li>
-      </ul>
+      </AsymmetricListComponent>
     </section>
   );
 }
