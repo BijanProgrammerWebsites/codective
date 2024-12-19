@@ -1,9 +1,12 @@
 .prerequisites {
+  background-color: var(--color-gray-14);
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
 
   margin-block: var(--section-margin-block);
+  padding-block: 4rem;
 
   h2 {
     grid-column: 1 / -1;
