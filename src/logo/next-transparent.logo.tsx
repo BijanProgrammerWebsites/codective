@@ -18,7 +18,7 @@ export function NextTransparentLogo(props: SVGProps<SVGSVGElement>) {
             cy="7.38"
             r="7.37"
             fill="none"
-            stroke-width="0"
+            strokeWidth="0"
           />
         </clipPath>
         <linearGradient
@@ -30,10 +30,10 @@ export function NextTransparentLogo(props: SVGProps<SVGSVGElement>) {
           gradientTransform="translate(0 11.13) scale(1 -1)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#fff" />
-          <stop offset=".61" stop-color="#fff" stop-opacity=".57" />
-          <stop offset=".8" stop-color="#fff" stop-opacity="0" />
-          <stop offset="1" stop-color="#fff" stop-opacity="0" />
+          <stop offset="0" stopColor="#fff" />
+          <stop offset=".61" stopColor="#fff" stopOpacity=".57" />
+          <stop offset=".8" stopColor="#fff" stopOpacity="0" />
+          <stop offset="1" stopColor="#fff" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="uuid-993dfd32-c207-4921-9be5-6a7e0b1fa936"
@@ -44,24 +44,24 @@ export function NextTransparentLogo(props: SVGProps<SVGSVGElement>) {
           gradientTransform="translate(0 11.13) scale(1 -1)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#fff" />
-          <stop offset="1" stop-color="#fff" stop-opacity="0" />
+          <stop offset="0" stopColor="#fff" />
+          <stop offset="1" stopColor="#fff" stopOpacity="0" />
         </linearGradient>
       </defs>
       <g id="uuid-dffacb49-3012-4215-8a5c-6cbf3ce29c4f">
         <g id="uuid-ee10a760-9565-49a7-a951-3cbb4b83d3cb">
-          <g clip-path="url(#uuid-b6db9c25-565b-426f-9e22-986f9c416a74)">
+          <g clipPath="url(#uuid-b6db9c25-565b-426f-9e22-986f9c416a74)">
             <path
               d="M10.01,10.38v-6"
               fill="#000"
               stroke="url(#uuid-234c14a3-4365-4c0c-863e-ee2297020d34)"
-              stroke-linejoin="round"
+              strokeLinejoin="round"
             />
             <path
               d="M5.37,4.38h0s-1.25,0-1.25,0v6h1.25v-4.03l6.37,7.74c.35-.23.68-.48.99-.76L5.37,4.38h0Z"
               fill="url(#uuid-993dfd32-c207-4921-9be5-6a7e0b1fa936)"
-              fill-rule="evenodd"
-              stroke-width="0"
+              fillRule="evenodd"
+              strokeWidth="0"
             />
           </g>
         </g>
