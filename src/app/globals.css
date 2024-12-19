@@ -1,6 +1,6 @@
 :root {
-  --color-default-background: var(--color-gray-98);
-  --color-default-foreground: var(--color-gray-10);
+  --color-default-background: var(--color-gray-10);
+  --color-default-foreground: var(--color-gray-98);
 
   --color-react: hsl(191deg 65% 60%);
   --color-next: hsl(0deg 0% 0%);
@@ -31,6 +31,8 @@
 
 html {
   color-scheme: dark light;
+
+  interpolate-size: allow-keywords;
 }
 
 input,
@@ -58,8 +60,8 @@ a {
 }
 
 body {
-  background-color: var(--color-gray-10);
-  color: var(--color-gray-98);
+  background-color: var(--color-default-background);
+  color: var(--color-default-foreground);
 
   display: flex;
   flex-direction: column;
@@ -70,6 +72,12 @@ body {
   > header,
   section {
     padding-inline: var(--full-width-padding-inline);
+  }
+
+  section#roadmap {
+    background-color: var(--color-gray-14);
+
+    padding-block: 4rem;
   }
 }
 

@@ -1,0 +1,59 @@
+.item {
+  --transition-duration: 250ms;
+  --transition: 0.25s cubic-bezier(0, 0, 0, 1);
+
+  background-color: var(--color-gray-12);
+
+  margin-block-end: 1rem;
+
+  border-radius: var(--border-radius);
+
+  .button {
+    background-color: inherit;
+    color: inherit;
+
+    display: flex;
+    align-items: center;
+
+    inline-size: 100%;
+
+    padding: 1rem;
+
+    border: none;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    .chevron {
+      margin-inline-start: auto;
+
+      font-size: 2rem;
+
+      transition: var(--transition);
+      transition-property: transform;
+    }
+
+    &.expanded {
+      background-color: var(--color-gray-20);
+
+      .chevron {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:hover {
+      background-color: var(--color-gray-16);
+    }
+  }
+
+  .content {
+    transition: var(--transition);
+    transition-property: block-size;
+
+    .panel {
+      padding: 1rem;
+    }
+  }
+}
