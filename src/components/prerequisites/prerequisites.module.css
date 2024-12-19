@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
 
-  margin-block: 4rem;
+  margin-block: var(--section-margin-block);
 
   h2 {
     grid-column: 1 / -1;
