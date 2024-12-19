@@ -7,5 +7,9 @@ type Props = {
 };
 
 export default function WeekComponent({ children }: Props): ReactElement {
-  return <ul className={styles.week}>{children}</ul>;
+  return (
+    <ol dir="ltr" className={styles.week}>
+      {children}
+    </ol>
+  );
 }
