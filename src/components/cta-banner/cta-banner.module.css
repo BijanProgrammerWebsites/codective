@@ -78,6 +78,8 @@
       }
 
       .cta {
+        display: grid;
+
         a {
           display: block;
 
