@@ -1,0 +1,43 @@
+.cta-banner {
+  margin-block: var(--section-margin-block);
+
+  .card {
+    background-image: var(--gradient-primary);
+    color: var(--color-primary-opposite);
+
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+
+    padding: 2rem;
+
+    border-radius: 2.5rem;
+
+    text-align: center;
+
+    .title {
+      color: var(--color-gray-20);
+
+      font-size: 2.25rem;
+      font-weight: 400;
+
+      .highlight {
+        color: var(--color-gray-10);
+
+        font-size: 4rem;
+        font-weight: 900;
+      }
+    }
+
+    .cta {
+      font-size: 1.5rem;
+
+      p {
+        a {
+          font-weight: 700;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

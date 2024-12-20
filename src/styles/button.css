@@ -13,8 +13,27 @@
   transition-property: background-color;
 
   &.primary {
-    background-color: var(--color-primary);
+    background-image: var(--gradient-primary);
+    background-size: 200% 100%;
+    background-position: 100% 0;
     color: var(--color-primary-opposite);
+
+    transition: background-position 0.5s ease-in-out;
+
+    &:hover {
+      background-position: 0 0;
+    }
+  }
+
+  &.primary-opposite {
+    background-color: var(--color-primary-opposite);
+    color: var(--color-primary);
+  }
+
+  &.inline {
+    padding: 0.2rem 0.5rem;
+
+    font-weight: 700;
   }
 
   &.large {

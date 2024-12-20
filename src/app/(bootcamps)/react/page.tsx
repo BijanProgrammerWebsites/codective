@@ -4,6 +4,7 @@ import PrerequisitesComponent from "@/components/prerequisites/prerequisites.com
 import ReactOutlineComponent from "@/components/react-outline/react-outline.component";
 import ReactRoadmapComponent from "@/components/react-roadmap/react-roadmap.component";
 import ReactTimeNoticeComponent from "@/components/react-time-notice/react-time-notice.component";
+import CtaBannerComponent from "@/components/cta-banner/cta-banner.component";
 
 import ReactLogo from "@/logo/react.logo";
 
@@ -26,6 +27,7 @@ export default function Page() {
       />
       <ReactOutlineComponent />
       <ReactRoadmapComponent />
+      <CtaBannerComponent />
       <ReactTimeNoticeComponent />
     </div>
   );
