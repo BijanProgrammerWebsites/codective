@@ -20,7 +20,7 @@
 
     cursor: default;
 
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 1s ease-in-out;
 
     &[data-highlight] {
       background-color: var(--color-primary);
@@ -32,6 +32,8 @@
     > li {
       &:hover {
         background-color: var(--color-gray-20);
+
+        transition-duration: 0.1s;
       }
 
       &[data-highlight] {
