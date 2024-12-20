@@ -11,6 +11,12 @@
   --color-gray-12: hsl(120deg 4% 12%);
   --color-gray-10: hsl(120deg 4% 10%);
 
+  --transparent-light: hsl(120deg 4% 98% / 0%);
+  --transparent-dark: hsl(120deg 4% 10% / 0%);
+
+  --glass-light: hsl(120deg 4% 98% / 6%);
+  --glass-dark: hsl(120deg 4% 10% / 10%);
+
   --color-primary: hsl(120deg 70% 40%);
   --color-primary-fade: hsl(120deg 70% 96%);
   --color-primary-lighter: hsl(120deg 70% 50%);
@@ -36,6 +42,12 @@
     --color-gray-14: hsl(191deg 16% 14%);
     --color-gray-12: hsl(191deg 16% 12%);
     --color-gray-10: hsl(191deg 16% 10%);
+
+    --transparent-light: hsl(191deg 4% 98% / 0%);
+    --transparent-dark: hsl(191deg 16% 10% / 0%);
+
+    --glass-light: hsl(191deg 4% 98% / 6%);
+    --glass-dark: hsl(191deg 16% 10% / 10%);
 
     --color-primary: hsl(191deg 65% 60%);
     --color-primary-fade: hsl(191deg 65% 96%);
@@ -63,6 +75,12 @@
     --color-gray-14: hsl(0deg 0% 14%);
     --color-gray-12: hsl(0deg 0% 12%);
     --color-gray-10: hsl(0deg 0% 10%);
+
+    --transparent-light: hsl(0deg 0% 98% / 0%);
+    --transparent-dark: hsl(0deg 0% 10% / 0%);
+
+    --glass-light: hsl(0deg 0% 98% / 6%);
+    --glass-dark: hsl(0deg 0% 10% / 10%);
 
     --color-primary: hsl(0deg 0% 90%);
     --color-primary-fade: hsl(0deg 0% 96%);

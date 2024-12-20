@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-import AsymmetricListComponent from "@/components/asymmetric-list/asymmetric-list.component";
+import ReactLogo from "@/logo/react.logo";
 
 import styles from "./features.module.css";
 
@@ -8,20 +8,27 @@ export default function FeaturesComponent(): ReactElement {
   return (
     <section id="features" className={styles.features}>
       <h2>ویژگی‌ها</h2>
-      <AsymmetricListComponent>
-        <li>مدت دوره: 8 هفته</li>
-        <li>2 جلسه تدریس آنلاین در هفته</li>
-        <li>1 جلسه رفع اشکال در هفته</li>
+      <ul>
+        <li>8 هفته فشرده</li>
+        <li>هر هفته 2 جلسه تدریس آنلاین</li>
+        <li>هر هفته 1 جلسه رفع اشکال</li>
         <li>ضبط و انتشار جلسات برای غایبین</li>
         <li>برنامه‌ی مشخص</li>
+        <li>مختصر و مفید</li>
+        <li>آموزش کاربردی</li>
+        <li>پشتیبانی اختصاصی</li>
+        <li className={styles.center}>
+          <ReactLogo />
+        </li>
+        <li>گروه خصوصی</li>
+        <li>مفاهیم عمیق</li>
+        <li>بررسی دقیق کدها</li>
         <li>نقشه راه شفاف</li>
         <li>کاملاً پروژه‌محور و تسک‌محور</li>
-        <li>پشتیبانی اختصاصی</li>
-        <li>گروه خصوصی</li>
         <li>منتورینگ حرفه‌ای</li>
-        <li>بررسی دقیق کدها</li>
         <li>پروژه‌های قابل‌ارائه در رزومه</li>
-      </AsymmetricListComponent>
+        <li>کتابخانه‌های معروف</li>
+      </ul>
     </section>
   );
 }
