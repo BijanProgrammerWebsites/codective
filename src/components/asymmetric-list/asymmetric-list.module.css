@@ -8,7 +8,7 @@
 
     background-color: var(--color-gray-14);
 
-    padding: 1rem 2rem;
+    padding: 0.75rem 1rem;
 
     border-radius: var(--border-radius);
 
@@ -46,6 +46,14 @@
       background-color: transparent;
 
       border: 3px solid var(--color-gray-14);
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .asymmetric-list {
+    > li {
+      padding: 1rem 2rem;
     }
   }
 }
