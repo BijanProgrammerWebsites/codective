@@ -21,6 +21,8 @@
         background-color: var(--color-gray-20);
         color: var(--color-gray-90);
 
+        display: block;
+
         padding: 0.25rem 0.5rem;
 
         border-radius: 999rem;
