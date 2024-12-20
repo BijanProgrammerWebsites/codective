@@ -18,7 +18,7 @@ export default function Page() {
         logo={<ReactLogo className={styles.logo} />}
       />
       <ReactTimeNoticeComponent alternate />
-      <FeaturesComponent />
+      <FeaturesComponent logo={<ReactLogo />} />
       <PrerequisitesComponent
         technicalItems={[
           "تسلط به HTML و CSS و JavaScript",

@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <div id="next" className={styles.page}>
       <HeroComponent subject="Next.js" logo={<NextLogo />} />
-      <FeaturesComponent />
+      <FeaturesComponent logo={<NextLogo />} />
       <PrerequisitesComponent
         technicalItems={[
           "تسلط به HTML و CSS و JavaScript",

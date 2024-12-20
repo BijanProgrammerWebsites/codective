@@ -1,10 +1,12 @@
 import { ReactElement } from "react";
 
-import ReactLogo from "@/logo/react.logo";
-
 import styles from "./features.module.css";
 
-export default function FeaturesComponent(): ReactElement {
+type Props = {
+  logo: ReactElement;
+};
+
+export default function FeaturesComponent({ logo }: Props): ReactElement {
   return (
     <section id="features" className={styles.features}>
       <h2>ویژگی‌ها</h2>
@@ -17,9 +19,7 @@ export default function FeaturesComponent(): ReactElement {
         <li>مختصر و مفید</li>
         <li>آموزش کاربردی</li>
         <li>پشتیبانی اختصاصی</li>
-        <li className={styles.center}>
-          <ReactLogo />
-        </li>
+        <li className={styles.center}>{logo}</li>
         <li>گروه خصوصی</li>
         <li>مفاهیم عمیق</li>
         <li>بررسی دقیق کدها</li>
