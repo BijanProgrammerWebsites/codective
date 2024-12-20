@@ -11,7 +11,7 @@ import styles from "./react-roadmap.module.css";
 export default function ReactRoadmapComponent(): ReactElement {
   return (
     <section id="roadmap" className={styles["react-roadmap"]}>
-      <h2>نقشه‌ی راه</h2>
+      <h2>نقشه راه</h2>
       <CustomAccordionComponent>
         <CustomAccordionItemComponent header="هفته 1">
           <WeekComponent>

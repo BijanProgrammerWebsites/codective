@@ -14,7 +14,7 @@ export default function FeaturesComponent(): ReactElement {
         <li>1 جلسه رفع اشکال در هفته</li>
         <li>ضبط و انتشار جلسات برای غایبین</li>
         <li>برنامه‌ی مشخص</li>
-        <li>نقشه‌ی راه شفاف</li>
+        <li>نقشه راه شفاف</li>
         <li>کاملاً پروژه‌محور و تسک‌محور</li>
         <li>پشتیبانی اختصاصی</li>
         <li>گروه خصوصی</li>
