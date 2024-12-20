@@ -9,7 +9,8 @@ export default function CtaBannerComponent(): ReactElement {
     <section id="register" className={styles["cta-banner"]}>
       <div className={styles.card}>
         <p className={styles.title}>
-          از مفاهیم پایه تا تکنیک‌های حرفه‌ای
+          از مفاهیم پایه <br className={styles["mobile-only"]} />
+          تا تکنیک‌های حرفه‌ای
           <br />
           <span className={styles.highlight}>فقط در یک بوت‌کمپ!</span>
         </p>

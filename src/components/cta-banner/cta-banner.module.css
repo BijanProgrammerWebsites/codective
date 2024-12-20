@@ -1,5 +1,5 @@
 .cta-banner {
-  margin-block: var(--section-margin-block);
+  margin-block: calc(var(--section-margin-block) + 2rem);
 
   .card {
     background-image: linear-gradient(
@@ -36,6 +36,10 @@
 
       font-size: var(--fz-600);
 
+      .mobile-only {
+        display: none;
+      }
+
       .highlight {
         color: var(--color-gray-10);
 
@@ -58,11 +62,19 @@
 @media (max-width: 1000px) {
   .cta-banner {
     .card {
+      border-width: 8px;
+      outline-width: 2px;
+      outline-offset: -2px;
+
       .title {
         display: grid;
         gap: inherit;
 
         line-height: 1.25;
+
+        .mobile-only {
+          display: revert;
+        }
       }
 
       .cta {
