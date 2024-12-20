@@ -26,7 +26,7 @@ export default function ReactTimeNoticeComponent({
         نوبت اول از
         <span className={styles.highlight}>هفته‌ی دوم دی</span>
         شروع میشه و نوبت دوم از
-        <span className={styles.highlight}>اواسط بهمن (بعد از امتحانات)</span>.
+        <span className={styles.highlight}>اواسط بهمن (بعد از امتحانات)</span>
       </p>
       <p>
         محتوای این بوت‌کمپ‌ها هیچ تفاوتی باهم نداره و فقط برای راحتی شما دو نوبت
