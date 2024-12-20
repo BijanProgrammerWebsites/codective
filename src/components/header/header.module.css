@@ -16,12 +16,6 @@
     > ul {
       display: flex;
       gap: 2rem;
-
-      > li {
-        a {
-          font-size: 1.25rem;
-        }
-      }
     }
   }
 }
