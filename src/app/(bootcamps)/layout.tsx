@@ -1,4 +1,5 @@
 import HeaderComponent from "@/components/header/header.component";
+import FooterComponent from "@/components/footer/footer.component";
 
 export default function BootcampsLayout({
   children,
@@ -9,6 +10,7 @@ export default function BootcampsLayout({
     <>
       <HeaderComponent />
       <main>{children}</main>
+      <FooterComponent />
     </>
   );
 }

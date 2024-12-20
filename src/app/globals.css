@@ -71,6 +71,7 @@ body {
   min-block-size: 100dvh;
 
   > header,
+  > footer,
   section {
     padding-inline: var(--full-width-padding-inline);
   }
