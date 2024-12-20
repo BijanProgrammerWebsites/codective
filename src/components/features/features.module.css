@@ -60,7 +60,7 @@
         padding: 0 1rem;
 
         &.center {
-          display: revert;
+          display: grid;
 
           animation: heartbeat-animation 2s infinite;
 
