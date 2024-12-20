@@ -1,5 +1,5 @@
 .react-time-notice {
-  margin-block: 4rem;
+  margin-block: var(--section-margin-block);
 
   p {
     text-align: center;
