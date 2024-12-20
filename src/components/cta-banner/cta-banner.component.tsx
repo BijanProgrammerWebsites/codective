@@ -11,24 +11,22 @@ export default function CtaBannerComponent(): ReactElement {
         <p className={styles.title}>
           از مفاهیم پایه تا تکنیک‌های حرفه‌ای
           <br />
-          <span className={styles.highlight}>فقط در یک بوتکمپ!</span>
+          <span className={styles.highlight}>فقط در یک بوت‌کمپ!</span>
         </p>
-        <div className={styles.cta}>
-          <p>
-            برای ثبت‌نام به
-            <span> </span>
-            <Link
-              dir="ltr"
-              className="button primary-opposite inline"
-              href="https://t.me/BijanEisapour"
-              target="_blank"
-            >
-              @BijanEisapour
-            </Link>
-            <span> </span>
-            در تلگرام پیام بدید.
-          </p>
-        </div>
+        <p className={styles.cta}>
+          برای ثبت‌نام به
+          <span> </span>
+          <Link
+            dir="ltr"
+            className="button primary-opposite inline"
+            href="https://t.me/BijanEisapour"
+            target="_blank"
+          >
+            @BijanEisapour
+          </Link>
+          <span> </span>
+          در تلگرام پیام بدید.
+        </p>
       </div>
     </section>
   );
