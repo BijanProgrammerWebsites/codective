@@ -33,10 +33,12 @@
 
         transition: background-color 1s ease-in-out;
 
-        &:hover {
-          background-color: var(--glass-light);
+        @media (hover: hover) {
+          &:hover {
+            background-color: var(--glass-light);
 
-          transition-duration: 0.1s;
+            transition-duration: 0.1s;
+          }
         }
       }
 

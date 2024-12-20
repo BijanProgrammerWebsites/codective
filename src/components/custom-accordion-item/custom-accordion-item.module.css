@@ -45,8 +45,10 @@
       }
     }
 
-    &:hover {
-      background-color: var(--color-gray-16);
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--color-gray-16);
+      }
     }
   }
 
