@@ -16,7 +16,7 @@ export default function Page() {
         subject="React"
         logo={<ReactLogo className={styles.logo} />}
       />
-      <ReactTimeNoticeComponent />
+      <ReactTimeNoticeComponent alternate />
       <FeaturesComponent />
       <PrerequisitesComponent
         technicalItems={[

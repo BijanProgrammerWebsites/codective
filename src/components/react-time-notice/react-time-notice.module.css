@@ -1,17 +1,27 @@
-.notice {
-  font-size: 1.25rem;
-  line-height: 1.7;
-  text-align: center;
+.react-time-notice {
+  margin-block: 4rem;
 
-  .highlight {
-    color: var(--color-react);
+  p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    text-align: center;
 
-    font-weight: 700;
-    font-style: italic;
+    .highlight {
+      color: var(--color-react);
 
-    &::before,
-    &::after {
-      content: " ";
+      font-weight: 700;
+      font-style: italic;
+
+      &::before,
+      &::after {
+        content: " ";
+      }
     }
+  }
+
+  &.alternate {
+    background-color: var(--color-gray-14);
+
+    padding-block: var(--alternative-section-padding-block);
   }
 }
