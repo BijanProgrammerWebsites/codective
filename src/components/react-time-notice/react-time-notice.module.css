@@ -2,7 +2,6 @@
   margin-block: 4rem;
 
   p {
-    line-height: 1.7;
     text-align: center;
 
     .highlight {
@@ -15,6 +14,10 @@
       &::after {
         content: " ";
       }
+    }
+
+    &:not(:first-of-type) {
+      margin-block-start: 0.5rem;
     }
   }
 
