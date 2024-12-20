@@ -3,20 +3,17 @@
 
   > ul {
     display: grid;
-    grid-auto-flow: dense;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
     gap: 0.5rem;
 
     > li {
       display: grid;
       place-items: center;
 
-      padding: 0 1rem;
+      padding: 0.5rem;
 
       border-radius: var(--border-radius);
 
-      font-size: 1.5rem;
+      font-size: var(--fz-500);
 
       text-align: center;
 
@@ -44,99 +41,121 @@
       }
 
       &.center {
-        animation: heartbeat-animation 2s infinite;
+        display: none;
+      }
+    }
+  }
+}
 
-        svg {
-          color: var(--color-primary);
+@media (min-width: 1000px) {
+  .features {
+    > ul {
+      display: grid;
+      grid-auto-flow: dense;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      gap: 0.5rem;
 
-          block-size: 70%;
-          inline-size: 70%;
+      > li {
+        padding: 0 1rem;
+
+        &.center {
+          display: revert;
+
+          animation: heartbeat-animation 2s infinite;
+
+          svg {
+            color: var(--color-primary);
+
+            block-size: 70%;
+            inline-size: 70%;
+          }
         }
-      }
 
-      &:nth-child(1) {
-        grid-column: span 3;
-        grid-row: span 2;
-      }
+        &:nth-child(1) {
+          grid-column: span 3;
+          grid-row: span 2;
+        }
 
-      &:nth-child(2) {
-        grid-column: span 5;
-        grid-row: span 2;
-      }
+        &:nth-child(2) {
+          grid-column: span 5;
+          grid-row: span 2;
+        }
 
-      &:nth-child(3) {
-        grid-column: span 4;
-        grid-row: span 2;
-      }
+        &:nth-child(3) {
+          grid-column: span 4;
+          grid-row: span 2;
+        }
 
-      &:nth-child(4) {
-        grid-column: span 5;
-        grid-row: span 2;
-      }
+        &:nth-child(4) {
+          grid-column: span 5;
+          grid-row: span 2;
+        }
 
-      &:nth-child(5) {
-        grid-column: span 3;
-        grid-row: span 2;
-      }
+        &:nth-child(5) {
+          grid-column: span 3;
+          grid-row: span 2;
+        }
 
-      &:nth-child(6) {
-        grid-column: span 2;
-        grid-row: span 4;
-      }
+        &:nth-child(6) {
+          grid-column: span 2;
+          grid-row: span 4;
+        }
 
-      &:nth-child(7) {
-        grid-column: span 2;
-        grid-row: span 4;
-      }
+        &:nth-child(7) {
+          grid-column: span 2;
+          grid-row: span 4;
+        }
 
-      &:nth-child(8) {
-        grid-column: span 4;
-        grid-row: span 2;
-      }
+        &:nth-child(8) {
+          grid-column: span 4;
+          grid-row: span 2;
+        }
 
-      &:nth-child(9) {
-        grid-column: span 4;
-        grid-row: span 4;
-      }
+        &:nth-child(9) {
+          grid-column: span 4;
+          grid-row: span 4;
+        }
 
-      &:nth-child(10) {
-        grid-column: span 2;
-        grid-row: span 4;
-      }
+        &:nth-child(10) {
+          grid-column: span 2;
+          grid-row: span 4;
+        }
 
-      &:nth-child(11) {
-        grid-column: span 2;
-        grid-row: span 4;
-      }
+        &:nth-child(11) {
+          grid-column: span 2;
+          grid-row: span 4;
+        }
 
-      &:nth-child(12) {
-        grid-column: span 4;
-        grid-row: span 2;
-      }
+        &:nth-child(12) {
+          grid-column: span 4;
+          grid-row: span 2;
+        }
 
-      &:nth-child(13) {
-        grid-column: span 3;
-        grid-row: span 2;
-      }
+        &:nth-child(13) {
+          grid-column: span 3;
+          grid-row: span 2;
+        }
 
-      &:nth-child(14) {
-        grid-column: span 5;
-        grid-row: span 2;
-      }
+        &:nth-child(14) {
+          grid-column: span 5;
+          grid-row: span 2;
+        }
 
-      &:nth-child(15) {
-        grid-column: span 4;
-        grid-row: span 2;
-      }
+        &:nth-child(15) {
+          grid-column: span 4;
+          grid-row: span 2;
+        }
 
-      &:nth-child(16) {
-        grid-column: span 5;
-        grid-row: span 2;
-      }
+        &:nth-child(16) {
+          grid-column: span 5;
+          grid-row: span 2;
+        }
 
-      &:nth-child(17) {
-        grid-column: span 3;
-        grid-row: span 2;
+        &:nth-child(17) {
+          grid-column: span 3;
+          grid-row: span 2;
+        }
       }
     }
   }
