@@ -4,7 +4,7 @@
 
   background-color: var(--color-gray-12);
 
-  margin-block-end: 1rem;
+  margin-block-end: 0.5rem;
 
   border-radius: var(--border-radius);
 
@@ -17,12 +17,12 @@
 
     inline-size: 100%;
 
-    padding: 1rem;
+    padding: 0.5rem 0.75rem;
 
     border: none;
 
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: var(--fz-500);
+    font-weight: 300;
 
     cursor: pointer;
 
@@ -31,7 +31,7 @@
     .chevron {
       margin-inline-start: auto;
 
-      font-size: 2rem;
+      font-size: var(--fz-600);
 
       transition: var(--transition);
       transition-property: transform;
@@ -55,7 +55,25 @@
     transition-property: block-size;
 
     .panel {
-      padding: 2rem 1rem;
+      padding: 1rem 0;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .item {
+    margin-block-end: 1rem;
+
+    .button {
+      padding: 1rem;
+
+      font-weight: 500;
+    }
+
+    .content {
+      .panel {
+        padding: 2rem 1rem;
+      }
     }
   }
 }
