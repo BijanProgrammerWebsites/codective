@@ -13,7 +13,8 @@
   --full-width: 75rem;
   --full-width-padding-inline: calc(max(100% - var(--full-width), 2rem) / 2);
 
-  --section-margin-block: 10rem;
+  --section-margin-block: 4rem;
+  --alternative-section-padding-block: 2rem;
 
   --animation-duration-fast: 0.1s;
   --animation-duration-normal: 0.5s;
@@ -77,7 +78,7 @@ body {
   section#roadmap {
     background-color: var(--color-gray-14);
 
-    padding-block: 4rem;
+    padding-block: var(--alternative-section-padding-block);
   }
 }
 

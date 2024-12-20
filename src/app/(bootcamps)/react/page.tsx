@@ -3,6 +3,7 @@ import FeaturesComponent from "@/components/features/features.component";
 import PrerequisitesComponent from "@/components/prerequisites/prerequisites.component";
 import ReactOutlineComponent from "@/components/react-outline/react-outline.component";
 import ReactRoadmapComponent from "@/components/react-roadmap/react-roadmap.component";
+import ReactTimeNoticeComponent from "@/components/react-time-notice/react-time-notice.component";
 
 import ReactLogo from "@/logo/react.logo";
 
@@ -15,6 +16,7 @@ export default function Page() {
         subject="React"
         logo={<ReactLogo className={styles.logo} />}
       />
+      <ReactTimeNoticeComponent />
       <FeaturesComponent />
       <PrerequisitesComponent
         technicalItems={[
@@ -24,6 +26,7 @@ export default function Page() {
       />
       <ReactOutlineComponent />
       <ReactRoadmapComponent />
+      <ReactTimeNoticeComponent />
     </div>
   );
 }

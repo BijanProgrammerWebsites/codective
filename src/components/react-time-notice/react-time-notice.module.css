@@ -1,0 +1,17 @@
+.notice {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  text-align: center;
+
+  .highlight {
+    color: var(--color-react);
+
+    font-weight: 700;
+    font-style: italic;
+
+    &::before,
+    &::after {
+      content: " ";
+    }
+  }
+}
