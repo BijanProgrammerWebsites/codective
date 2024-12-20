@@ -4,6 +4,7 @@ import { Vazirmatn } from "next/font/google";
 import "@/styles/background.css";
 import "@/styles/button.css";
 import "@/styles/palette.css";
+import "@/styles/typography.css";
 
 import "./globals.css";
 

@@ -25,12 +25,12 @@
 
         border-radius: 999rem;
 
-        font-size: 1.25rem;
+        font-size: var(--fz-300);
         font-weight: 300;
       }
 
       .title {
-        font-size: 4rem;
+        font-size: var(--fz-800);
         font-weight: 300;
 
         .highlight {
@@ -50,7 +50,7 @@
 
         max-inline-size: 60ch;
 
-        font-size: 1.25rem;
+        font-size: var(--fz-300);
         line-height: 1.5;
       }
     }
@@ -65,6 +65,32 @@
 
     > * {
       grid-area: 1 / 2 / 1 / 2;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    grid-template-columns: 1fr;
+
+    margin-block-start: 2rem;
+
+    text-align: center;
+
+    .writings {
+      justify-items: center;
+
+      h1 {
+        justify-items: center;
+      }
+
+      .actions {
+        margin-block-start: 2rem;
+      }
+    }
+
+    .visuals {
+      display: none;
     }
   }
 }

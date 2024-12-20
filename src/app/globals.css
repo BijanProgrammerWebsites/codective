@@ -70,6 +70,8 @@ body {
   min-block-size: 100vh;
   min-block-size: 100dvh;
 
+  font-size: var(--fz-400);
+
   > header,
   > footer,
   section {
