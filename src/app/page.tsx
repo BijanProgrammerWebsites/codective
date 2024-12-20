@@ -17,7 +17,11 @@ export default function Page() {
             <ReactLogo />
           </div>
           <div className={styles.title}>بوت‌کمپ React</div>
-          <p className={styles.date}>شروع از هفته‌ی دوم دی</p>
+          <p className={styles.date}>
+            نوبت اول از هفته‌ی دوم دی
+            <br />
+            نوبت دوم از اواسط بهمن (بعد از امتحانات)
+          </p>
           <Link className="button primary large" href="/react">
             ثبت‌نام
           </Link>
