@@ -25,6 +25,7 @@
 
         border-radius: 999rem;
 
+        font-size: var(--fz-400);
         font-weight: 300;
       }
 
