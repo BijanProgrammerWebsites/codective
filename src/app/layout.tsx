@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Vazirmatn } from "next/font/google";
 
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 import "@/styles/background.css";
 import "@/styles/button.css";
 import "@/styles/palette.css";
@@ -54,6 +56,7 @@ export default function RootLayout({
       className={vazirmatn.className}
     >
       <body>{children}</body>
+      <GoogleAnalytics gaId="G-95NEST07R1" />
     </html>
   );
 }
