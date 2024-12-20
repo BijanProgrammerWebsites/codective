@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import dishesImage from "@/assets/images/dishes.png";
 
@@ -35,7 +36,9 @@ export default function HeroComponent({ subject, logo }: Props): ReactElement {
           </p>
         </div>
         <div className={styles.actions}>
-          <button className="button primary large">همین الان شروع کن!</button>
+          <Link className="button primary large" href="#register">
+            همین الان شروع کن!
+          </Link>
         </div>
       </div>
       <div className={styles.visuals}>
