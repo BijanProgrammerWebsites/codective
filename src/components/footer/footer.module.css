@@ -4,7 +4,7 @@
   justify-content: center;
   gap: 1rem;
 
-  padding-block: 1rem;
+  margin-block: var(--section-margin-block);
 
   text-align: center;
 }
