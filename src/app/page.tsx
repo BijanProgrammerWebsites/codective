@@ -18,7 +18,7 @@ export default function Page() {
           </div>
           <div className={styles.title}>بوت‌کمپ React</div>
           <p className={styles.date}>شروع از هفته‌ی دوم دی</p>
-          <Link className="button primary large" href="/bootcamps/react">
+          <Link className="button primary large" href="/react">
             ثبت‌نام
           </Link>
         </li>
@@ -28,7 +28,7 @@ export default function Page() {
           </div>
           <div className={styles.title}>بوت‌کمپ Next.js</div>
           <p className={styles.date}>شروع از اواخر اسفند</p>
-          <Link className="button primary large" href="/bootcamps/nextjs">
+          <Link className="button primary large" href="/nextjs">
             ثبت‌نام
           </Link>
         </li>
