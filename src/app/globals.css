@@ -37,6 +37,9 @@
 html {
   color-scheme: dark light;
 
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 2rem;
+
   interpolate-size: allow-keywords;
 }
 
