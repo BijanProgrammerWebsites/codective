@@ -46,6 +46,10 @@
         font-size: var(--fz-900);
         font-weight: 900;
       }
+
+      .price {
+        font-weight: 900;
+      }
     }
 
     .cta {
@@ -74,6 +78,10 @@
 
         .mobile-only {
           display: revert;
+        }
+
+        .desktop-only {
+          display: none;
         }
       }
 

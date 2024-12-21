@@ -11,8 +11,10 @@ export default function CtaBannerComponent(): ReactElement {
         <p className={styles.title}>
           از مفاهیم پایه <br className={styles["mobile-only"]} />
           تا تکنیک‌های حرفه‌ای
-          <br />
-          <span className={styles.highlight}>فقط در یک بوت‌کمپ!</span>
+          <br className={styles["desktop-only"]} />
+          <span className={styles.highlight}>تنها در یک بوت‌کمپ!</span>
+          <br className={styles["desktop-only"]} />
+          <span className={styles.price}>🔥 فقط 5 میلیون تومان 🔥</span>
         </p>
         <p className={styles.cta}>
           برای ثبت‌نام به
