@@ -1,0 +1,45 @@
+.subscribe {
+  background-color: var(--color-subscribe-background);
+  color: var(--color-subscribe-foreground);
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding-block: 0.25rem;
+
+  font-size: var(--fz-300);
+
+  p {
+    a {
+      font-weight: 700;
+
+      text-decoration: underline;
+    }
+  }
+
+  > a {
+    background-color: var(--color-subscribe-foreground);
+    color: var(--color-subscribe-background);
+
+    margin-inline-end: auto;
+    padding-inline: 0.75rem;
+
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 600px) {
+  .subscribe {
+    flex-direction: column;
+
+    text-align: center;
+
+    > a {
+      margin-inline: auto;
+    }
+  }
+}

@@ -21,7 +21,7 @@
   --color-primary-fade: hsl(120deg 70% 96%);
   --color-primary-lighter: hsl(120deg 70% 50%);
   --color-primary-darker: hsl(120deg 70% 34%);
-  --color-primary-opposite: var(--color-gray-98);
+  --color-primary-opposite: var(--color-gray-10);
 
   --gradient-primary: linear-gradient(
     -135deg,

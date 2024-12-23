@@ -2,6 +2,9 @@
   --color-default-background: var(--color-gray-10);
   --color-default-foreground: var(--color-gray-98);
 
+  --color-subscribe-background: hsl(50deg 100% 50%);
+  --color-subscribe-foreground: var(--color-gray-10);
+
   --color-react: hsl(191deg 65% 60%);
   --color-next: hsl(0deg 0% 0%);
 
