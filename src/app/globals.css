@@ -108,3 +108,7 @@ h3 {
   font-size: var(--fz-600);
   font-weight: 100;
 }
+
+.ambient-filter {
+  filter: url("#ambient-filter");
+}
