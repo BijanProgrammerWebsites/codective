@@ -40,7 +40,7 @@
         display: none;
       }
 
-      .highlight {
+      > .highlight {
         color: var(--color-gray-10);
 
         font-size: var(--fz-900);
@@ -49,6 +49,15 @@
 
       .price {
         font-weight: 900;
+      }
+
+      .discount {
+        font-size: var(--fz-400);
+
+        .highlight {
+          font-size: var(--fz-400);
+          font-weight: 900;
+        }
       }
     }
 

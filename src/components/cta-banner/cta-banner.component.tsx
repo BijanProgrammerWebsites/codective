@@ -15,6 +15,14 @@ export default function CtaBannerComponent(): ReactElement {
           <span className={styles.highlight}>تنها در یک بوت‌کمپ!</span>
           <br className={styles["desktop-only"]} />
           <span className={styles.price}>🔥 فقط 5 میلیون تومان 🔥</span>
+          <br className={styles["desktop-only"]} />
+          <span className={styles.discount}>
+            اگر دانشجو هستید
+            <span> </span>
+            <span className={styles.highlight}>50درصد تخفیف</span>
+            <span> </span>
+            دریافت می‌کنید.
+          </span>
         </p>
         <p className={styles.cta}>
           برای ثبت‌نام به
