@@ -33,31 +33,51 @@
 
     animation: shiny-animation 2s ease-in-out infinite;
 
-    .title {
+    .mobile-only {
+      display: none;
+    }
+
+    .info {
       color: var(--color-gray-20);
 
       font-size: var(--fz-600);
 
-      .mobile-only {
-        display: none;
+      .subtitle {
+        display: flex;
+        justify-content: center;
+        gap: 0.5ch;
       }
 
-      > .highlight {
+      .title {
         color: var(--color-gray-10);
 
         font-size: var(--fz-900);
         font-weight: 900;
       }
 
-      .price {
+      .discount {
         font-weight: 900;
       }
 
-      .discount {
+      .price {
         font-size: var(--fz-400);
 
-        .highlight {
-          font-size: var(--fz-400);
+        .before-discount,
+        .after-discount {
+          &::before,
+          &::after {
+            content: " ";
+          }
+        }
+
+        .before-discount {
+          opacity: 0.5;
+
+          text-decoration: line-through;
+        }
+
+        .after-discount {
+          font-size: var(--fz-600);
           font-weight: 900;
         }
       }
@@ -78,23 +98,26 @@
   .cta-banner {
     filter: none;
 
+    .mobile-only {
+      display: revert;
+    }
+
     .card {
       border-width: 8px;
       outline-width: 2px;
       outline-offset: -2px;
 
-      .title {
+      .info {
         display: grid;
         gap: inherit;
 
         line-height: 1.25;
 
-        .mobile-only {
-          display: revert;
+        .subtitle {
+          flex-direction: column;
         }
 
-        .desktop-only {
-          display: none;
+        .price {
         }
       }
 

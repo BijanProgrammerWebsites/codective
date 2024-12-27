@@ -1,0 +1,26 @@
+.preorder {
+  background-color: var(--color-gray-14);
+
+  margin-block: var(--section-margin-block);
+  padding-block: var(--alternative-section-padding-block);
+
+  p {
+    text-align: center;
+
+    .highlight {
+      color: var(--color-react);
+
+      font-weight: 700;
+      font-style: italic;
+
+      &::before,
+      &::after {
+        content: " ";
+      }
+    }
+
+    &:not(:first-of-type) {
+      margin-block-start: 0.5rem;
+    }
+  }
+}

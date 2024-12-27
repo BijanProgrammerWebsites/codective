@@ -8,22 +8,23 @@ export default function CtaBannerComponent(): ReactElement {
   return (
     <section id="register" className={styles["cta-banner"]}>
       <div className={styles.card}>
-        <p className={styles.title}>
-          از مفاهیم پایه <br className={styles["mobile-only"]} />
-          تا تکنیک‌های حرفه‌ای
-          <br className={styles["desktop-only"]} />
-          <span className={styles.highlight}>تنها در یک بوت‌کمپ!</span>
-          <br className={styles["desktop-only"]} />
-          <span className={styles.price}>🔥 فقط 5 میلیون تومان 🔥</span>
-          <br className={styles["desktop-only"]} />
-          <span className={styles.discount}>
-            اگر دانشجو هستید
-            <span> </span>
-            <span className={styles.highlight}>50درصد تخفیف</span>
-            <span> </span>
-            دریافت می‌کنید.
-          </span>
-        </p>
+        <div className={styles.info}>
+          <div className={styles.subtitle}>
+            <div>از مفاهیم پایه</div>
+            <div>تا تکنیک‌های حرفه‌ای</div>
+          </div>
+          <div className={styles.title}>تنها در یک بوت‌کمپ!</div>
+          <div className={styles.discount}>
+            🔥 50% تخفیف ویژه برای ثبت‌نام زودهنگام 🔥
+          </div>
+          <div className={styles.price}>
+            فقط و فقط
+            <span className={styles["before-discount"]}>5,000,000</span>
+            <br className={styles["mobile-only"]} />
+            <span className={styles["after-discount"]}>2,500,000</span>
+            تومان!
+          </div>
+        </div>
         <p className={styles.cta}>
           برای ثبت‌نام به
           <span> </span>
