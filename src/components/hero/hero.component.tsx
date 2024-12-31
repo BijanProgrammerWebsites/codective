@@ -53,7 +53,7 @@ export default function HeroComponent({
           src={dishesImage}
           alt=""
           height={300}
-          loading="eager"
+          priority
         />
         {logo}
       </div>
