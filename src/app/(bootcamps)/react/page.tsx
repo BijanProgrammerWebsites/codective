@@ -16,6 +16,11 @@ export default function Page() {
       <HeroComponent
         subject="React"
         logo={<ReactLogo className={styles.logo} />}
+        extraDescriptions={[
+          <p key="date">
+            این دوره از 7 بهمن شروع میشه و تا 28 اسفند ادامه داره.
+          </p>,
+        ]}
       />
       <PreorderComponent />
       <FeaturesComponent logo={<ReactLogo />} />

@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { ComponentProps, ReactElement } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -10,9 +10,14 @@ import styles from "./hero.module.css";
 type Props = {
   subject: string;
   logo: ReactElement;
+  extraDescriptions?: ReactElement<ComponentProps<"p">>[];
 };
 
-export default function HeroComponent({ subject, logo }: Props): ReactElement {
+export default function HeroComponent({
+  subject,
+  logo,
+  extraDescriptions,
+}: Props): ReactElement {
   return (
     <section id="intro" className={styles.hero}>
       <div className={styles.writings}>
@@ -34,6 +39,7 @@ export default function HeroComponent({ subject, logo }: Props): ReactElement {
             از همه مهم‌تر بهتون تسک داده میشه و Code Review داریم. همچنین تو
             گروه اختصاصی می‌تونید هر جا به مشکل خوردید از منتورتون کمک بگیرید.
           </p>
+          {extraDescriptions}
         </div>
         <div className={styles.actions}>
           <Link className="button primary large" href="#register">
