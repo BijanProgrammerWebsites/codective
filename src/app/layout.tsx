@@ -6,7 +6,6 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import SubscribeComponent from "@/components/subscribe/subscribe.component";
 
 import "@/styles/background.css";
-import "@/styles/button.css";
 import "@/styles/palette.css";
 import "@/styles/typography.css";
 

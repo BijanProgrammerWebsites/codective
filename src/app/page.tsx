@@ -1,6 +1,6 @@
-import Link from "next/link";
-
 import clsx from "clsx";
+
+import { ButtonLinkComponent } from "@/components/button/button.component";
 
 import ReactLogo from "@/logo/react.logo";
 
@@ -17,9 +17,9 @@ export default function Page() {
           </div>
           <div className={styles.title}>بوت‌کمپ React</div>
           <p className={styles.date}>از 7 بهمن تا 28 اسفند</p>
-          <Link className="button primary large" href="/react">
+          <ButtonLinkComponent href="/react" variant="primary" size="large">
             ثبت‌نام
-          </Link>
+          </ButtonLinkComponent>
         </li>
       </ul>
     </div>

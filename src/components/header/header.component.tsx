@@ -2,6 +2,8 @@ import { ReactElement } from "react";
 
 import Link from "next/link";
 
+import { ButtonLinkComponent } from "@/components/button/button.component";
+
 import styles from "./header.module.css";
 
 export default function HeaderComponent(): ReactElement {
@@ -30,9 +32,9 @@ export default function HeaderComponent(): ReactElement {
         </ul>
       </nav>
       <div className={styles.cta}>
-        <Link className="button primary" href="#register">
+        <ButtonLinkComponent href="#register" variant="primary">
           ثبت‌نام
-        </Link>
+        </ButtonLinkComponent>
       </div>
     </header>
   );
