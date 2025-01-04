@@ -1,8 +1,12 @@
+"use client";
+
 import { ComponentProps, ReactElement } from "react";
 
-import Link from "next/link";
+import { motion } from "motion/react";
 
 import clsx from "clsx";
+
+import MotionLinkComponent from "@/components/motion-link/motion-link.component";
 
 import styles from "./button.module.css";
 
@@ -18,9 +22,10 @@ type CommonProps = {
   position?: ButtonPosition;
 };
 
-type ButtonComponentProps = ComponentProps<"button"> & CommonProps;
+type ButtonComponentProps = ComponentProps<typeof motion.button> & CommonProps;
 
-type ButtonLinkComponentProps = ComponentProps<typeof Link> & CommonProps;
+type ButtonLinkComponentProps = ComponentProps<typeof MotionLinkComponent> &
+  CommonProps;
 
 export function ButtonComponent({
   variant = "default",
@@ -32,7 +37,7 @@ export function ButtonComponent({
   ...otherProps
 }: ButtonComponentProps): ReactElement {
   return (
-    <button
+    <motion.button
       className={clsx(
         styles.button,
         styles[variant],
@@ -41,10 +46,12 @@ export function ButtonComponent({
         styles[position],
         className,
       )}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
       {...otherProps}
     >
       {children}
-    </button>
+    </motion.button>
   );
 }
 
@@ -59,7 +66,8 @@ export function ButtonLinkComponent({
   ...otherProps
 }: ButtonLinkComponentProps): ReactElement {
   return (
-    <Link
+    <MotionLinkComponent
+      href={href}
       className={clsx(
         styles.button,
         styles[variant],
@@ -68,10 +76,11 @@ export function ButtonLinkComponent({
         styles[position],
         className,
       )}
-      href={href}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
       {...otherProps}
     >
       {children}
-    </Link>
+    </MotionLinkComponent>
   );
 }
