@@ -11,8 +11,12 @@
 
   cursor: pointer;
 
-  transition: var(--animation-duration-fast) ease-in-out;
-  transition-property: background-color;
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, background-position, transform;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   &.solid {
     &.primary {
@@ -20,8 +24,6 @@
       background-size: 200% 100%;
       background-position: 100% 0;
       color: var(--color-primary-opposite);
-
-      transition: background-position 0.5s ease-in-out;
 
       @media (hover: hover) {
         &:hover {
