@@ -17,7 +17,5 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 type Props = PropsWithChildren;
 
 export default function GsapProvider({ children }: Props): ReactElement {
-  useGSAP(() => {});
-
   return <>{children}</>;
 }
