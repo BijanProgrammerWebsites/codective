@@ -5,12 +5,14 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 import SubscribeComponent from "@/components/subscribe/subscribe.component";
 
+import AmbientFilter from "@/filters/ambient.filter";
+
 import "@/styles/background.css";
 import "@/styles/palette.css";
 import "@/styles/typography.css";
 
 import "./globals.css";
-import AmbientFilter from "@/filters/ambient.filter";
+import GsapProvider from "@/providers/gsap/gsap.provider";
 
 const vazirmatn = Vazirmatn({
   subsets: ["latin", "arabic"],
@@ -58,9 +60,11 @@ export default function RootLayout({
       className={vazirmatn.className}
     >
       <body>
-        <SubscribeComponent />
-        {children}
-        <AmbientFilter />
+        <GsapProvider>
+          <SubscribeComponent />
+          {children}
+          <AmbientFilter />
+        </GsapProvider>
       </body>
       <GoogleAnalytics gaId="G-95NEST07R1" />
     </html>
