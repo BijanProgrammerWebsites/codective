@@ -7,12 +7,13 @@ import SubscribeComponent from "@/components/subscribe/subscribe.component";
 
 import AmbientFilter from "@/filters/ambient.filter";
 
+import GsapProvider from "@/providers/gsap/gsap.provider";
+
 import "@/styles/background.css";
 import "@/styles/palette.css";
 import "@/styles/typography.css";
 
 import "./globals.css";
-import GsapProvider from "@/providers/gsap/gsap.provider";
 
 const vazirmatn = Vazirmatn({
   subsets: ["latin", "arabic"],
