@@ -28,8 +28,9 @@ export default function FeatureComponent({
       viewport={{
         once: true,
         amount: "all",
+        margin: "-50px",
       }}
-      transition={{ type: "spring", bounce: 0.25 }}
+      transition={{ type: "spring", bounce: 0.5 }}
     >
       {children}
     </motion.li>
