@@ -1,7 +1,6 @@
 import { ReactElement } from "react";
 
 import OutlineComponent from "@/components/outline/outline.component";
-import MotionListItemComponent from "@/components/motion-list-item/motion-list-item.component";
 
 const willLearnItems = [
   "Git & GitHub",
@@ -44,16 +43,12 @@ export default function ReactOutlineComponent(): ReactElement {
     <OutlineComponent>
       <OutlineComponent.WillLearn>
         {willLearnItems.map((item, index) => (
-          <MotionListItemComponent key={index} index={index}>
-            {item}
-          </MotionListItemComponent>
+          <li key={index}>{item}</li>
         ))}
       </OutlineComponent.WillLearn>
       <OutlineComponent.WillNotLearn>
         {willNotLearnItems.map((item, index) => (
-          <MotionListItemComponent key={index} index={index}>
-            {item}
-          </MotionListItemComponent>
+          <li key={index}>{item}</li>
         ))}
       </OutlineComponent.WillNotLearn>
     </OutlineComponent>

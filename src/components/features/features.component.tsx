@@ -2,8 +2,7 @@
 
 import { ReactElement } from "react";
 
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
+import useListAnimation from "@/hooks/use-list-animation.hook";
 
 import styles from "./features.module.css";
 
@@ -12,36 +11,12 @@ type Props = {
 };
 
 export default function FeaturesComponent({ logo }: Props): ReactElement {
-  useGSAP(() => {
-    const items = gsap.utils.toArray<HTMLLIElement>("#features > ul > li");
-
-    items.forEach((item) => {
-      gsap.fromTo(
-        item,
-        {
-          opacity: 0,
-          y: 50,
-          scale: 0.5,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          duration: 1,
-          ease: "elastic.out(1, 0.7)",
-          scrollTrigger: {
-            trigger: item,
-            start: "bottom bottom-=50px",
-          },
-        },
-      );
-    });
-  });
+  const [scope] = useListAnimation();
 
   return (
     <section id="features" className={styles.features}>
       <h2>ویژگی‌ها</h2>
-      <ul>
+      <ul ref={scope}>
         <li>8 هفته فشرده</li>
         <li>هر هفته 2 جلسه تدریس آنلاین</li>
         <li>هر هفته 1 جلسه رفع اشکال</li>
