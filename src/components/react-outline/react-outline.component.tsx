@@ -2,54 +2,46 @@ import { ReactElement } from "react";
 
 import OutlineComponent from "@/components/outline/outline.component";
 
-const willLearnItems = [
-  "Git & GitHub",
-  "TypeScript",
-  "JSX",
-  "Components",
-  "Props",
-  "Hooks",
-  "Custom Hooks",
-  "Event Handling",
-  "Routing",
-  "Forms",
-  "Context",
-  "Working with APIs",
-  "Error Handling",
-  "Suspense",
-  "Authentication",
-  "Internationalization",
-  "CSS Modules",
-  "Design Patterns",
-  "Best Practices (DRY, KISS, YAGNI)",
-  "Clean Code (Prettier, ESLint)",
-  "LocalStorage, Sessions, Cookies",
-  "Popular libraries",
-  "React Router",
-  "TanStack Query (React Query)",
-  "React Hook Form",
-  "Zod",
-  "Zustand",
-  "i18next",
-  "React-Toastify",
-  "Motion (Framer Motion)",
-  "CI/CD, Docker, Deploy",
-];
-
-const willNotLearnItems = ["React 19", "Server Components", "Server Functions"];
-
 export default function ReactOutlineComponent(): ReactElement {
   return (
     <OutlineComponent>
       <OutlineComponent.WillLearn>
-        {willLearnItems.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
+        <li>Git & GitHub</li>
+        <li>TypeScript</li>
+        <li>JSX</li>
+        <li>Components</li>
+        <li>Props</li>
+        <li>Hooks</li>
+        <li>Custom Hooks</li>
+        <li>Event Handling</li>
+        <li>Routing</li>
+        <li>Forms</li>
+        <li>Context</li>
+        <li>Working with APIs</li>
+        <li>Error Handling</li>
+        <li>Suspense</li>
+        <li>Authentication</li>
+        <li>Internationalization</li>
+        <li>CSS Modules</li>
+        <li>Design Patterns</li>
+        <li>Best Practices (DRY, KISS, YAGNI)</li>
+        <li>Clean Code (Prettier, ESLint)</li>
+        <li>LocalStorage, Sessions, Cookies</li>
+        <li>Popular libraries</li>
+        <li>React Router</li>
+        <li>TanStack Query (React Query)</li>
+        <li>React Hook Form</li>
+        <li>Zod</li>
+        <li>Zustand</li>
+        <li>i18next</li>
+        <li>React-Toastify</li>
+        <li>Motion (Framer Motion)</li>
+        <li>CI/CD, Docker, Deploy</li>
       </OutlineComponent.WillLearn>
       <OutlineComponent.WillNotLearn>
-        {willNotLearnItems.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
+        <li>React 19</li>
+        <li>Server Components</li>
+        <li>Server Functions</li>
       </OutlineComponent.WillNotLearn>
     </OutlineComponent>
   );
