@@ -3,7 +3,6 @@ import Link from "next/link";
 import clsx from "clsx";
 
 import ReactLogo from "@/logo/react.logo";
-import NextTransparentLogo from "@/logo/next-transparent.logo";
 
 import styles from "./page.module.css";
 
@@ -19,16 +18,6 @@ export default function Page() {
           <div className={styles.title}>بوت‌کمپ React</div>
           <p className={styles.date}>از 7 بهمن تا 28 اسفند</p>
           <Link className="button primary large" href="/react">
-            ثبت‌نام
-          </Link>
-        </li>
-        <li className={clsx(styles.card, styles.next)}>
-          <div className={styles.visuals}>
-            <NextTransparentLogo />
-          </div>
-          <div className={styles.title}>بوت‌کمپ Next.js</div>
-          <p className={styles.date}>شروع از اواخر اسفند</p>
-          <Link className="button primary large" href="/nextjs">
             ثبت‌نام
           </Link>
         </li>
