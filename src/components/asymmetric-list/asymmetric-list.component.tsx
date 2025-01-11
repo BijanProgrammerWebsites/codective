@@ -1,4 +1,8 @@
+"use client";
+
 import { ComponentProps, ReactElement } from "react";
+
+import useListAnimation from "@/hooks/use-list-animation.hook";
 
 import clsx from "clsx";
 
@@ -16,8 +20,11 @@ export default function AsymmetricListComponent({
   hollow = false,
   ...otherProps
 }: Props): ReactElement {
+  const [scope] = useListAnimation();
+
   return (
     <ul
+      ref={scope}
       className={clsx(
         styles["asymmetric-list"],
         className,

@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-import Link from "next/link";
+import { ButtonLinkComponent } from "@/components/button/button.component";
 
 import styles from "./cta-banner.module.css";
 
@@ -19,14 +19,16 @@ export default function CtaBannerComponent(): ReactElement {
         <p className={styles.cta}>
           برای ثبت‌نام به
           <span> </span>
-          <Link
+          <ButtonLinkComponent
             dir="ltr"
-            className="button primary-opposite inline"
             href="https://t.me/BijanEisapour"
             target="_blank"
+            variant="primary"
+            shape="outlined"
+            position="inline"
           >
             @BijanEisapour
-          </Link>
+          </ButtonLinkComponent>
           <span> </span>
           در تلگرام پیام بدید.
         </p>

@@ -1,0 +1,48 @@
+.button {
+  display: inline-block;
+
+  padding: 0.5rem 2rem;
+
+  border: none;
+  border-radius: var(--border-radius);
+
+  font-size: 1rem;
+  font-weight: 900;
+
+  cursor: pointer;
+
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, background-position;
+
+  &.solid {
+    &.primary {
+      background-image: var(--gradient-primary);
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      color: var(--color-primary-opposite);
+
+      @media (hover: hover) {
+        &:hover {
+          background-position: 0 0;
+        }
+      }
+    }
+  }
+
+  &.outlined {
+    &.primary {
+      background-color: var(--color-primary-opposite);
+      color: var(--color-primary);
+    }
+  }
+
+  &.large {
+    padding: 1rem 2rem;
+  }
+
+  &.inline {
+    padding: 0.2rem 0.5rem;
+
+    font-weight: 700;
+  }
+}

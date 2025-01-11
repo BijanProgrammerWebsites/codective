@@ -1,9 +1,10 @@
 import { ComponentProps, ReactElement } from "react";
 
 import Image from "next/image";
-import Link from "next/link";
 
 import dishesImage from "@/assets/images/dishes.png";
+
+import { ButtonLinkComponent } from "@/components/button/button.component";
 
 import styles from "./hero.module.css";
 
@@ -42,9 +43,9 @@ export default function HeroComponent({
           {extraDescriptions}
         </div>
         <div className={styles.actions}>
-          <Link className="button primary large" href="#register">
+          <ButtonLinkComponent href="#register" variant="primary" size="large">
             همین الان شروع کن!
-          </Link>
+          </ButtonLinkComponent>
         </div>
       </div>
       <div className={styles.visuals}>
