@@ -22,7 +22,6 @@ export default function Page() {
           </p>,
         ]}
       />
-      <PreorderComponent />
       <FeaturesComponent logo={<ReactLogo />} />
       <PrerequisitesComponent
         technicalItems={[
@@ -33,7 +32,6 @@ export default function Page() {
       <ReactOutlineComponent />
       <ReactRoadmapComponent />
       <CtaBannerComponent />
-      <PreorderComponent />
     </div>
   );
 }

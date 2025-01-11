@@ -21,7 +21,7 @@
     justify-items: center;
     gap: 2rem;
 
-    padding: 2rem;
+    padding: 2rem 1rem;
 
     border: 16px dashed transparent;
     border-radius: 2.5rem;
@@ -55,31 +55,8 @@
         font-weight: 900;
       }
 
-      .discount {
-        font-weight: 900;
-      }
-
       .price {
-        font-size: var(--fz-400);
-
-        .before-discount,
-        .after-discount {
-          &::before,
-          &::after {
-            content: " ";
-          }
-        }
-
-        .before-discount {
-          opacity: 0.5;
-
-          text-decoration: line-through;
-        }
-
-        .after-discount {
-          font-size: var(--fz-600);
-          font-weight: 900;
-        }
+        font-weight: 900;
       }
     }
 
@@ -115,9 +92,6 @@
 
         .subtitle {
           flex-direction: column;
-        }
-
-        .price {
         }
       }
 
