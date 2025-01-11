@@ -27,7 +27,7 @@ export default function useListAnimation(): [scope: ReactRef] {
             ease: "elastic.out(1, 0.7)",
             scrollTrigger: {
               trigger: item,
-              start: "bottom bottom-=50px",
+              start: "bottom bottom",
             },
           },
         );
