@@ -1,14 +1,20 @@
+"use client";
+
 import { ReactElement } from "react";
 
 import Link from "next/link";
 
 import { ButtonLinkComponent } from "@/components/button/button.component";
 
+import useListAnimation from "@/hooks/use-list-animation.hook";
+
 import styles from "./header.module.css";
 
 export default function HeaderComponent(): ReactElement {
+  const [scope] = useListAnimation({ selector: "a" });
+
   return (
-    <header className={styles.header}>
+    <header ref={scope} className={styles.header}>
       <Link className={styles.logo} href="/">
         Codective
       </Link>

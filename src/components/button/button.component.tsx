@@ -1,8 +1,18 @@
 "use client";
 
-import { ComponentProps, ReactElement } from "react";
+import {
+  ComponentProps,
+  MouseEventHandler,
+  ReactElement,
+  useCallback,
+  useRef,
+  useState,
+} from "react";
 
 import Link from "next/link";
+
+import { ReactRef, useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 import clsx from "clsx";
 
@@ -33,8 +43,11 @@ export function ButtonComponent({
   children,
   ...otherProps
 }: ButtonComponentProps): ReactElement {
+  const [ref] = useButtonAnimation();
+
   return (
     <button
+      ref={ref}
       className={clsx(
         styles.button,
         styles[variant],
@@ -60,8 +73,11 @@ export function ButtonLinkComponent({
   children,
   ...otherProps
 }: ButtonLinkComponentProps): ReactElement {
+  const [ref] = useButtonAnimation();
+
   return (
     <Link
+      ref={ref}
       href={href}
       className={clsx(
         styles.button,
@@ -76,4 +92,49 @@ export function ButtonLinkComponent({
       {children}
     </Link>
   );
+}
+
+function useButtonAnimation(): [ref: ReactRef] {
+  const ref = useRef<HTMLElement>(null);
+
+  useGSAP(() => {
+    const element = ref.current;
+
+    if (!element) {
+      return;
+    }
+
+    const timeline = gsap.timeline({ paused: true });
+
+    timeline.fromTo(
+      element,
+      {
+        scale: 1,
+      },
+      {
+        scale: 1.05,
+        duration: 0.2,
+      },
+    );
+
+    const mouseEnterHandler = (): void => {
+      console.log("play");
+      timeline.play();
+    };
+
+    const mouseLeaveHandler = (): void => {
+      console.log("reverse");
+      timeline.reverse();
+    };
+
+    element.addEventListener("mouseenter", mouseEnterHandler);
+    element.addEventListener("mouseleave", mouseLeaveHandler);
+
+    return () => {
+      element.removeEventListener("mouseenter", mouseEnterHandler);
+      element.removeEventListener("mouseleave", mouseLeaveHandler);
+    };
+  });
+
+  return [ref];
 }

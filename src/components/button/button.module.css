@@ -12,11 +12,7 @@
   cursor: pointer;
 
   transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, background-position, transform;
-
-  &:hover {
-    transform: scale(1.05);
-  }
+  transition-property: background-color, background-position;
 
   &.solid {
     &.primary {

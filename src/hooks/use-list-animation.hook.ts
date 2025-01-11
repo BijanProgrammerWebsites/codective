@@ -3,12 +3,18 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { ReactRef, useGSAP } from "@gsap/react";
 
-export default function useListAnimation(): [scope: ReactRef] {
-  const scope = useRef<HTMLUListElement>(null);
+type Options = {
+  selector?: string;
+};
+
+export default function useListAnimation(options?: Options): [scope: ReactRef] {
+  const { selector = "li" } = options ?? {};
+
+  const scope = useRef<HTMLElement>(null);
 
   useGSAP(
     () => {
-      const items = gsap.utils.toArray<HTMLLIElement>("li");
+      const items = gsap.utils.toArray<HTMLLIElement>(selector);
 
       items.forEach((item) => {
         gsap.fromTo(
@@ -33,7 +39,7 @@ export default function useListAnimation(): [scope: ReactRef] {
         );
       });
     },
-    { scope },
+    { scope, dependencies: [selector] },
   );
 
   return [scope];
