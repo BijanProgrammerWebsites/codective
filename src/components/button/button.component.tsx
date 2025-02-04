@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  ComponentProps,
-  MouseEventHandler,
-  ReactElement,
-  useCallback,
-  useRef,
-  useState,
-} from "react";
+import { ComponentProps, ReactElement, useRef } from "react";
 
 import Link from "next/link";
 
