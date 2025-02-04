@@ -21,7 +21,7 @@ export default function CustomAccordionItemComponent({
       className={styles.item}
       header={
         <>
-          {header}
+          <h3>{header}</h3>
           <MingcuteDownLine className={styles.chevron} />
         </>
       }
