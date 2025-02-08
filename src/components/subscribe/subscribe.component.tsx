@@ -2,6 +2,8 @@ import { ReactElement } from "react";
 
 import Link from "next/link";
 
+import { ButtonLinkComponent } from "@/components/button/button.component";
+
 import styles from "./subscribe.module.css";
 
 export default function SubscribeComponent(): ReactElement {
@@ -15,14 +17,13 @@ export default function SubscribeComponent(): ReactElement {
         </Link>
         .
       </p>
-      <Link
+      <ButtonLinkComponent
         dir="ltr"
-        className="button"
         href="https://t.me/Codective"
         target="_blank"
       >
         @Codective
-      </Link>
+      </ButtonLinkComponent>
     </section>
   );
 }

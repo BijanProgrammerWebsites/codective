@@ -1,4 +1,8 @@
+"use client";
+
 import { ReactElement } from "react";
+
+import useListAnimation from "@/hooks/use-list-animation.hook";
 
 import styles from "./features.module.css";
 
@@ -7,10 +11,12 @@ type Props = {
 };
 
 export default function FeaturesComponent({ logo }: Props): ReactElement {
+  const [scope] = useListAnimation();
+
   return (
     <section id="features" className={styles.features}>
       <h2>ویژگی‌ها</h2>
-      <ul>
+      <ul ref={scope}>
         <li>8 هفته فشرده</li>
         <li>هر هفته 2 جلسه تدریس آنلاین</li>
         <li>هر هفته 1 جلسه رفع اشکال</li>

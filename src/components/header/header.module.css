@@ -18,6 +18,12 @@
       gap: 2rem;
     }
   }
+
+  a {
+    display: inline-block;
+
+    opacity: 0;
+  }
 }
 
 @media (max-width: 1000px) {
