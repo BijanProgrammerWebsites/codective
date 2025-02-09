@@ -17,6 +17,9 @@ export default function ReactRoadmapComponent(): ReactElement {
           <WeekComponent>
             <WeekComponent.SessionComponent>
               <li>Introduction</li>
+              <li>Review Prerequisites</li>
+            </WeekComponent.SessionComponent>
+            <WeekComponent.SessionComponent>
               <li>Git</li>
               <li>GitHub</li>
               <li>
@@ -41,29 +44,38 @@ export default function ReactRoadmapComponent(): ReactElement {
               <li>JSX</li>
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
+              <li>Virtual DOM</li>
+              <li>The Diffing Algorithm</li>
+              <li>Closure</li>
+              <li>Hook: useState</li>
+            </WeekComponent.SessionComponent>
+            <WeekComponent.SessionComponent>
               <li>Components</li>
               <li>Props</li>
-              <li>Hook: useState</li>
-              <li>Closure</li>
+              <li>Key Attribute</li>
               <li>CSS Module</li>
-              <li>
-                Task 3: Implement the design by creating several components.
-              </li>
             </WeekComponent.SessionComponent>
           </WeekComponent>
         </CustomAccordionItemComponent>
         <CustomAccordionItemComponent header="هفته 3">
           <WeekComponent>
             <WeekComponent.SessionComponent>
-              <li>Event Handling</li>
-              <li>Hook: useEffect</li>
+              <li>Working with Figma</li>
+              <li>Implementing the Design</li>
               <li>Hook: useRef</li>
-              <li>Hook: useMemo</li>
-              <li>Hook: useCallback</li>
-              <li>Storage: LocalStorage</li>
+              <li>
+                Task 3: Implement the design by creating several components.
+              </li>
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
+              <li>Event Handling</li>
+              <li>Hook: useEffect</li>
+              <li>Hook: useMemo</li>
+              <li>Storage: LocalStorage</li>
               <li>Context</li>
+            </WeekComponent.SessionComponent>
+            <WeekComponent.SessionComponent>
+              <li>Hook: useCallback</li>
               <li>Library: React-Toastify</li>
               <li>Library: Motion (Framer Motion)</li>
               <li>Library: i18next</li>
