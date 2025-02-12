@@ -62,6 +62,8 @@ export default function ReactRoadmapComponent(): ReactElement {
             <WeekComponent.SessionComponent>
               <li>Working with Figma</li>
               <li>Implementing the Design</li>
+            </WeekComponent.SessionComponent>
+            <WeekComponent.SessionComponent>
               <li>Hook: useRef</li>
               <li>
                 Task 3: Implement the design by creating several components.
@@ -73,17 +75,18 @@ export default function ReactRoadmapComponent(): ReactElement {
               <li>Hook: useMemo</li>
               <li>Storage: LocalStorage</li>
               <li>Context</li>
+              <li>Task 4: Implement the logic.</li>
             </WeekComponent.SessionComponent>
+          </WeekComponent>
+        </CustomAccordionItemComponent>
+        <CustomAccordionItemComponent header="هفته 4">
+          <WeekComponent>
             <WeekComponent.SessionComponent>
               <li>Hook: useCallback</li>
               <li>Library: React-Toastify</li>
               <li>Library: Motion (Framer Motion)</li>
               <li>Library: i18next</li>
             </WeekComponent.SessionComponent>
-          </WeekComponent>
-        </CustomAccordionItemComponent>
-        <CustomAccordionItemComponent header="هفته 4">
-          <WeekComponent>
             <WeekComponent.SessionComponent>
               <li>Project: City Sightseeing</li>
               <li>Routing</li>
