@@ -8,12 +8,14 @@ import dishesImage from "@/assets/images/dishes.png";
 import styles from "./hero.module.css";
 
 type Props = {
+  length: string;
   subject: string;
   logo: ReactElement;
   extraDescriptions?: ReactElement<ComponentProps<"p">>[];
 };
 
 export default function HeroComponent({
+  length,
   subject,
   logo,
   extraDescriptions,
@@ -22,9 +24,10 @@ export default function HeroComponent({
     <section id="intro" className={styles.hero}>
       <div className={styles.writings}>
         <h1>
-          <span className={styles.subtitle}>فقط تو 2 ماه</span>
+          <span className={styles.subtitle}>فقط تو {length}</span>
           <span className={styles.title}>
             <span className={styles.highlight}>{subject}</span>
+            {` `}
             رو قورت بده!
           </span>
         </h1>

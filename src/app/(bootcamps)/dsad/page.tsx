@@ -1,36 +1,36 @@
 import HeroComponent from "@/components/hero/hero.component";
 import FeaturesComponent from "@/components/features/features.component";
 import PrerequisitesComponent from "@/components/prerequisites/prerequisites.component";
-import ReactOutlineComponent from "@/components/react-outline/react-outline.component";
-import ReactRoadmapComponent from "@/components/react-roadmap/react-roadmap.component";
+import DsadOutlineComponent from "@/components/dsad-outline/dsad-outline.component";
+import DsadRoadmapComponent from "@/components/dsad-roadmap/dsad-roadmap.component";
 import CtaBannerComponent from "@/components/cta-banner/cta-banner.component";
 
-import ReactLogo from "@/logo/react.logo";
+import DsadLogo from "@/logo/dsad.logo";
 
 import styles from "./page.module.css";
 
 export default function Page() {
   return (
-    <div id="react" className={styles.page}>
+    <div id="dsad" className={styles.page}>
       <HeroComponent
-        length="2 ماه"
-        subject="React"
-        logo={<ReactLogo className={styles.logo} />}
+        length="10 روز"
+        subject="ساختمان داده و طراحی الگوریتم"
+        logo={<DsadLogo className={styles.logo} />}
         extraDescriptions={[
           <p key="date">
             این دوره از 7 بهمن شروع میشه و تا 28 اسفند ادامه داره.
           </p>,
         ]}
       />
-      <FeaturesComponent logo={<ReactLogo />} />
+      <FeaturesComponent logo={<DsadLogo />} />
       <PrerequisitesComponent
         technicalItems={[
           "تسلط به HTML و CSS و JavaScript",
           "آشنایی با npm یا یک Package Manager دیگر",
         ]}
       />
-      <ReactOutlineComponent />
-      <ReactRoadmapComponent />
+      <DsadOutlineComponent />
+      <DsadRoadmapComponent />
       <CtaBannerComponent />
     </div>
   );

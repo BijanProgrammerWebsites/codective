@@ -20,7 +20,7 @@
     gap: 1rem;
 
     .card {
-      background-color: var(--color-gray-14);
+      background-color: var(--color-surface-3);
       box-shadow: var(--box-shadow-subtle);
 
       display: grid;
@@ -54,7 +54,7 @@
       }
 
       .date {
-        color: var(--color-gray-80);
+        color: var(--color-text-3);
       }
 
       a {
@@ -70,6 +70,12 @@
       &.next {
         .visuals {
           background-color: var(--color-next);
+        }
+      }
+
+      &.dsad {
+        .visuals {
+          background-color: var(--color-dsad);
         }
       }
     }

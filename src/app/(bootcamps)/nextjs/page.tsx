@@ -9,7 +9,7 @@ import styles from "./page.module.css";
 export default function Page() {
   return (
     <div id="next" className={styles.page}>
-      <HeroComponent subject="Next.js" logo={<NextLogo />} />
+      <HeroComponent length="2 ماه" subject="Next.js" logo={<NextLogo />} />
       <FeaturesComponent logo={<NextLogo />} />
       <PrerequisitesComponent
         technicalItems={[

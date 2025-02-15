@@ -6,7 +6,7 @@
   > li {
     flex: 1 0 auto;
 
-    background-color: var(--color-gray-14);
+    background-color: var(--color-surface-3);
 
     padding: 0.75rem 1rem;
 
@@ -29,7 +29,10 @@
     > li {
       background-color: transparent;
 
-      border: 3px solid var(--color-gray-14);
+      border: 3px solid var(--color-border-2);
+
+      text-decoration: line-through;
+      text-decoration-thickness: 1px;
     }
   }
 
@@ -37,7 +40,7 @@
     &:not(.hollow) {
       > li {
         &:hover {
-          background-color: var(--color-gray-20);
+          background-color: var(--color-surface-5);
 
           transition-duration: 0.1s;
         }

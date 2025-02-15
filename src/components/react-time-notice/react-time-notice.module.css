@@ -22,7 +22,7 @@
   }
 
   &.alternate {
-    background-color: var(--color-gray-14);
+    background-color: var(--color-surface-3);
 
     padding-block: var(--alternative-section-padding-block);
   }

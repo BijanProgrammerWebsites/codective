@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import clsx from "clsx";
 
-import ReactLogo from "@/logo/react.logo";
+import DsadLogo from "@/logo/dsad.logo";
 
 import styles from "./page.module.css";
 
@@ -11,13 +11,13 @@ export default function Page() {
     <div className={styles.page}>
       <h1>Codective</h1>
       <ul>
-        <li className={clsx(styles.card, styles.react)}>
+        <li className={clsx(styles.card, styles.dsad)}>
           <div className={styles.visuals}>
-            <ReactLogo />
+            <DsadLogo />
           </div>
-          <div className={styles.title}>بوت‌کمپ React</div>
-          <p className={styles.date}>از 7 بهمن تا 28 اسفند</p>
-          <Link className="button primary large" href="/react">
+          <div className={styles.title}>ساختمان داده و طراحی الگوریتم</div>
+          <p className={styles.date}>از 2 تا 12 فروردین</p>
+          <Link className="button primary large" href="/dsad">
             ثبت‌نام
           </Link>
         </li>
