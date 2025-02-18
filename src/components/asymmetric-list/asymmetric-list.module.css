@@ -6,7 +6,7 @@
   > li {
     flex: 1 0 auto;
 
-    background-color: var(--color-surface-3);
+    background-color: var(--color-surface-floating);
 
     padding: 0.75rem 1rem;
 
@@ -40,7 +40,7 @@
     &:not(.hollow) {
       > li {
         &:hover {
-          background-color: var(--color-surface-5);
+          background-color: var(--color-surface-floating-hover);
 
           transition-duration: 0.1s;
         }

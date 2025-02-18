@@ -4,7 +4,7 @@
 
   --color-react: hsl(191deg 65% 60%);
   --color-next: hsl(0deg 0% 0%);
-  --color-dsad: hsl(160deg 70% 70%);
+  --color-dsad: hsl(200deg 26% 70%);
 
   --color-box-shadow-subtle: hsl(0deg 0% 10% / 12%);
   --box-shadow-subtle: 0 0.2rem 0.5rem 0 var(--color-box-shadow-subtle);
@@ -36,8 +36,6 @@
 }
 
 html {
-  color-scheme: dark light;
-
   scroll-behavior: smooth;
   scroll-padding-block-start: 2rem;
 
@@ -69,7 +67,7 @@ a {
 }
 
 body {
-  background-color: var(--color-surface-1);
+  background-color: var(--color-surface-body);
   color: var(--color-text-1);
 
   display: flex;
@@ -87,7 +85,7 @@ body {
   }
 
   section#roadmap {
-    background-color: var(--color-surface-3);
+    background-color: var(--color-surface-floating);
 
     padding-block: var(--alternative-section-padding-block);
   }

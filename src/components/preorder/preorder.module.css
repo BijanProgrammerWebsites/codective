@@ -1,5 +1,5 @@
 .preorder {
-  background-color: var(--color-surface-3);
+  background-color: var(--color-surface-floating);
 
   margin-block: var(--section-margin-block);
   padding-block: var(--alternative-section-padding-block);

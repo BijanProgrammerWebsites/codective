@@ -22,8 +22,8 @@
       &:not(.center) {
         background-image: linear-gradient(
           -45deg,
-          var(--color-surface-1),
-          var(--color-surface-5)
+          var(--color-surface-body),
+          var(--color-surface-floating)
         );
         background-attachment: fixed;
         background-color: var(--transparent-light);

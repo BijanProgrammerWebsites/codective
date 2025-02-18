@@ -5,7 +5,7 @@ body {
     background-image: radial-gradient(
         at center,
         transparent,
-        var(--color-surface-1) 80%
+        var(--color-surface-body) 80%
       ),
       linear-gradient(
         var(--color-border-2) 1px,

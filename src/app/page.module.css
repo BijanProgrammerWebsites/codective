@@ -20,7 +20,7 @@
     gap: 1rem;
 
     .card {
-      background-color: var(--color-surface-3);
+      background-color: var(--color-surface-floating);
       box-shadow: var(--box-shadow-subtle);
 
       display: grid;

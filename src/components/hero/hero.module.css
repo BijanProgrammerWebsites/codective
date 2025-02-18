@@ -18,7 +18,7 @@
       line-height: 1.2;
 
       .subtitle {
-        background-color: var(--color-surface-5);
+        background-color: var(--color-surface-fade);
         color: var(--color-text-3);
 
         display: block;
