@@ -17,17 +17,12 @@ export default function Page() {
         subject="ساختمان داده و طراحی الگوریتم"
         logo={<DsadLogo className={styles.logo} />}
         extraDescriptions={[
-          <p key="date">
-            این دوره از 7 بهمن شروع میشه و تا 28 اسفند ادامه داره.
-          </p>,
+          <p key="date">این دوره از 2 تا 12 فروردین برگزار میشه.</p>,
         ]}
       />
       <FeaturesComponent logo={<DsadLogo />} />
       <PrerequisitesComponent
-        technicalItems={[
-          "تسلط به HTML و CSS و JavaScript",
-          "آشنایی با npm یا یک Package Manager دیگر",
-        ]}
+        technicalItems={["آشنایی با یکی از زبان‌های TypeScript یا Java یا #C"]}
       />
       <DsadOutlineComponent />
       <DsadRoadmapComponent />
