@@ -10,6 +10,13 @@
     font-weight: 700;
   }
 
+  nav a,
+  .cta {
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
   nav {
     margin-inline-start: auto;
 

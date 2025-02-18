@@ -1,4 +1,5 @@
 import HeroComponent from "@/components/hero/hero.component";
+import TutorComponent from "@/components/tutor/tutor.component";
 import FeaturesComponent from "@/components/features/features.component";
 import PrerequisitesComponent from "@/components/prerequisites/prerequisites.component";
 import DsadOutlineComponent from "@/components/dsad-outline/dsad-outline.component";
@@ -35,6 +36,7 @@ export default function Page() {
           </>
         }
       />
+      <TutorComponent />
       <FeaturesComponent logo={<DsadLogo />} />
       <PrerequisitesComponent
         technicalItems={["آشنایی با یکی از زبان‌های TypeScript یا Java یا #C"]}

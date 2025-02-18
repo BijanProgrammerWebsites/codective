@@ -172,7 +172,7 @@
     --glass-light: hsl(var(--hue) 4% 98% / 6%);
     --glass-dark: hsl(var(--hue) 26% 10% / 10%);
 
-    --color-primary: hsl(var(--hue) 26% 70%);
+    --color-primary: hsl(var(--hue) 70% 60%);
     --color-primary-fade: hsl(var(--hue) 26% 96%);
     --color-primary-lighter: hsl(var(--hue) 26% 70%);
     --color-primary-darker: hsl(var(--hue) 26% 54%);
@@ -180,9 +180,9 @@
 
     --gradient-primary: linear-gradient(
       135deg,
-      hsl(var(--hue) 26% 70%),
-      hsl(var(--hue) 26% 60%),
-      hsl(var(--hue) 26% 50%)
+      hsl(var(--hue) 70% 60%),
+      hsl(var(--hue) 70% 50%),
+      hsl(var(--hue) 70% 40%)
     );
   }
 }

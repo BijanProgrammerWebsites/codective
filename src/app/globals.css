@@ -4,7 +4,7 @@
 
   --color-react: hsl(191deg 65% 60%);
   --color-next: hsl(0deg 0% 0%);
-  --color-dsad: hsl(200deg 26% 70%);
+  --color-dsad: hsl(200deg 70% 60%);
 
   --color-box-shadow-subtle: hsl(0deg 0% 10% / 12%);
   --box-shadow-subtle: 0 0.2rem 0.5rem 0 var(--color-box-shadow-subtle);
@@ -89,20 +89,6 @@ body {
 
     padding-block: var(--alternative-section-padding-block);
   }
-}
-
-h2 {
-  margin-block-end: 1rem;
-
-  font-size: var(--fz-700);
-  font-weight: 100;
-}
-
-h3 {
-  margin-block-end: 1rem;
-
-  font-size: var(--fz-600);
-  font-weight: 100;
 }
 
 .ambient-filter {

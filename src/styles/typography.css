@@ -8,4 +8,28 @@
   --fz-700: clamp(1.75rem, 1.4286rem + 1.4286vw, 2.5rem);
   --fz-800: clamp(2.5rem, 1.8571rem + 2.8571vw, 4rem);
   --fz-900: clamp(3rem, 1.7143rem + 5.7143vw, 6rem);
+
+  h2 {
+    margin-block-end: 1rem;
+
+    font-size: var(--fz-700);
+    font-weight: 100;
+  }
+
+  h3 {
+    margin-block-end: 1rem;
+
+    font-size: var(--fz-600);
+    font-weight: 100;
+  }
+
+  &:has(#dsad) {
+    h2 {
+      font-weight: 200;
+    }
+
+    h3 {
+      font-weight: 200;
+    }
+  }
 }

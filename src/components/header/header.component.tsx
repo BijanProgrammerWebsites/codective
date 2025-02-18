@@ -4,6 +4,19 @@ import Link from "next/link";
 
 import styles from "./header.module.css";
 
+type NavItem = {
+  href: string;
+  title: string;
+};
+
+const navItems: NavItem[] = [
+  { href: "#tutor", title: "مدرس" },
+  { href: "#features", title: "ویژگی‌ها" },
+  { href: "#prerequisites", title: "پیش‌نیازها" },
+  { href: "#outline", title: "محتوا" },
+  { href: "#roadmap", title: "نقشه راه" },
+];
+
 export default function HeaderComponent(): ReactElement {
   return (
     <header className={styles.header}>
@@ -12,28 +25,16 @@ export default function HeaderComponent(): ReactElement {
       </Link>
       <nav>
         <ul>
-          <li>
-            <Link href="#">معرفی</Link>
-          </li>
-          <li>
-            <Link href="#features">ویژگی‌ها</Link>
-          </li>
-          <li>
-            <Link href="#prerequisites">پیش‌نیازها</Link>
-          </li>
-          <li>
-            <Link href="#outline">محتوا</Link>
-          </li>
-          <li>
-            <Link href="#roadmap">نقشه راه</Link>
-          </li>
+          {navItems.map((item) => (
+            <li key={item.title}>
+              <Link href={item.href}>{item.title}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
-      <div className={styles.cta}>
-        <Link className="button primary" href="#register">
-          ثبت‌نام
-        </Link>
-      </div>
+      <Link className={styles.cta} href="#register">
+        ثبت‌نام
+      </Link>
     </header>
   );
 }
