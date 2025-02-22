@@ -6,16 +6,19 @@
   .card {
     background-image: linear-gradient(
       135deg,
-      var(--color-primary) 0%,
-      var(--color-primary) 40%,
-      var(--color-primary-lighter) 45%,
-      var(--color-primary) 60%,
-      var(--color-primary) 100%
+      var(--color-cta-banner) 0%,
+      var(--color-cta-banner) 40%,
+      var(--color-cta-banner-shiny) 45%,
+      var(--color-cta-banner) 60%,
+      var(--color-cta-banner) 100%
     );
     background-size: 400% 100%;
     background-clip: padding-box;
 
     color: var(--color-primary-opposite);
+
+    position: relative;
+    overflow: hidden;
 
     display: grid;
     justify-items: center;
@@ -33,12 +36,29 @@
 
     animation: shiny-animation 2s ease-in-out infinite;
 
+    &::after {
+      content: "";
+
+      background-image: linear-gradient(
+        135deg,
+        hsl(0deg 0% 0%),
+        hsl(0deg 0% 100%) 30%,
+        hsl(0deg 0% 100%) 70%,
+        hsl(0deg 0% 0%)
+      );
+      mix-blend-mode: multiply;
+      opacity: 0.3;
+
+      position: absolute;
+      inset: 0;
+    }
+
     .mobile-only {
       display: none;
     }
 
     .info {
-      color: var(--color-text-3);
+      color: var(--color-gray-20);
 
       font-size: var(--fz-600);
 
@@ -49,7 +69,7 @@
       }
 
       .title {
-        color: var(--color-text-1);
+        color: var(--color-gray-10);
 
         font-size: var(--fz-900);
         font-weight: 900;

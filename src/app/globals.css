@@ -6,6 +6,9 @@
   --color-next: hsl(0deg 0% 0%);
   --color-dsad: hsl(200deg 70% 60%);
 
+  --color-cta-banner: hsl(48, 97%, 48%);
+  --color-cta-banner-shiny: hsl(48, 97%, 70%);
+
   --color-box-shadow-subtle: hsl(0deg 0% 10% / 12%);
   --box-shadow-subtle: 0 0.2rem 0.5rem 0 var(--color-box-shadow-subtle);
 
