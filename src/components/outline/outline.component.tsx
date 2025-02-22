@@ -16,15 +16,11 @@ export default function OutlineComponent({ children }: Props): ReactElement {
     <section id="outline" className={styles.outline}>
       <div className={styles.group}>
         <h2>چه چیزهایی یاد می‌گیریم؟</h2>
-        <AsymmetricListComponent dir="ltr">
-          {children[0]}
-        </AsymmetricListComponent>
+        <AsymmetricListComponent>{children[0]}</AsymmetricListComponent>
       </div>
       <div className={styles.group}>
         <h2>چه چیزهایی یاد نمی‌گیریم؟</h2>
-        <AsymmetricListComponent dir="ltr" hollow>
-          {children[1]}
-        </AsymmetricListComponent>
+        <AsymmetricListComponent hollow>{children[1]}</AsymmetricListComponent>
       </div>
     </section>
   );

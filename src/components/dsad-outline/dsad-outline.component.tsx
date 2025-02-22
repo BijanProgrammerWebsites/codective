@@ -6,42 +6,40 @@ export default function DsadOutlineComponent(): ReactElement {
   return (
     <OutlineComponent>
       <OutlineComponent.WillLearn>
-        <li>Git & GitHub</li>
-        <li>TypeScript</li>
-        <li>JSX</li>
-        <li>Components</li>
-        <li>Props</li>
-        <li>Hooks</li>
-        <li>Custom Hooks</li>
-        <li>Event Handling</li>
-        <li>Routing</li>
-        <li>Forms</li>
-        <li>Context</li>
-        <li>Working with APIs</li>
-        <li>Error Handling</li>
-        <li>Suspense</li>
-        <li>Authentication</li>
-        <li>Internationalization</li>
-        <li>CSS Modules</li>
-        <li>Design Patterns</li>
-        <li>Best Practices (DRY, KISS, YAGNI)</li>
-        <li>Clean Code (Prettier, ESLint)</li>
-        <li>LocalStorage, Sessions, Cookies</li>
-        <li>Popular libraries</li>
-        <li>React Router</li>
-        <li>TanStack Query (React Query)</li>
-        <li>React Hook Form</li>
-        <li>Zod</li>
-        <li>Zustand</li>
-        <li>i18next</li>
-        <li>React-Toastify</li>
-        <li>Motion (Framer Motion)</li>
-        <li>CI/CD, Docker, Deploy</li>
+        <li>پیچیدگی زمانی</li>
+        <li>مرتبه‌ی پیچیدگی</li>
+        <li>Two Pointers</li>
+        <li>Sliding Window</li>
+        <li>الگوریتم‌های بازگشتی</li>
+        <li>فاکتوریل</li>
+        <li>فیبوناچی</li>
+        <li>تقسیم و غلبه</li>
+        <li>جستجوی خطی</li>
+        <li>جستجوی دودویی</li>
+        <li>مرتب‌سازی</li>
+        <li>صف (Queue)</li>
+        <li>پشته (Stack)</li>
+        <li>Set</li>
+        <li>Map</li>
+        <li>لیست پیوندی (Linked List)</li>
+        <li>درخت</li>
+        <li>BST</li>
+        <li>گراف</li>
+        <li>DFS</li>
+        <li>BFS</li>
+        <li>برنامه‌نویسی پویا</li>
+        <li>Memoization</li>
+        <li>Tabulation</li>
+        <li>الگوریتم‌های حریصانه</li>
+        <li>بزرگ‌ترین زیردنباله‌ی مشترک</li>
+        <li>کوله‌پشتی</li>
+        <li>فروشنده‌ی دوره‌گرد</li>
+        <li>رنگ‌آمیزی گراف</li>
       </OutlineComponent.WillLearn>
       <OutlineComponent.WillNotLearn>
-        <li>React 19</li>
-        <li>Server Components</li>
-        <li>Server Functions</li>
+        <li>برنامه‌نویسی</li>
+        <li>ICPC یا ACM</li>
+        <li>المپیاد</li>
       </OutlineComponent.WillNotLearn>
     </OutlineComponent>
   );
