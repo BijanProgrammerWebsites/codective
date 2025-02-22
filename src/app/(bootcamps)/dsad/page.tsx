@@ -1,6 +1,6 @@
 import HeroComponent from "@/components/hero/hero.component";
 import TutorComponent from "@/components/tutor/tutor.component";
-import FeaturesComponent from "@/components/features/features.component";
+import SimpleFeaturesComponent from "@/components/simple-features/simple-features.component";
 import PrerequisitesComponent from "@/components/prerequisites/prerequisites.component";
 import DsadOutlineComponent from "@/components/dsad-outline/dsad-outline.component";
 import DsadRoadmapComponent from "@/components/dsad-roadmap/dsad-roadmap.component";
@@ -37,9 +37,30 @@ export default function Page() {
         }
       />
       <TutorComponent />
-      <FeaturesComponent logo={<DsadLogo />} />
+      <SimpleFeaturesComponent>
+        <li>10 روز فشرده</li>
+        <li>جلسات آنلاین 2 ساعته</li>
+        <li>ضبط و آپلود جلسات</li>
+        <li>حل چندین مثال در هر جلسه</li>
+        <li>تمرین منزل برای هر جلسه</li>
+        <li>برنامه‌ی مشخص</li>
+        <li>مختصر و مفید</li>
+        <li>آموزش کاربردی</li>
+        <li>پشتیبانی اختصاصی</li>
+        <li>گروه خصوصی</li>
+        <li>داوری خودکار پاسخ‌ها</li>
+        <li>نقشه راه شفاف</li>
+        <li>مناسب برای رزومه</li>
+        <li>مناسب برای مسابقات استخدامی</li>
+        <li>مناسب برای مصاحبه‌های فنی</li>
+      </SimpleFeaturesComponent>
       <PrerequisitesComponent
-        technicalItems={["آشنایی با یکی از زبان‌های TypeScript یا Java یا #C"]}
+        technicalItems={[
+          "ریاضیات دبیرستان",
+          "برنامه‌نویسی نیمه‌پیشرفته (معادل ترم 2 دانشگاه)",
+          "برنامه‌نویسی شیءگرا (OOP)",
+          "آشنایی با یکی از زبان‌های TypeScript یا Java یا #C",
+        ]}
       />
       <DsadOutlineComponent />
       <DsadRoadmapComponent />
