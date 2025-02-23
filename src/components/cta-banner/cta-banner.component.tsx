@@ -2,6 +2,8 @@ import { ReactElement } from "react";
 
 import Link from "next/link";
 
+import FluentEmojiFire from "@/icons/FluentEmojiFire";
+
 import styles from "./cta-banner.module.css";
 
 export default function CtaBannerComponent(): ReactElement {
@@ -14,7 +16,13 @@ export default function CtaBannerComponent(): ReactElement {
             <div>تا تکنیک‌های حرفه‌ای</div>
           </div>
           <div className={styles.title}>تنها در یک بوت‌کمپ!</div>
-          <div className={styles.price}>🔥 فقط 5,000,000 تومان! 🔥</div>
+          <div className={styles.price}>
+            <FluentEmojiFire />
+            {` `}
+            فقط 5,000,000 تومان!
+            {` `}
+            <FluentEmojiFire />
+          </div>
         </div>
         <p className={styles.cta}>
           برای ثبت‌نام به
