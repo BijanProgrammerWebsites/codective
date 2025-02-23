@@ -1,0 +1,85 @@
+.course {
+  background-color: var(--color-surface-floating);
+  box-shadow: var(--box-shadow-subtle);
+
+  display: grid;
+  grid-template-areas: "logo title action" "logo date action";
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: 1rem;
+
+  max-inline-size: 100%;
+
+  padding: 1rem;
+
+  border-radius: var(--border-radius);
+
+  .logo {
+    grid-area: logo;
+
+    display: grid;
+    place-items: center;
+
+    min-block-size: 100%;
+    block-size: 0;
+    aspect-ratio: 1 / 1;
+
+    border-radius: var(--border-radius);
+
+    font-size: 4rem;
+
+    img {
+      block-size: 100%;
+      inline-size: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .title {
+    grid-area: title;
+
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .date {
+    grid-area: date;
+
+    color: var(--color-text-3);
+  }
+
+  .action {
+    grid-area: action;
+  }
+
+  &.react {
+    .logo {
+      background-color: var(--color-react);
+    }
+  }
+
+  &.next {
+    .logo {
+      background-color: var(--color-next);
+    }
+  }
+
+  &.dsad {
+    .logo {
+      background-color: var(--color-dsad);
+    }
+  }
+
+  &.completed {
+    .logo {
+      background-color: var(--color-text-disabled);
+      color: var(--color-surface-disabled);
+    }
+
+    .title,
+    .date,
+    .action {
+      color: var(--color-text-disabled);
+    }
+  }
+}

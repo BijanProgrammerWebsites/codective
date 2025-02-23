@@ -17,6 +17,7 @@
   --color-surface-floating: var(--color-gray-14);
   --color-surface-floating-hover: var(--color-gray-20);
   --color-surface-fade: var(--color-gray-20);
+  --color-surface-disabled: var(--color-gray-30);
 
   --color-surface-accordion: var(--color-gray-12);
   --color-surface-accordion-hover: var(--color-gray-16);
@@ -25,6 +26,7 @@
   --color-text-1: var(--color-gray-98);
   --color-text-2: var(--color-gray-80);
   --color-text-3: var(--color-gray-70);
+  --color-text-disabled: var(--color-gray-40);
 
   --color-border-1: var(--color-gray-30);
   --color-border-2: hsl(120deg 4% 20% / 20%);
@@ -154,6 +156,7 @@
     --color-surface-floating: hsl(var(--hue) 26% 94%);
     --color-surface-floating-hover: hsl(var(--hue) 26% 90%);
     --color-surface-fade: hsl(var(--hue) 26% 90%);
+    --color-surface-disabled: var(--color-gray-40);
 
     --color-surface-accordion: hsl(var(--hue) 26% 90%);
     --color-surface-accordion-hover: hsl(var(--hue) 26% 85%);
@@ -162,6 +165,7 @@
     --color-text-1: var(--color-gray-10);
     --color-text-2: var(--color-gray-20);
     --color-text-3: var(--color-gray-30);
+    --color-text-disabled: var(--color-gray-70);
 
     --color-border-1: hsl(var(--hue) 26% 80%);
     --color-border-2: hsl(var(--hue) 26% 80% / 20%);

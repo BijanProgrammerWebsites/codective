@@ -1,0 +1,11 @@
+.courses {
+  display: grid;
+  gap: 4rem;
+
+  > section {
+    > ul {
+      display: grid;
+      gap: 1rem;
+    }
+  }
+}

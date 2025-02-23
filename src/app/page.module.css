@@ -1,83 +1,16 @@
+.header {
+  padding-block: 1rem;
+  padding-inline: var(--full-width-padding-inline);
+
+  h1 {
+    font-size: var(--fz-700);
+  }
+}
+
 .page {
   flex: 1 1 auto;
 
-  display: grid;
-  align-content: center;
-  gap: 2rem;
-
-  padding-block: 2rem;
-
-  h1 {
-    font-size: var(--fz-900);
-
-    text-align: center;
-  }
-
-  > ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), auto));
-    justify-content: center;
-    gap: 1rem;
-
-    .card {
-      background-color: var(--color-surface-floating);
-      box-shadow: var(--box-shadow-subtle);
-
-      display: grid;
-      grid-template-rows: auto auto 1fr auto;
-
-      max-inline-size: 100%;
-
-      padding: 1rem;
-
-      border-radius: var(--border-radius);
-
-      text-align: center;
-
-      .visuals {
-        display: grid;
-        place-items: center;
-
-        padding: 2rem;
-
-        border-radius: var(--border-radius);
-
-        font-size: 8rem;
-      }
-
-      .title {
-        margin-block-start: 1rem;
-        padding-inline: 1rem;
-
-        font-size: 2.5rem;
-        font-weight: 700;
-      }
-
-      .date {
-        color: var(--color-text-3);
-      }
-
-      a {
-        margin-block-start: 2rem;
-      }
-
-      &.react {
-        .visuals {
-          background-color: var(--color-react);
-        }
-      }
-
-      &.next {
-        .visuals {
-          background-color: var(--color-next);
-        }
-      }
-
-      &.dsad {
-        .visuals {
-          background-color: var(--color-dsad);
-        }
-      }
-    }
+  > main {
+    margin-block-end: 4rem;
   }
 }
