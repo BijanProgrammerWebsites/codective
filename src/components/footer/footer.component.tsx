@@ -7,10 +7,10 @@ export default function FooterComponent(): ReactElement {
 
   return (
     <footer className={styles.footer}>
-      <span className="persian">
+      <span className={styles.persian}>
         تمامی حقوق مادی و معنوی این وب‌سایت متعلق به بیژن عیسی‌پور می‌باشد.
       </span>
-      <span className="english">Copyright © {year} codective.ir</span>
+      <span className={styles.english}>Copyright © {year} codective.ir</span>
     </footer>
   );
 }
