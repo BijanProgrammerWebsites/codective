@@ -64,7 +64,16 @@ export default function Page() {
       />
       <DsadOutlineComponent />
       <DsadRoadmapComponent />
-      <CtaBannerComponent />
+      <CtaBannerComponent
+        title="تنها در 10 روز!"
+        subtitle={
+          <>
+            <div>از مفاهیم پایه</div>
+            <div>تا تکنیک‌های حرفه‌ای</div>
+          </>
+        }
+        price={480_000}
+      />
     </div>
   );
 }

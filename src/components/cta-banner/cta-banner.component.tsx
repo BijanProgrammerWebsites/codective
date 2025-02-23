@@ -6,21 +6,32 @@ import FluentEmojiFire from "@/icons/FluentEmojiFire";
 
 import styles from "./cta-banner.module.css";
 
-export default function CtaBannerComponent(): ReactElement {
+type Props = {
+  title: string;
+  subtitle: ReactElement;
+  price: number;
+};
+
+export default function CtaBannerComponent({
+  title,
+  subtitle,
+  price,
+}: Props): ReactElement {
   return (
     <section id="register" className={styles["cta-banner"]}>
       <div className={styles.card}>
         <div className={styles.info}>
-          <div className={styles.subtitle}>
-            <div>از مفاهیم پایه</div>
-            <div>تا تکنیک‌های حرفه‌ای</div>
-          </div>
-          <div className={styles.title}>تنها در یک بوت‌کمپ!</div>
+          <div className={styles.subtitle}>{subtitle}</div>
+          <div className={styles.title}>{title}</div>
           <div className={styles.price}>
             <FluentEmojiFire />
-            {` `}
-            فقط 5,000,000 تومان!
-            {` `}
+            <span>
+              فقط
+              {` `}
+              {price.toLocaleString()}
+              {` `}
+              تومان!
+            </span>
             <FluentEmojiFire />
           </div>
         </div>

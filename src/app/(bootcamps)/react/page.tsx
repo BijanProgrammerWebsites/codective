@@ -41,7 +41,16 @@ export default function Page() {
       />
       <ReactOutlineComponent />
       <ReactRoadmapComponent />
-      <CtaBannerComponent />
+      <CtaBannerComponent
+        title="تنها در یک بوت‌کمپ!"
+        subtitle={
+          <>
+            <div>از مفاهیم پایه</div>
+            <div>تا تکنیک‌های حرفه‌ای</div>
+          </>
+        }
+        price={5_000_000}
+      />
     </div>
   );
 }
