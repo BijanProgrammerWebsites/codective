@@ -86,9 +86,14 @@
     }
 
     .cta {
+      color: var(--color-gray-10);
+
       font-size: 1.5rem;
 
       a {
+        background-color: var(--color-gray-10);
+        color: var(--color-cta-banner);
+
         font-weight: 700;
         letter-spacing: 1px;
       }
