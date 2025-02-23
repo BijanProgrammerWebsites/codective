@@ -14,6 +14,14 @@
 
   border-radius: var(--border-radius);
 
+  .title,
+  .date,
+  .action {
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+  }
+
   .logo {
     grid-area: logo;
 
@@ -24,11 +32,13 @@
     block-size: 0;
     aspect-ratio: 1 / 1;
 
+    padding: 0.5rem;
+
     border-radius: var(--border-radius);
 
-    font-size: 4rem;
+    font-size: var(--fz-800);
 
-    img {
+    svg {
       block-size: 100%;
       inline-size: 100%;
       object-fit: contain;
@@ -38,7 +48,7 @@
   .title {
     grid-area: title;
 
-    font-size: 2rem;
+    font-size: var(--fz-600);
     font-weight: 700;
   }
 
@@ -80,6 +90,39 @@
     .date,
     .action {
       color: var(--color-text-disabled);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .course {
+    grid-template-areas: "logo title" "logo date" ". action";
+    grid-template-columns: auto 1fr;
+
+    .action {
+      margin-block-start: 1rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .course {
+    grid-template-areas: "logo" "title" "date" "action";
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+    .logo {
+      block-size: 6rem;
+      inline-size: 100%;
+
+      padding: 1rem;
+    }
+
+    .title {
+      margin-block-start: 1rem;
+
+      text-wrap: wrap;
     }
   }
 }

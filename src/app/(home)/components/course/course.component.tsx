@@ -27,11 +27,11 @@ export default function CourseComponent({
       <p className={styles.date}>{course.date}</p>
       <div className={styles.action}>
         {status === "upcoming" ? (
-          <Link className="button primary large" href={course.link}>
+          <Link className="button primary" href={course.link}>
             ثبت‌نام
           </Link>
         ) : (
-          <div>پایان مهلت ثبت‌نام</div>
+          "پایان مهلت ثبت‌نام"
         )}
       </div>
     </li>
