@@ -32,6 +32,8 @@
       margin: 0;
 
       font: inherit;
+
+      text-align: start;
     }
 
     .chevron {
