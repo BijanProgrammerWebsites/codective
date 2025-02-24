@@ -1,6 +1,6 @@
 .course {
   background-color: var(--color-surface-floating);
-  box-shadow: var(--box-shadow-subtle);
+  box-shadow: var(--shadow-400);
 
   display: grid;
   grid-template-areas: "logo title action" "logo date action";

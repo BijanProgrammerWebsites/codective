@@ -1,15 +1,4 @@
 :root {
-  --color-gold: hsl(48deg 97% 48%);
-  --color-gold-shiny: hsl(48deg 97% 70%);
-  --color-gold-opposite: hsl(0deg 0% 10%);
-
-  --color-react: hsl(191deg 65% 60%);
-  --color-next: hsl(0deg 0% 0%);
-  --color-dsad: hsl(200deg 70% 60%);
-
-  --color-box-shadow-subtle: hsl(0deg 0% 10% / 12%);
-  --box-shadow-subtle: 0 0.2rem 0.5rem 0 var(--color-box-shadow-subtle);
-
   --border-radius: 0.25rem;
 
   --full-width: 75rem;
