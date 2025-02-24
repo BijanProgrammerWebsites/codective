@@ -111,7 +111,7 @@ export default function Page() {
             عمل پیاده‌سازیشون می‌کنیم.
           </p>
         </FaqItemComponent>
-        <FaqItemComponent question="چرا گفته شده باید زبان‌های رو بلد TypeScript یا Java یا #C باشم؟">
+        <FaqItemComponent question="چرا گفته شده باید زبان‌های TypeScript یا Java یا #C رو بلد باشم؟">
           <p>
             ما تو دوره قراره از زبان TypeScript برای پیاده‌سازی الگوریتم‌ها
             استفاده کنیم؛ با توجه به فشردگی دوره و زمان محدود، نمی‌تونیم جداگانه
