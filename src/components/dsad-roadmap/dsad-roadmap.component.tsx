@@ -10,7 +10,7 @@ import styles from "./dsad-roadmap.module.css";
 
 export default function DsadRoadmapComponent(): ReactElement {
   return (
-    <section id="roadmap" className={styles["react-roadmap"]}>
+    <section id="roadmap" className={styles["dsad-roadmap"]}>
       <h2>نقشه راه</h2>
       <CustomAccordionComponent>
         <CustomAccordionItemComponent header="جلسه 0 - سلام، رفیق!">

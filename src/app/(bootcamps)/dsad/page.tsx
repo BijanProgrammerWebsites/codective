@@ -7,6 +7,8 @@ import PrerequisitesComponent from "@/components/prerequisites/prerequisites.com
 import DsadOutlineComponent from "@/components/dsad-outline/dsad-outline.component";
 import DsadRoadmapComponent from "@/components/dsad-roadmap/dsad-roadmap.component";
 import CtaBannerComponent from "@/components/cta-banner/cta-banner.component";
+import FaqComponent from "@/components/faq/faq.component";
+import FaqItemComponent from "@/components/faq-item/faq-item.component";
 
 import DsadLogo from "@/logo/dsad.logo";
 
@@ -94,6 +96,38 @@ export default function Page() {
         }
         price={480_000}
       />
+      <FaqComponent>
+        <FaqItemComponent question="این دوره برای چه افرادی مناسبه؟">
+          <p>
+            این دوره برای افرادی که برنامه‌نویسی بلدن و می‌خوان ساختمان داده و
+            طراحی الگوریتم یاد بگیرن مناسبه. سطح برنامه‌نویسی شما باید در حدی
+            باشه که مفاهیمی مثل آرایه‌ها، حلقه‌ها، توابع و کلاس‌ها رو بلد باشید
+            و بتونید به خوبی ازشون استفاده کنید.
+          </p>
+        </FaqItemComponent>
+        <FaqItemComponent question="محتوای دوره به‌صورت تئوریه یا عملی هم هست؟">
+          <p>
+            تو هر جلسه، مباحث تئوری رو مطرح می‌کنیم و بعد در قالب چندین مثال در
+            عمل پیاده‌سازیشون می‌کنیم.
+          </p>
+        </FaqItemComponent>
+        <FaqItemComponent question="چرا گفته شده باید زبان‌های رو بلد TypeScript یا Java یا #C باشم؟">
+          <p>
+            ما تو دوره قراره از زبان TypeScript برای پیاده‌سازی الگوریتم‌ها
+            استفاده کنیم؛ با توجه به فشردگی دوره و زمان محدود، نمی‌تونیم جداگانه
+            این زبان رو تدریس کنیم؛ بنابراین باید از قبل باهاش کار کرده باشید.
+          </p>
+          <p>
+            زبان‌های Java و #C سینتکس مشابهی با زبان TypeScript دارن و خیلی از
+            مفاهیمی که تو TypeScript وجود داره و قراره تو دوره ازشون استفاده
+            کنیم، تو این دو زبان هم هست. بنابراین اگه TypeScript بلد نیستید اما
+            یکی از زبان‌های Java یا #C رو بلدید، مشکلی پیش نمیاد.
+          </p>
+        </FaqItemComponent>
+        <FaqItemComponent question="کلاس‌ها چه زمانی برگزار میشن؟">
+          <p>از تاریخ 2 تا 12 فروردین، هر روز ساعت 8 تا 10 شب کلاس داریم.</p>
+        </FaqItemComponent>
+      </FaqComponent>
     </div>
   );
 }

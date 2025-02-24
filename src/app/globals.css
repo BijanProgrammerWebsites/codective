@@ -89,12 +89,6 @@ body {
   section {
     padding-inline: var(--full-width-padding-inline);
   }
-
-  section#roadmap {
-    background-color: var(--color-surface-floating);
-
-    padding-block: var(--alternative-section-padding-block);
-  }
 }
 
 .ambient-filter {

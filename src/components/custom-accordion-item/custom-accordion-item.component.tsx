@@ -14,11 +14,12 @@ type Props = AccordionItemProps & {
 
 export default function CustomAccordionItemComponent({
   header,
+  className,
   ...otherProps
 }: Props): ReactElement {
   return (
     <AccordionItem
-      className={styles.item}
+      className={clsx(styles.item, className)}
       header={
         <>
           <h3>{header}</h3>

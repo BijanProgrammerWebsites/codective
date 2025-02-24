@@ -15,6 +15,7 @@ const navItems: NavItem[] = [
   { href: "#prerequisites", title: "پیش‌نیازها" },
   { href: "#outline", title: "محتوا" },
   { href: "#roadmap", title: "نقشه راه" },
+  { href: "#faq", title: "سوالات متداول" },
 ];
 
 export default function HeaderComponent(): ReactElement {
