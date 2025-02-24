@@ -2,9 +2,9 @@
 :root {
   color-scheme: dark;
 
-  --hue: 120deg;
+  --hue: 48deg;
   --sat: 4%;
-  --satter: 70%;
+  --satter: 97%;
 
   --color-surface-body: hsl(var(--hue) var(--sat) 10%);
   --color-surface-floating: hsl(var(--hue) var(--sat) 14%);
@@ -113,5 +113,7 @@
     color-scheme: light;
 
     --hue: 200deg;
+    --sat: 4%;
+    --satter: 70%;
   }
 }
