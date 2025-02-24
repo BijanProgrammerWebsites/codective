@@ -6,11 +6,11 @@
   .card {
     background-image: linear-gradient(
       135deg,
-      var(--color-cta-banner) 0%,
-      var(--color-cta-banner) 40%,
-      var(--color-cta-banner-shiny) 45%,
-      var(--color-cta-banner) 60%,
-      var(--color-cta-banner) 100%
+      var(--color-gold) 0%,
+      var(--color-gold) 40%,
+      var(--color-gold-shiny) 45%,
+      var(--color-gold) 60%,
+      var(--color-gold) 100%
     );
     background-size: 400% 100%;
     background-clip: padding-box;
@@ -63,7 +63,7 @@
     }
 
     .info {
-      color: var(--color-gray-20);
+      color: var(--color-gold-opposite);
 
       font-size: var(--fz-600);
 
@@ -74,8 +74,6 @@
       }
 
       .title {
-        color: var(--color-gray-10);
-
         font-size: var(--fz-900);
         font-weight: 900;
       }
@@ -96,13 +94,13 @@
     }
 
     .cta {
-      color: var(--color-gray-10);
+      color: var(--color-gold-opposite);
 
       font-size: 1.5rem;
 
       a {
-        background-color: var(--color-gray-10);
-        color: var(--color-cta-banner);
+        background-color: var(--color-gold-opposite);
+        color: var(--color-gold);
 
         font-weight: 700;
         letter-spacing: 1px;

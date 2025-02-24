@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 import HeroComponent from "@/components/hero/hero.component";
 import TutorComponent from "@/components/tutor/tutor.component";
 import SimpleFeaturesComponent from "@/components/simple-features/simple-features.component";
@@ -12,7 +14,7 @@ import styles from "./page.module.css";
 
 export default function Page() {
   return (
-    <div id="dsad" className={styles.page}>
+    <div id="dsad" className={clsx(styles.page, "light")}>
       <HeroComponent
         subtitle="تعطیلات نوروز روز از دست نده!"
         subject="ساختمان داده و طراحی الگوریتم"
