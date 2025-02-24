@@ -4,6 +4,7 @@ import { ReactElement } from "react";
 
 import CustomAccordionComponent from "@/components/custom-accordion/custom-accordion.component";
 import FaqItemComponent from "@/components/faq-item/faq-item.component";
+import RulesComponent from "@/components/rules/rules.component";
 
 import styles from "./faq.module.css";
 
@@ -16,8 +17,11 @@ type Props = {
 export default function FaqComponent({ children }: Props): ReactElement {
   return (
     <section id="faq" className={styles.faq}>
-      <h2>سوالات متداول</h2>
+      <h2>قوانین و سوالات متداول</h2>
       <CustomAccordionComponent>
+        <FaqItemComponent question="قوانین و مقررات">
+          <RulesComponent />
+        </FaqItemComponent>
         {children}
         <FaqItemComponent question="آیا کلاس‌ها به‌صورت آنلاین برگزار میشن یا ضبط‌شده هستن؟">
           <p>
@@ -31,6 +35,13 @@ export default function FaqComponent({ children }: Props): ReactElement {
             بله از اونجایی که جلسات ضبط میشن و در اختیار شما قرار می‌گیرن،
             می‌تونید اون‌ها رو دانلود کنید و برای همیشه بهشون دسترسی داشته
             باشید.
+          </p>
+        </FaqItemComponent>
+        <FaqItemComponent question="جلسات کجا آپلود میشه؟">
+          <p>
+            با توجه به شرایط و تشخیص برگزارکننده، جلسات تو یکی از
+            {` `}
+            پلتفرم‌های YouTube، تلگرام یا آپارات آپلود میشن.
           </p>
         </FaqItemComponent>
         <FaqItemComponent question="اگه انصراف بدم، هزینه بهم برگردونده میشه؟">

@@ -106,6 +106,12 @@
         letter-spacing: 1px;
       }
     }
+
+    .rules {
+      color: var(--color-gold-opposite);
+
+      font-size: var(--fz-300);
+    }
   }
 }
 

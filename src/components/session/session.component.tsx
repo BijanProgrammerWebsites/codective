@@ -1,5 +1,7 @@
 import { ReactElement } from "react";
 
+import OrderedListComponent from "@/components/ordered-list/ordered-list.component";
+
 import styles from "./session.module.css";
 
 type Props = {
@@ -9,7 +11,7 @@ type Props = {
 export default function SessionComponent({ children }: Props): ReactElement {
   return (
     <div className={styles.session}>
-      <ol>{children}</ol>
+      <OrderedListComponent>{children}</OrderedListComponent>
     </div>
   );
 }

@@ -8,7 +8,7 @@ import styles from "./faq-item.module.css";
 
 type Props = {
   question: string;
-  children: ReactElement<"p"> | ReactElement<"p">[];
+  children: ReactElement | ReactElement[];
 };
 
 export default function FaqItemComponent({ question, children }: Props) {

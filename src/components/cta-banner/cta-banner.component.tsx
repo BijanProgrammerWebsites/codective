@@ -49,6 +49,10 @@ export default function CtaBannerComponent({
           <span> </span>
           در تلگرام پیام بدید.
         </p>
+        <p className={styles.rules}>
+          ثبت‌نام در دوره به منزله‌ی پذیرش تمام قوانینی است که در ادامه مطرح
+          شده‌اند.
+        </p>
       </div>
     </section>
   );
