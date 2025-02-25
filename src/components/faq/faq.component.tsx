@@ -37,7 +37,7 @@ export default function FaqComponent({ children }: Props): ReactElement {
             باشید.
           </p>
         </FaqItemComponent>
-        <FaqItemComponent question="جلسات کجا آپلود میشه؟">
+        <FaqItemComponent question="جلسات کجا آپلود میشن؟">
           <p>
             با توجه به شرایط و تشخیص برگزارکننده، جلسات تو یکی از
             {` `}

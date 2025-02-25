@@ -109,7 +109,7 @@ export default function DsadRoadmapComponent(): ReactElement {
             <li>Tabulation</li>
             <li>فیبوناچی</li>
             <li>پیمایش جدول</li>
-            <li>بررسی توانایی رسیدن هدف</li>
+            <li>بررسی توانایی رسیدن به هدف</li>
             <li>تمام حالات رسیدن به هدف</li>
             <li>بهینه‌ترین حالت رسیدن به هدف</li>
           </SessionComponent>
