@@ -1,13 +1,28 @@
 .header {
+  background-color: hsl(var(--hue) var(--sat) 98% / 50%);
+  backdrop-filter: blur(5px);
+  box-shadow: var(--shadow-400);
+
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 1;
+
   display: flex;
   align-items: center;
   gap: 2rem;
 
-  padding-block: 1rem;
+  padding-block: 0.25rem;
 
   .logo {
-    font-size: var(--fz-700);
+    font-size: var(--fz-600);
     font-weight: 700;
+  }
+
+  nav a,
+  .cta {
+    &:hover {
+      color: var(--color-primary);
+    }
   }
 
   nav {
@@ -20,16 +35,38 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1001px) {
   .header {
-    justify-content: center;
-
-    nav {
+    .hamburger {
       display: none;
     }
+  }
+}
 
-    .cta {
-      display: none;
+@media (max-width: 1000px) {
+  .header {
+    nav {
+      > ul {
+        > li {
+          &.lg {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    nav {
+      > ul {
+        > li {
+          &.md {
+            display: none;
+          }
+        }
+      }
     }
   }
 }

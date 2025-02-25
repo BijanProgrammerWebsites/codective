@@ -1,6 +1,6 @@
 .subscribe {
-  background-color: var(--color-subscribe-background);
-  color: var(--color-subscribe-foreground);
+  background-color: var(--color-gold);
+  color: var(--color-gold-opposite);
 
   display: flex;
   flex-wrap: wrap;
@@ -21,8 +21,8 @@
   }
 
   > a {
-    background-color: var(--color-subscribe-foreground);
-    color: var(--color-subscribe-background);
+    background-color: var(--color-gold-opposite);
+    color: var(--color-gold);
 
     margin-inline-end: auto;
     padding-inline: 0.75rem;

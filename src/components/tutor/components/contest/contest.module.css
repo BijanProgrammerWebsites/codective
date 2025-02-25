@@ -1,0 +1,42 @@
+.contest {
+  background-color: var(--color-surface-body);
+
+  display: grid;
+  justify-items: center;
+
+  padding: 1rem 2rem;
+
+  border: 1px solid var(--color-primary);
+  border-radius: 0.5rem;
+
+  .company {
+    display: grid;
+
+    img {
+      block-size: 4rem;
+      inline-size: 8rem;
+      object-fit: contain;
+    }
+  }
+
+  .title {
+    margin-block-start: 1rem;
+
+    font-weight: 700;
+
+    &::before {
+      content: "مسابقه‌ی ";
+    }
+  }
+
+  .rank {
+    display: flex;
+    gap: 0.5ch;
+
+    margin-block: 1rem;
+
+    svg {
+      font-size: 1.5em;
+    }
+  }
+}

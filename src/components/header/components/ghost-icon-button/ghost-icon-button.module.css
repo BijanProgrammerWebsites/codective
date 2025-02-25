@@ -1,0 +1,37 @@
+.ghost-icon-button {
+  background-color: transparent;
+
+  position: relative;
+  isolation: isolate;
+
+  display: grid;
+
+  border: none;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+
+    background-color: var(--color-surface-floating-hover);
+    opacity: 0;
+
+    position: absolute;
+    inset: -0.5rem;
+    z-index: -1;
+
+    border-radius: 999rem;
+
+    transition: opacity var(--animation-duration-fast) ease-in-out;
+  }
+
+  svg {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+}

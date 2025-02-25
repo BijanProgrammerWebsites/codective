@@ -1,39 +1,66 @@
-import { ReactElement } from "react";
+"use client";
+
+import { ReactElement, useCallback, useEffect, useState } from "react";
 
 import Link from "next/link";
 
+import MingcuteMenuLine from "@/icons/MingcuteMenuLine";
+
+import GhostIconButtonComponent from "@/components/header/components/ghost-icon-button/ghost-icon-button.component";
+import MenuComponent from "@/components/header/components/menu/menu.component";
+
+import { NavItemType } from "@/components/header/types/nav-item.type";
+
 import styles from "./header.module.css";
 
+const navItems: NavItemType[] = [
+  { href: "#tutor", title: "مدرس", className: "md" },
+  { href: "#features", title: "ویژگی‌ها", className: "lg" },
+  { href: "#prerequisites", title: "پیش‌نیازها", className: "md" },
+  { href: "#outline", title: "محتوا", className: "lg" },
+  { href: "#roadmap", title: "نقشه راه", className: "md" },
+  { href: "#faq", title: "سوالات متداول", className: "md" },
+];
+
 export default function HeaderComponent(): ReactElement {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+
+  const closeHandler = useCallback(() => setIsVisible(false), []);
+
+  useEffect(() => {
+    document.body.style.overflow = isVisible ? "hidden" : "auto";
+  }, [isVisible]);
+
   return (
-    <header className={styles.header}>
-      <Link className={styles.logo} href="/">
-        Codective
-      </Link>
-      <nav>
-        <ul>
-          <li>
-            <Link href="#">معرفی</Link>
-          </li>
-          <li>
-            <Link href="#features">ویژگی‌ها</Link>
-          </li>
-          <li>
-            <Link href="#prerequisites">پیش‌نیازها</Link>
-          </li>
-          <li>
-            <Link href="#outline">محتوا</Link>
-          </li>
-          <li>
-            <Link href="#roadmap">نقشه راه</Link>
-          </li>
-        </ul>
-      </nav>
-      <div className={styles.cta}>
-        <Link className="button primary" href="#register">
+    <>
+      <header className={styles.header}>
+        <Link className={styles.logo} href="/">
+          Codective
+        </Link>
+        <nav>
+          <ul>
+            {navItems.map((item) => (
+              <li key={item.title} className={styles[item.className]}>
+                <Link href={item.href}>{item.title}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <Link className={styles.cta} href="#register">
           ثبت‌نام
         </Link>
-      </div>
-    </header>
+        <GhostIconButtonComponent
+          className={styles.hamburger}
+          onClick={() => setIsVisible(true)}
+        >
+          <MingcuteMenuLine />
+        </GhostIconButtonComponent>
+      </header>
+      <MenuComponent
+        navItems={navItems}
+        isVisible={isVisible}
+        onClose={closeHandler}
+      />
+    </>
   );
 }

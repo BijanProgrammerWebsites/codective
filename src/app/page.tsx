@@ -1,27 +1,31 @@
-import Link from "next/link";
+import FooterComponent from "@/components/footer/footer.component";
 
-import clsx from "clsx";
+import CoursesComponent from "@/app/(home)/components/courses/courses.component";
 
-import ReactLogo from "@/logo/react.logo";
+import {
+  completedCoursesData,
+  ongoingCoursesData,
+  upcomingCoursesData,
+} from "@/app/(home)/data/courses.data";
 
 import styles from "./page.module.css";
 
 export default function Page() {
   return (
-    <div className={styles.page}>
-      <h1>Codective</h1>
-      <ul>
-        <li className={clsx(styles.card, styles.react)}>
-          <div className={styles.visuals}>
-            <ReactLogo />
-          </div>
-          <div className={styles.title}>بوت‌کمپ React</div>
-          <p className={styles.date}>از 7 بهمن تا 28 اسفند</p>
-          <Link className="button primary large" href="/react">
-            ثبت‌نام
-          </Link>
-        </li>
-      </ul>
-    </div>
+    <>
+      <header className={styles.header}>
+        <h1>Codective</h1>
+      </header>
+      <div className={styles.page}>
+        <main>
+          <CoursesComponent
+            upcoming={upcomingCoursesData}
+            ongoing={ongoingCoursesData}
+            completed={completedCoursesData}
+          />
+        </main>
+      </div>
+      <FooterComponent />
+    </>
   );
 }

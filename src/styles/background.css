@@ -1,26 +1,24 @@
 body {
   &::before {
-    --line-color: hsl(200deg 12% 20% / 20%);
-
     content: "";
 
     background-image: radial-gradient(
         at center,
         transparent,
-        var(--color-gray-10) 80%
+        var(--color-surface-body) 80%
       ),
       linear-gradient(
-        var(--line-color) 1px,
+        var(--color-border-2) 1px,
         transparent 1px,
         transparent 99px,
-        var(--line-color) 99px
+        var(--color-border-2) 99px
       ),
       linear-gradient(
         90deg,
-        var(--line-color) 1px,
+        var(--color-border-2) 1px,
         transparent 1px,
         transparent 99px,
-        var(--line-color) 99px
+        var(--color-border-2) 99px
       );
     background-position:
       center,

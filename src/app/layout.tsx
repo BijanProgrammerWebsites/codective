@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { Vazirmatn } from "next/font/google";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -12,11 +11,6 @@ import "@/styles/typography.css";
 
 import "./globals.css";
 import AmbientFilter from "@/filters/ambient.filter";
-
-const vazirmatn = Vazirmatn({
-  subsets: ["latin", "arabic"],
-  display: "swap",
-});
 
 const metadataTitle = "Codective";
 const metadataDescription =
@@ -52,12 +46,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="fa"
-      dir="rtl"
-      prefix="og: http://ogp.me/ns#"
-      className={vazirmatn.className}
-    >
+    <html lang="fa" dir="rtl" prefix="og: http://ogp.me/ns#">
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
+          rel="stylesheet"
+          type="text/css"
+        />
+      </head>
       <body>
         <SubscribeComponent />
         {children}

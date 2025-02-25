@@ -1,0 +1,19 @@
+.ordered-list {
+  display: grid;
+  gap: 0.5rem;
+
+  padding-inline: 2rem 1rem;
+
+  > li {
+    padding-inline-start: 0.5rem;
+
+    font-weight: 300;
+
+    &::marker {
+      margin-inline-end: 2rem;
+
+      font-size: 0.75em;
+      font-weight: 200;
+    }
+  }
+}

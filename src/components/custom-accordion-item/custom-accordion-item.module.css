@@ -2,7 +2,7 @@
   --transition-duration: 500ms;
   --transition: var(--transition-duration) ease-in-out;
 
-  background-color: var(--color-gray-12);
+  background-color: var(--color-surface-accordion);
 
   margin-block-end: 0.5rem;
 
@@ -32,6 +32,8 @@
       margin: 0;
 
       font: inherit;
+
+      text-align: start;
     }
 
     .chevron {
@@ -44,7 +46,7 @@
     }
 
     &.expanded {
-      background-color: var(--color-gray-20);
+      background-color: var(--color-surface-accordion-expanded);
 
       .chevron {
         transform: rotate(180deg);
@@ -53,7 +55,7 @@
 
     @media (hover: hover) {
       &:hover {
-        background-color: var(--color-gray-16);
+        background-color: var(--color-surface-accordion-hover);
       }
     }
   }

@@ -13,13 +13,24 @@ export default function Page() {
   return (
     <div id="react" className={styles.page}>
       <HeroComponent
+        subtitle="فقط تو 2 ماه"
         subject="React"
         logo={<ReactLogo className={styles.logo} />}
-        extraDescriptions={[
-          <p key="date">
-            این دوره از 7 بهمن شروع میشه و تا 28 اسفند ادامه داره.
-          </p>,
-        ]}
+        description={
+          <>
+            <p key={1}>
+              تو این بوت‌کمپ، React رو از پایه یاد می‌گیریم و یه سایت کامل توسعه
+              میدیم. هر هفته دو جلسه تدریس آنلاین و یک جلسه رفع اشکال داریم.
+            </p>
+            <p key={2}>
+              از همه مهم‌تر بهتون تسک داده میشه و Code Review داریم. همچنین تو
+              گروه اختصاصی می‌تونید هر جا به مشکل خوردید از منتورتون کمک بگیرید.
+            </p>
+            <p key={3}>
+              این دوره از 7 بهمن شروع میشه و تا 28 اسفند ادامه داره.
+            </p>
+          </>
+        }
       />
       <FeaturesComponent logo={<ReactLogo />} />
       <PrerequisitesComponent
@@ -30,7 +41,16 @@ export default function Page() {
       />
       <ReactOutlineComponent />
       <ReactRoadmapComponent />
-      <CtaBannerComponent />
+      <CtaBannerComponent
+        title="تنها در یک بوت‌کمپ!"
+        subtitle={
+          <>
+            <div>از مفاهیم پایه</div>
+            <div>تا تکنیک‌های حرفه‌ای</div>
+          </>
+        }
+        price={5_000_000}
+      />
     </div>
   );
 }
