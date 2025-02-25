@@ -35,16 +35,38 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1001px) {
   .header {
-    justify-content: center;
-
-    nav {
+    .hamburger {
       display: none;
     }
+  }
+}
 
-    .cta {
-      display: none;
+@media (max-width: 1000px) {
+  .header {
+    nav {
+      > ul {
+        > li {
+          &.lg {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    nav {
+      > ul {
+        > li {
+          &.md {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
