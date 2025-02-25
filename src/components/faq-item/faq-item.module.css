@@ -1,5 +1,7 @@
 .faq-item {
   p {
+    margin-inline: 1rem;
+
     &:not(:last-child) {
       margin-block-end: 1rem;
     }
