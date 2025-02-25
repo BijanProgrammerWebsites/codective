@@ -6,10 +6,12 @@ import styles from "./prerequisites.module.css";
 
 type Props = {
   technicalItems: string[];
+  extraElement?: ReactElement;
 };
 
 export default function PrerequisitesComponent({
   technicalItems,
+  extraElement,
 }: Props): ReactElement {
   return (
     <section id="prerequisites" className={styles.prerequisites}>
@@ -32,6 +34,7 @@ export default function PrerequisitesComponent({
           <ListItem>خلاقیت</ListItem>
         </ul>
       </div>
+      <div className={styles.extra}>{extraElement}</div>
     </section>
   );
 }

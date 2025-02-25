@@ -4,6 +4,7 @@ import HeroComponent from "@/components/hero/hero.component";
 import TutorComponent from "@/components/tutor/tutor.component";
 import SimpleFeaturesComponent from "@/components/simple-features/simple-features.component";
 import PrerequisitesComponent from "@/components/prerequisites/prerequisites.component";
+import TypescriptDocComponent from "@/components/typescript-doc/typescript-doc.component";
 import DsadOutlineComponent from "@/components/dsad-outline/dsad-outline.component";
 import DsadRoadmapComponent from "@/components/dsad-roadmap/dsad-roadmap.component";
 import CtaBannerComponent from "@/components/cta-banner/cta-banner.component";
@@ -83,6 +84,7 @@ export default function Page() {
           "برنامه‌نویسی شیءگرا (OOP)",
           "آشنایی با یکی از زبان‌های TypeScript یا Java یا #C",
         ]}
+        extraElement={<TypescriptDocComponent />}
       />
       <DsadOutlineComponent />
       <DsadRoadmapComponent />

@@ -1,0 +1,7 @@
+.typescript-doc {
+  .highlight {
+    color: var(--color-react);
+
+    font-weight: 700;
+  }
+}
