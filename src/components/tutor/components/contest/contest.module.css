@@ -24,6 +24,8 @@
 
     font-weight: 700;
 
+    text-align: center;
+
     &::before {
       content: "مسابقه‌ی ";
     }
