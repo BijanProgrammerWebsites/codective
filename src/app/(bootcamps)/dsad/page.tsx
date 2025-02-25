@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <div id="dsad" className={clsx(styles.page, "light")}>
       <HeroComponent
-        subtitle="تعطیلات نوروز روز از دست نده!"
+        subtitle="تعطیلات نوروز رو از دست نده!"
         subject="ساختمان داده و طراحی الگوریتم"
         logo={<DsadLogo className={styles.logo} />}
         description={
