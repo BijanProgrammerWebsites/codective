@@ -71,22 +71,30 @@ export default function ReactRoadmapComponent(): ReactElement {
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
               <li>Event Handling</li>
-              <li>Hook: useEffect</li>
-              <li>Hook: useMemo</li>
-              <li>Storage: LocalStorage</li>
               <li>Context</li>
-              <li>Task 4: Implement the logic.</li>
             </WeekComponent.SessionComponent>
           </WeekComponent>
         </CustomAccordionItemComponent>
         <CustomAccordionItemComponent header="هفته 4">
           <WeekComponent>
             <WeekComponent.SessionComponent>
-              <li>Hook: useCallback</li>
+              <li>Hook: useEffect</li>
+              <li>Hook: useMemo</li>
+              <li>Storage: LocalStorage</li>
+              <li>Task 4: Implement the logic.</li>
+            </WeekComponent.SessionComponent>
+            <WeekComponent.SessionComponent>
+              <li>Refactor</li>
               <li>Library: React-Toastify</li>
-              <li>Library: Motion (Framer Motion)</li>
+            </WeekComponent.SessionComponent>
+            <WeekComponent.SessionComponent>
+              <li>Deploy Using Vercel</li>
               <li>Library: i18next</li>
             </WeekComponent.SessionComponent>
+          </WeekComponent>
+        </CustomAccordionItemComponent>
+        <CustomAccordionItemComponent header="هفته 5">
+          <WeekComponent>
             <WeekComponent.SessionComponent>
               <li>Project: City Sightseeing</li>
               <li>Routing</li>
@@ -94,10 +102,15 @@ export default function ReactRoadmapComponent(): ReactElement {
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
               <li>Working with APIs</li>
+              <li>Improve The Design</li>
+            </WeekComponent.SessionComponent>
+            <WeekComponent.SessionComponent>
+              <li>Library: TanStack Query (React Query)</li>
+              <li>Custom Hooks</li>
             </WeekComponent.SessionComponent>
           </WeekComponent>
         </CustomAccordionItemComponent>
-        <CustomAccordionItemComponent header="هفته 5">
+        <CustomAccordionItemComponent header="هفته 6">
           <WeekComponent>
             <WeekComponent.SessionComponent>
               <li>Error Handling</li>
@@ -105,14 +118,6 @@ export default function ReactRoadmapComponent(): ReactElement {
               <li>Hook: useTransition</li>
               <li>Hook: useDeferredValue</li>
             </WeekComponent.SessionComponent>
-            <WeekComponent.SessionComponent>
-              <li>Custom Hooks</li>
-              <li>Library: TanStack Query (React Query)</li>
-            </WeekComponent.SessionComponent>
-          </WeekComponent>
-        </CustomAccordionItemComponent>
-        <CustomAccordionItemComponent header="هفته 6">
-          <WeekComponent>
             <WeekComponent.SessionComponent>
               <li>Project: Movie Box</li>
               <li>Forms</li>
