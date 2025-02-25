@@ -1,4 +1,4 @@
-import { ReactElement, useEffect } from "react";
+import { ReactElement } from "react";
 
 import Link from "next/link";
 
@@ -11,7 +11,6 @@ import { NavItemType } from "@/components/header/types/nav-item.type";
 import MingcuteCloseLine from "@/icons/MingcuteCloseLine";
 
 import styles from "./menu.module.css";
-import { usePathname, useSearchParams } from "next/navigation";
 
 type Props = {
   navItems: NavItemType[];
@@ -24,13 +23,6 @@ export default function MenuComponent({
   isVisible,
   onClose,
 }: Props): ReactElement {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-
-  useEffect(() => {
-    onClose();
-  }, [pathname, searchParams, onClose]);
-
   return (
     <div
       className={clsx(styles.menu, isVisible ? styles.visible : styles.hidden)}
