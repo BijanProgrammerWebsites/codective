@@ -26,7 +26,6 @@ export default function DsadRoadmapComponent(): ReactElement {
           <SessionComponent>
             <li>مرتبه‌ی پیچیدگی (Order)</li>
             <li>Big O Notation</li>
-            <li>مقایسه‌ی بی‌نهایت‌ها</li>
             <li>پیچیدگی فضایی</li>
             <li>پیچیدگی زمانی</li>
             <li>محاسبه با استفاده از Trace</li>
@@ -67,9 +66,6 @@ export default function DsadRoadmapComponent(): ReactElement {
             <li>صف (Queue)</li>
             <li>صف اولویت</li>
             <li>پشته (Stack)</li>
-            <li>تبدیل عبارت میانوندی به پسوندی</li>
-            <li>تبدیل عبارت میانوندی به پیشوندی</li>
-            <li>محاسبه‌ی حاصل عبارت پسوندی</li>
             <li>Set</li>
             <li>Map</li>
           </SessionComponent>
@@ -88,11 +84,7 @@ export default function DsadRoadmapComponent(): ReactElement {
           <SessionComponent>
             <li>تعاریف</li>
             <li>درخت دودویی (Binary Tree)</li>
-            <li>درخت دودویی تقریباً کامل</li>
-            <li>درخت دودویی محض</li>
-            <li>درخت دودویی پر</li>
             <li>پیمایش درخت دودویی</li>
-            <li>تبدیل فرم‌های مختلف عبارات ریاضی به یکدیگر</li>
             <li>درخت جستجوی دودویی (Binary Search Tree)</li>
           </SessionComponent>
         </CustomAccordionItemComponent>
@@ -128,15 +120,12 @@ export default function DsadRoadmapComponent(): ReactElement {
             <li>مسئله‌ی لامپ‌های خاموش و روشن</li>
             <li>بیشترین حاصل ضرب</li>
             <li>دنباله‌های ازهم‌گسسته</li>
-            <li>بهینه‌ترین حالت تقسیم اتاق جلسات</li>
-            <li>تقسیم شیرینی</li>
-            <li>سوراخ موش</li>
+            <li>مسئله‌ی کوله‌پشتی (Knapsack Problem)</li>
           </SessionComponent>
         </CustomAccordionItemComponent>
         <CustomAccordionItemComponent header="جلسه 10 - مسائل معروف دنیای الگوریتم">
           <SessionComponent>
             <li>مسئله‌ی بزرگ‌ترین زیردنباله‌ی مشترک (LCS)</li>
-            <li>مسئله‌ی کوله‌پشتی (Knapsack Problem)</li>
             <li>مسئله‌ی فروشنده‌ی دوره‌گرد (Travelling Salesman)</li>
             <li>مسئله‌ی رنگ‌آمیزی گراف</li>
             <li>نکاتی برای موفقیت در مسابقات برنامه‌نویسی</li>
