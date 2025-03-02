@@ -103,10 +103,11 @@ export default function ReactRoadmapComponent(): ReactElement {
             <WeekComponent.SessionComponent>
               <li>Working with APIs</li>
               <li>Improve The Design</li>
+              <li>Dynamic Routes</li>
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
+              <li>Implement PDP</li>
               <li>Library: TanStack Query (React Query)</li>
-              <li>Custom Hooks</li>
             </WeekComponent.SessionComponent>
           </WeekComponent>
         </CustomAccordionItemComponent>
@@ -115,6 +116,7 @@ export default function ReactRoadmapComponent(): ReactElement {
             <WeekComponent.SessionComponent>
               <li>Error Handling</li>
               <li>Suspense</li>
+              <li>Custom Hooks</li>
               <li>Hook: useTransition</li>
               <li>Hook: useDeferredValue</li>
             </WeekComponent.SessionComponent>
