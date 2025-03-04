@@ -106,7 +106,7 @@ export default function ReactRoadmapComponent(): ReactElement {
               <li>Dynamic Routes</li>
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
-              <li>Implement PDP</li>
+              <li>Implement Product Detail Page (PDP)</li>
               <li>Library: TanStack Query (React Query)</li>
             </WeekComponent.SessionComponent>
           </WeekComponent>
@@ -114,18 +114,28 @@ export default function ReactRoadmapComponent(): ReactElement {
         <CustomAccordionItemComponent header="هفته 6">
           <WeekComponent>
             <WeekComponent.SessionComponent>
-              <li>Error Handling</li>
-              <li>Suspense</li>
-              <li>Custom Hooks</li>
-              <li>Hook: useTransition</li>
-              <li>Hook: useDeferredValue</li>
+              <li>React Query: Defaults</li>
+              <li>React Query: Fresh vs Stale</li>
+              <li>React Query: Caching</li>
+              <li>React Query: Background Re-fetch</li>
+              <li>React Query: Loading UI</li>
+              <li>React Query: Error Handling</li>
+              <li>React Query: Duplicate Queries</li>
+              <li>React Query: isFetching vs isPending vs isLoading</li>
+              <li>React Query: initialData vs placeholderData</li>
+              <li>React Query: staleTime vs gcTime</li>
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
               <li>Project: Movie Box</li>
-              <li>Forms</li>
-              <li>Library: React Hook Form</li>
+              <li>Error Handling</li>
+              <li>Hook: useTransition</li>
+              <li>Working with TMDB API</li>
+              <li>Implement Search/Filter Page</li>
+              <li>Custom Hooks</li>
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
+              <li>Forms</li>
+              <li>Library: React Hook Form</li>
               <li>Authentication</li>
               <li>Storage: Sessions</li>
               <li>Storage: Cookies</li>
@@ -148,6 +158,10 @@ export default function ReactRoadmapComponent(): ReactElement {
           <WeekComponent>
             <WeekComponent.SessionComponent>
               <li>Wrap Up</li>
+              <li>Library: Motion (Framer Motion)</li>
+              <li>Hook: useCallback</li>
+              <li>Suspense</li>
+              <li>Hook: useDeferredValue</li>
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
               <li>DevOps: CI/CD</li>
