@@ -113,6 +113,13 @@ export default function Page() {
             عمل پیاده‌سازیشون می‌کنیم.
           </p>
         </FaqItemComponent>
+        <FaqItemComponent question="مزیت اصلی این دوره چیه؟">
+          <p>
+            مزیت اصلی دوره تمرین‌هاییه که بعد از هر جلسه بهتون داده میشه و با
+            داوری خودکار امتیازدهی میشه. بنابراین شما می‌تونید در هر ساعتی از
+            شبانه‌روز و حتی بعد از اتمام دوره، تمرین‌ها رو ارسال کنید.
+          </p>
+        </FaqItemComponent>
         <FaqItemComponent question="چرا گفته شده باید زبان‌های TypeScript یا Java یا #C رو بلد باشم؟">
           <p>
             ما تو دوره قراره از زبان TypeScript برای پیاده‌سازی الگوریتم‌ها
@@ -128,6 +135,13 @@ export default function Page() {
         </FaqItemComponent>
         <FaqItemComponent question="کلاس‌ها چه زمانی برگزار میشن؟">
           <p>از تاریخ 2 تا 12 فروردین، هر روز ساعت 8 تا 10 شب کلاس داریم.</p>
+        </FaqItemComponent>
+        <FaqItemComponent question="با توجه به ایام عید، بهتر نیست کلاس‌ها در روز برگزار بشن؟">
+          <p>
+            بله بهتر بود. اما به علت مصادف شدن این ایام با ماه مبارک رمضان،
+            تدریس در طول روز سخته؛ بنابراین زمان کلاس‌ها به بعد از افطار منتقل
+            شده.
+          </p>
         </FaqItemComponent>
       </FaqComponent>
     </div>
