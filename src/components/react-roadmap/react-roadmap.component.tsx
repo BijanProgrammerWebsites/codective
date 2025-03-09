@@ -126,26 +126,30 @@ export default function ReactRoadmapComponent(): ReactElement {
               <li>React Query: staleTime vs gcTime</li>
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
-              <li>Project: Movie Box</li>
               <li>Error Handling</li>
               <li>Hook: useTransition</li>
+              <li>Project: Movie Box</li>
               <li>Working with TMDB API</li>
               <li>Implement Search/Filter Page</li>
-              <li>Custom Hooks</li>
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
-              <li>Forms</li>
-              <li>Library: React Hook Form</li>
-              <li>Authentication</li>
-              <li>Storage: Sessions</li>
-              <li>Storage: Cookies</li>
-              <li>Route Guard</li>
+              <li>Rules of Hooks</li>
+              <li>Custom Hooks</li>
+              <li>Authentication: Concepts</li>
             </WeekComponent.SessionComponent>
           </WeekComponent>
         </CustomAccordionItemComponent>
         <CustomAccordionItemComponent header="هفته 7">
           <WeekComponent>
             <WeekComponent.SessionComponent>
+              <li>Forms</li>
+              <li>Authentication: Implement</li>
+              <li>Storage: Sessions</li>
+              <li>Storage: Cookies</li>
+              <li>Route Guard (Protected Routes)</li>
+            </WeekComponent.SessionComponent>
+            <WeekComponent.SessionComponent>
+              <li>Library: React Hook Form</li>
               <li>Form Validation</li>
               <li>Library: Zod</li>
             </WeekComponent.SessionComponent>
