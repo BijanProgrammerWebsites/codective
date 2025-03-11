@@ -142,10 +142,19 @@ export default function ReactRoadmapComponent(): ReactElement {
         <CustomAccordionItemComponent header="هفته 7">
           <WeekComponent>
             <WeekComponent.SessionComponent>
-              <li>Forms</li>
-              <li>Authentication: Implement</li>
               <li>Storage: Sessions</li>
               <li>Storage: Cookies</li>
+              <li>Security Concerns</li>
+              <li>Implement Product Detail Page (PDP)</li>
+              <li>Postman</li>
+              <li>Implement Sign Up Page UI</li>
+            </WeekComponent.SessionComponent>
+            <WeekComponent.SessionComponent>
+              <li>Authentication: Implement</li>
+              <li>Forms</li>
+              <li>Connect Sign Up Page to API</li>
+              <li>Server-side Form Validation</li>
+              <li>Library: Floating UI (Popper)</li>
               <li>Route Guard (Protected Routes)</li>
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
@@ -153,13 +162,13 @@ export default function ReactRoadmapComponent(): ReactElement {
               <li>Form Validation</li>
               <li>Library: Zod</li>
             </WeekComponent.SessionComponent>
-            <WeekComponent.SessionComponent>
-              <li>Library: Zustand</li>
-            </WeekComponent.SessionComponent>
           </WeekComponent>
         </CustomAccordionItemComponent>
         <CustomAccordionItemComponent header="هفته 8">
           <WeekComponent>
+            <WeekComponent.SessionComponent>
+              <li>Library: Zustand</li>
+            </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
               <li>Wrap Up</li>
               <li>Library: Motion (Framer Motion)</li>
