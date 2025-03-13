@@ -155,9 +155,12 @@ export default function ReactRoadmapComponent(): ReactElement {
               <li>Connect Sign Up Page to API</li>
               <li>Server-side Form Validation</li>
               <li>Library: Floating UI (Popper)</li>
-              <li>Route Guard (Protected Routes)</li>
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
+              <li>Connect Sign In Page to API</li>
+              <li>Access Token vs Refresh Token</li>
+              <li>Automatically Refresh Token</li>
+              <li>Route Guard (Protected Routes)</li>
               <li>Library: React Hook Form</li>
               <li>Form Validation</li>
               <li>Library: Zod</li>
