@@ -162,14 +162,14 @@ export default function ReactRoadmapComponent(): ReactElement {
               <li>Automatically Refresh Token</li>
               <li>Route Guard (Protected Routes)</li>
               <li>Library: React Hook Form</li>
-              <li>Form Validation</li>
-              <li>Library: Zod</li>
             </WeekComponent.SessionComponent>
           </WeekComponent>
         </CustomAccordionItemComponent>
         <CustomAccordionItemComponent header="هفته 8">
           <WeekComponent>
             <WeekComponent.SessionComponent>
+              <li>Form Validation</li>
+              <li>Library: Zod</li>
               <li>Library: Zustand</li>
             </WeekComponent.SessionComponent>
             <WeekComponent.SessionComponent>
