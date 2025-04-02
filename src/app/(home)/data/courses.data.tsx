@@ -4,7 +4,11 @@ import DsadLogo from "@/logo/dsad.logo";
 
 import { CourseType } from "@/app/(home)/types/course.type";
 
-export const upcomingCoursesData: CourseType[] = [
+export const upcomingCoursesData: CourseType[] = [];
+
+export const ongoingCoursesData: CourseType[] = [];
+
+export const completedCoursesData: CourseType[] = [
   {
     title: "ساختمان داده و طراحی الگوریتم",
     category: "dsad",
@@ -12,9 +16,6 @@ export const upcomingCoursesData: CourseType[] = [
     date: "از 2 تا 12 فروردین 1404",
     link: "/dsad",
   },
-];
-
-export const ongoingCoursesData: CourseType[] = [
   {
     title: "بوت‌کمپ React",
     category: "react",
@@ -23,20 +24,17 @@ export const ongoingCoursesData: CourseType[] = [
     link: "/react",
   },
   {
-    title: "بوت‌کمپ Next.js",
-    category: "next",
-    logo: <NextTransparentLogo />,
-    date: "شروع از 19 آذر 1403",
-    link: "/nextjs",
-  },
-];
-
-export const completedCoursesData: CourseType[] = [
-  {
     title: "بوت‌کمپ React",
     category: "react",
     logo: <ReactLogo />,
     date: "شروع از 9 دی 1403",
     link: "/react",
+  },
+  {
+    title: "بوت‌کمپ Next.js",
+    category: "next",
+    logo: <NextTransparentLogo />,
+    date: "شروع از 19 آذر 1403",
+    link: "/nextjs",
   },
 ];
