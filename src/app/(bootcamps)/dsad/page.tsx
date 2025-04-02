@@ -19,6 +19,7 @@ export default function Page() {
   return (
     <div id="dsad" className={clsx(styles.page, "light")}>
       <HeroComponent
+        expired
         subtitle="تعطیلات نوروز رو از دست نده!"
         subject="ساختمان داده و طراحی الگوریتم"
         logo={<DsadLogo className={styles.logo} />}
@@ -89,6 +90,7 @@ export default function Page() {
       <DsadOutlineComponent />
       <DsadRoadmapComponent />
       <CtaBannerComponent
+        expired
         title="تنها در 10 روز!"
         subtitle={
           <>

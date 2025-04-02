@@ -10,6 +10,7 @@ export default function Page() {
   return (
     <div id="next" className={styles.page}>
       <HeroComponent
+        expired
         subtitle="فقط تو 2 ماه"
         subject="Next.js"
         logo={<NextLogo />}

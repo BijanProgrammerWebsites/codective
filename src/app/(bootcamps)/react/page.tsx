@@ -13,6 +13,7 @@ export default function Page() {
   return (
     <div id="react" className={styles.page}>
       <HeroComponent
+        expired
         subtitle="فقط تو 2 ماه"
         subject="React"
         logo={<ReactLogo className={styles.logo} />}
@@ -42,6 +43,7 @@ export default function Page() {
       <ReactOutlineComponent />
       <ReactRoadmapComponent />
       <CtaBannerComponent
+        expired
         title="تنها در یک بوت‌کمپ!"
         subtitle={
           <>
