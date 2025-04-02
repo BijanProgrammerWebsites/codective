@@ -1,0 +1,32 @@
+.expired {
+  backdrop-filter: blur(3px) saturate(0);
+
+  position: absolute;
+  inset: 0;
+  z-index: 999;
+
+  display: grid;
+  place-content: center;
+
+  user-select: none;
+
+  .banner {
+    color: var(--color-danger);
+
+    mask-image: url("/assets/effects/grunge.png");
+    mask-size: 50%;
+    mask-position: 5rem 6rem;
+
+    padding: 0.5rem 1rem;
+
+    border: 0.25em solid currentColor;
+    border-radius: 0.5rem;
+
+    transform: rotate(-30deg);
+
+    font-size: var(--fz-900);
+    font-weight: 900;
+
+    text-align: center;
+  }
+}

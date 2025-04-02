@@ -3,7 +3,11 @@ import { ReactElement } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import clsx from "clsx";
+
 import dishesImage from "@/assets/images/dishes.png";
+
+import ExpiredComponent from "@/components/expired/expired.component";
 
 import styles from "./hero.module.css";
 
@@ -12,6 +16,7 @@ type Props = {
   subject: string;
   logo: ReactElement;
   description: ReactElement;
+  expired?: boolean;
 };
 
 export default function HeroComponent({
@@ -19,9 +24,13 @@ export default function HeroComponent({
   subject,
   logo,
   description,
+  expired = false,
 }: Props): ReactElement {
   return (
-    <section id="intro" className={styles.hero}>
+    <section
+      id="intro"
+      className={clsx(styles.hero, expired && styles.expired)}
+    >
       <div className={styles.writings}>
         <h1>
           <span className={styles.subtitle}>{subtitle}</span>
@@ -48,6 +57,7 @@ export default function HeroComponent({
         />
         {logo}
       </div>
+      {expired && <ExpiredComponent />}
     </section>
   );
 }

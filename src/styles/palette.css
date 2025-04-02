@@ -7,6 +7,9 @@
   --color-react: hsl(191deg 65% 60%);
   --color-next: hsl(0deg 0% 0%);
   --color-dsad: hsl(200deg 70% 60%);
+
+  --color-danger: hsl(0deg 50% 50%);
+  --color-danger-opposite: hsl(0deg 0% 100%);
 }
 
 /* Styles Specific to Dark Theme */

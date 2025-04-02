@@ -66,6 +66,11 @@
       grid-area: 1 / 2 / 1 / 2;
     }
   }
+
+  &.expired {
+    position: relative;
+    isolation: isolate;
+  }
 }
 
 @media (max-width: 1000px) {

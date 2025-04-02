@@ -113,6 +113,17 @@
       font-size: var(--fz-300);
     }
   }
+
+  &.expired {
+    filter: none;
+
+    position: relative;
+    isolation: isolate;
+
+    .card {
+      animation: none;
+    }
+  }
 }
 
 @media (max-width: 1000px) {

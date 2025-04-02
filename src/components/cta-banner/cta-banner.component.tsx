@@ -2,6 +2,10 @@ import { ReactElement } from "react";
 
 import Link from "next/link";
 
+import clsx from "clsx";
+
+import ExpiredComponent from "@/components/expired/expired.component";
+
 import FluentEmojiFire from "@/icons/FluentEmojiFire";
 
 import styles from "./cta-banner.module.css";
@@ -10,15 +14,20 @@ type Props = {
   title: string;
   subtitle: ReactElement;
   price: number;
+  expired?: boolean;
 };
 
 export default function CtaBannerComponent({
   title,
   subtitle,
   price,
+  expired = false,
 }: Props): ReactElement {
   return (
-    <section id="register" className={styles["cta-banner"]}>
+    <section
+      id="register"
+      className={clsx(styles["cta-banner"], expired && styles.expired)}
+    >
       <div className={styles.card}>
         <div className={styles.info}>
           <div className={styles.subtitle}>{subtitle}</div>
@@ -54,6 +63,7 @@ export default function CtaBannerComponent({
           شده‌اند.
         </p>
       </div>
+      {expired && <ExpiredComponent />}
     </section>
   );
 }
