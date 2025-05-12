@@ -68,21 +68,30 @@ export default function Page() {
       />
       <TutorComponent />
       <SimpleFeaturesComponent>
-        <li>10 روز فشرده</li>
-        <li>جلسات آنلاین 2 ساعته</li>
-        <li>ضبط و آپلود جلسات</li>
-        <li>حل چندین مثال در هر جلسه</li>
-        <li>تمرین منزل برای هر جلسه</li>
-        <li>برنامه‌ی مشخص</li>
-        <li>مختصر و مفید</li>
-        <li>آموزش کاربردی</li>
-        <li>پشتیبانی اختصاصی</li>
-        <li>گروه خصوصی</li>
-        <li>داوری خودکار پاسخ‌ها</li>
-        <li>نقشه راه شفاف</li>
-        <li>مناسب برای رزومه</li>
-        <li>مناسب برای مسابقات استخدامی</li>
-        <li>مناسب برای مصاحبه‌های فنی</li>
+        <li>رایگان</li>
+        <li>شبیه‌سازی کار واقعی</li>
+        <li>کاملاً دورکاری</li>
+        <li>جلسات روزانه و هفتگی</li>
+        <li>Agile, Scrum, Sprint</li>
+        <li>Retrospective</li>
+        <li>Team Building</li>
+        <li>Coffee Chat</li>
+        <li>Soft Skills</li>
+        <li>کار تیمی</li>
+        <li>منتورینگ</li>
+        <li>Code Review</li>
+        <li>درک عمیق JavaScript</li>
+        <li>درک عمیق React</li>
+        <li>Clean Code</li>
+        <li>SOLID</li>
+        <li>شبیه‌سازی مصاحبه</li>
+        <li>تکنیک‌های محصابه فنی</li>
+        <li>تکنیک‌های محصابه منابع انسانی</li>
+        <li>کارگاه‌های متنوع و متعدد</li>
+        <li>رزومه‌نویسی</li>
+        <li>نمونه‌کار قوی</li>
+        <li>شبکه‌سازی</li>
+        <li>LinkedIn</li>
       </SimpleFeaturesComponent>
       <PrerequisitesComponent
         technicalItems={[
