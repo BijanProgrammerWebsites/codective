@@ -6,10 +6,6 @@
     justify-items: center;
     gap: 2rem;
 
-    .mobile-only {
-      display: none;
-    }
-
     .info {
       color: var(--color-gold-opposite);
 
@@ -65,10 +61,6 @@
 
 @media (max-width: 1000px) {
   .cta-banner {
-    .mobile-only {
-      display: revert;
-    }
-
     .card-content {
       .info {
         display: grid;

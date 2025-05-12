@@ -1,0 +1,37 @@
+.cta-banner {
+  margin-block: calc(var(--section-margin-block) + 2rem);
+
+  .card-content {
+    .info {
+      color: var(--color-gold-opposite);
+
+      font-size: var(--fz-600);
+
+      .title {
+        font-size: var(--fz-900);
+        font-weight: 900;
+      }
+    }
+
+    .cta {
+      color: var(--color-gold-opposite);
+
+      font-size: 1.5rem;
+
+      a {
+        font-weight: 700;
+
+        text-decoration: underline;
+        text-underline-offset: 10px;
+      }
+    }
+
+    .rules {
+      color: var(--color-gold-opposite);
+
+      margin-block-start: 2rem;
+
+      font-size: var(--fz-300);
+    }
+  }
+}
