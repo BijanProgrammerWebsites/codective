@@ -103,15 +103,15 @@ export default function Page() {
         title="کاملاً رایگان!"
         subtitle="از آموزش تا استخدام"
       />
-      <FaqComponent rules={<ShahidRulesComponent />}>
-        <FaqItemComponent question="این دوره برای چه افرادی مناسبه؟">
+      <FaqComponent rules={<ShahidRulesComponent />} trimEnd>
+        <FaqItemComponent question="این بوت‌کمپ برای چه افرادی مناسبه؟">
           <p>
             این دوره برای افرادی مناسبه که تسلط خوبی روی مفاهیم اصلی و React
             دارن اما نمیتونن کار پیدا کنن. علت این مشکل می‌تونه رزومه‌ی نامناسب،
             نداشتن نمونه‌کار قوی، عدم شبکه‌سازی و مسائلی از این قبیل باشه.
           </p>
         </FaqItemComponent>
-        <FaqItemComponent question="این بوت‌کمپ چند روز طول میکشه؟">
+        <FaqItemComponent question="چند روز برای بوت‌کمپ در نظر گرفته شده؟">
           <p>
             در ابتدا شما باید تعهد بدید حداقل 40 روز تو این بوت‌کمپ شرکت کنید و
             تسک‌هایی که بهتون تخصیص داده میشه رو انجام بدید. همچنین باید تو تمام
