@@ -13,6 +13,7 @@ export default function Page() {
   return (
     <div id="react" className={styles.page}>
       <HeroComponent
+        dish
         expired
         subtitle="فقط تو 2 ماه"
         subject="React"

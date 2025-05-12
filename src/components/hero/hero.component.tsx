@@ -16,6 +16,7 @@ type Props = {
   subject: string;
   logo: ReactElement;
   description: ReactElement;
+  dish?: boolean;
   expired?: boolean;
 };
 
@@ -24,12 +25,17 @@ export default function HeroComponent({
   subject,
   logo,
   description,
+  dish = false,
   expired = false,
 }: Props): ReactElement {
   return (
     <section
       id="intro"
-      className={clsx(styles.hero, expired && styles.expired)}
+      className={clsx(
+        styles.hero,
+        dish && styles.dish,
+        expired && styles.expired,
+      )}
     >
       <div className={styles.writings}>
         <h1>
@@ -37,7 +43,7 @@ export default function HeroComponent({
           <span className={styles.title}>
             <span className={styles.highlight}>{subject}</span>
             {` `}
-            رو قورت بده!
+            {dish && "رو قورت بده!"}
           </span>
         </h1>
         <div className={styles.description}>{description}</div>
@@ -48,13 +54,15 @@ export default function HeroComponent({
         </div>
       </div>
       <div className={styles.visuals}>
-        <Image
-          className={styles.dishes}
-          src={dishesImage}
-          alt=""
-          height={300}
-          priority
-        />
+        {dish && (
+          <Image
+            className={styles.dishes}
+            src={dishesImage}
+            alt=""
+            height={300}
+            priority
+          />
+        )}
         {logo}
       </div>
       {expired && <ExpiredComponent />}

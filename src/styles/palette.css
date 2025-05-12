@@ -7,6 +7,7 @@
   --color-react: hsl(191deg 65% 60%);
   --color-next: hsl(0deg 0% 0%);
   --color-dsad: hsl(200deg 70% 60%);
+  --color-shahid: hsl(178deg 54% 54%);
 
   --color-danger: hsl(0deg 50% 50%);
   --color-danger-opposite: hsl(0deg 0% 100%);
@@ -129,5 +130,13 @@
     --hue: 200deg;
     --sat: 26%;
     --satter: 70%;
+  }
+
+  &:has(#shahid) {
+    color-scheme: light;
+
+    --hue: 178deg;
+    --sat: 54%;
+    --satter: 54%;
   }
 }

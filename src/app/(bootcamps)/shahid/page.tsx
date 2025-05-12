@@ -1,62 +1,67 @@
 import clsx from "clsx";
 
+import ShahidRaisiPortrait from "@/assets/portraits/shahid-raisi.png";
+
 import CtaBannerComponent from "@/components/cta-banner/cta-banner.component";
-import DsadOutlineComponent from "@/components/dsad-outline/dsad-outline.component";
-import DsadRoadmapComponent from "@/components/dsad-roadmap/dsad-roadmap.component";
 import FaqItemComponent from "@/components/faq-item/faq-item.component";
 import FaqComponent from "@/components/faq/faq.component";
 import HeroComponent from "@/components/hero/hero.component";
+import LogoImageComponent from "@/components/logo-image/logo-image.component";
 import PrerequisitesComponent from "@/components/prerequisites/prerequisites.component";
+// import ShahidOutlineComponent from "@/components/shahid-outline/shahid-outline.component";
+// import ShahidRoadmapComponent from "@/components/shahid-roadmap/shahid-roadmap.component";
 import SimpleFeaturesComponent from "@/components/simple-features/simple-features.component";
 import TutorComponent from "@/components/tutor/tutor.component";
 import TypescriptDocComponent from "@/components/typescript-doc/typescript-doc.component";
-
-import DsadLogo from "@/logo/dsad.logo";
 
 import styles from "./page.module.css";
 
 export default function Page() {
   return (
-    <div id="dsad" className={clsx(styles.page, "light")}>
+    <div id="shahid" className={clsx(styles.page, "light")}>
       <HeroComponent
-        dish
-        expired
-        subtitle="تعطیلات نوروز رو از دست نده!"
-        subject="ساختمان داده و طراحی الگوریتم"
-        logo={<DsadLogo className={styles.logo} />}
+        subtitle="بوت‌کمپ صلواتی شهید رئیسی"
+        subject="طلای گمشده‌ای که دنبالش میگشتی!"
+        logo={
+          <LogoImageComponent src={ShahidRaisiPortrait.src} alt="شهید رئیسی" />
+        }
         description={
           <>
             <p>
-              این دوره
-              {` `}
-              <b> از 2 تا 12 فروردین</b>
-              {` `}
-              تو تعطیلات عید نوروز برگزار میشه؛ یعنی یه
-              {` `}
-              <strong>فرصت طلایی</strong>
-              {` `}
-              برای یادگیری بدون دغدغه.
+              هر چقد تلاش میکنی نمیتونی کار پیدا کنی؟ برای تمام شرکت‌ها رزومه
+              فرستادی اما هیچکدوم جواب ندادن؟ نمیدونی مشکل از کجاست؟ تمام راه‌ها
+              به بن‌بست رسیده؟
+              <br />
+              <b>پس جات اینجاست!</b>
             </p>
             <p>
-              هر روز
+              اینجا در کنار 7 نفر دیگه، یه تیم تشکیل میدی و روی یه پروژه‌ی واقعی
+              کار می‌کنی. اینجوری هم
               {` `}
-              <b>کلاس آنلاین</b>
+              <b>کار تیمی</b>
               {` `}
-              داریم؛ هر جلسه روی یه مبحث خاص تمرکز می‌کنیم و چندین مثال حل
-              می‌کنیم که تو
+              یاد می‌گیری، هم یه
               {` `}
-              <b>مسابقات برنامه‌نویسی</b>
-              {` `}و{` `}
-              <b> مصاحبه‌ها</b>
+              <b>نمونه‌کار قوی</b>
               {` `}
-              پرسیده میشن.
+              داری که بذاری تو رزومه‌ت.
             </p>
             <p>
-              بعد از هر جلسه، بهتون تمرین داده میشه که به صورت خودکار داوری و
-              امتیازدهی میشه. بنابراین هر زمان،
+              تمام روال‌هایی که تو یه شرکت فنی وجود داره، اینجا شبیه‌سازی شده.
+              از Sprint و جلسات روزانه و Code Review بگیر تا جلسات یک به یک و
+              Retro و Team Building.
+            </p>
+            <p>
+              کلی کارگاه داریم که بهت کمک میکنه بتونی کار پیدا کنی. از
+              رزومه‌نویسی و شبکه‌سازی بگیر تا تکنیک‌های مصاحبه و مهارت نرم.
+              خودمم همیشه در دسترسم.
+            </p>
+            <p>
+              تعهد میدم تمام تلاشم‌و کنم که بتونی کار پیدا کنی.
+              <br />
+              اگه خودتم تعهد و انگیزه و پشتکار داری...
               {` `}
-              <b>حتی بعد از اتمام دوره</b>،{` `}
-              می‌تونید پاسخ خودتون رو ثبت کنید.
+              <b>بسم‌الله</b>!
             </p>
           </>
         }
@@ -88,10 +93,9 @@ export default function Page() {
         ]}
         extraElement={<TypescriptDocComponent />}
       />
-      <DsadOutlineComponent />
-      <DsadRoadmapComponent />
+      {/*<ShahidOutlineComponent />*/}
+      {/*<ShahidRoadmapComponent />*/}
       <CtaBannerComponent
-        expired
         title="تنها در 10 روز!"
         subtitle={
           <>

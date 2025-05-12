@@ -56,14 +56,23 @@
   }
 
   .visuals {
-    display: grid;
-    place-items: center;
-    justify-content: end;
+    > img {
+      block-size: 100%;
+      inline-size: 100%;
+    }
+  }
 
-    font-size: 6rem;
+  &.dish {
+    .visuals {
+      display: grid;
+      place-items: center;
+      justify-content: end;
 
-    > * {
-      grid-area: 1 / 2 / 1 / 2;
+      font-size: 6rem;
+
+      > * {
+        grid-area: 1 / 2 / 1 / 2;
+      }
     }
   }
 
