@@ -4,13 +4,14 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 import SubscribeComponent from "@/components/subscribe/subscribe.component";
 
+import AmbientFilter from "@/filters/ambient.filter";
+
 import "@/styles/background.css";
 import "@/styles/button.css";
 import "@/styles/palette.css";
 import "@/styles/typography.css";
 
 import "./globals.css";
-import AmbientFilter from "@/filters/ambient.filter";
 
 const metadataTitle = "Codective";
 const metadataDescription =

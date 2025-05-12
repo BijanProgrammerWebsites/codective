@@ -1,9 +1,9 @@
-import HeroComponent from "@/components/hero/hero.component";
+import CtaBannerComponent from "@/components/cta-banner/cta-banner.component";
 import FeaturesComponent from "@/components/features/features.component";
+import HeroComponent from "@/components/hero/hero.component";
 import PrerequisitesComponent from "@/components/prerequisites/prerequisites.component";
 import ReactOutlineComponent from "@/components/react-outline/react-outline.component";
 import ReactRoadmapComponent from "@/components/react-roadmap/react-roadmap.component";
-import CtaBannerComponent from "@/components/cta-banner/cta-banner.component";
 
 import ReactLogo from "@/logo/react.logo";
 

@@ -2,8 +2,8 @@
 
 import { ReactElement } from "react";
 
-import CustomAccordionComponent from "@/components/custom-accordion/custom-accordion.component";
 import CustomAccordionItemComponent from "@/components/custom-accordion-item/custom-accordion-item.component";
+import CustomAccordionComponent from "@/components/custom-accordion/custom-accordion.component";
 import SessionComponent from "@/components/session/session.component";
 
 import styles from "./dsad-roadmap.module.css";

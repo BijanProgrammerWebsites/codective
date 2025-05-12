@@ -5,7 +5,6 @@ import Link from "next/link";
 import clsx from "clsx";
 
 import GhostIconButtonComponent from "@/components/header/components/ghost-icon-button/ghost-icon-button.component";
-
 import { NavItemType } from "@/components/header/types/nav-item.type";
 
 import MingcuteCloseLine from "@/icons/MingcuteCloseLine";

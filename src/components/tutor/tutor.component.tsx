@@ -5,7 +5,6 @@ import Image from "next/image";
 import bijanPortrait from "@/assets/portraits/bijan.webp";
 
 import ContestComponent from "@/components/tutor/components/contest/contest.component";
-
 import {
   goldContests,
   silverContests,

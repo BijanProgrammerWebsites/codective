@@ -4,8 +4,8 @@ import Link from "next/link";
 
 import clsx from "clsx";
 
-import { CourseType } from "@/app/(home)/types/course.type";
 import { CourseStatusType } from "@/app/(home)/types/course-status.type";
+import { CourseType } from "@/app/(home)/types/course.type";
 
 import styles from "./course.module.css";
 

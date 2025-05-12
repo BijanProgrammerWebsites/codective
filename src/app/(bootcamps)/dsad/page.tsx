@@ -1,15 +1,15 @@
 import clsx from "clsx";
 
-import HeroComponent from "@/components/hero/hero.component";
-import TutorComponent from "@/components/tutor/tutor.component";
-import SimpleFeaturesComponent from "@/components/simple-features/simple-features.component";
-import PrerequisitesComponent from "@/components/prerequisites/prerequisites.component";
-import TypescriptDocComponent from "@/components/typescript-doc/typescript-doc.component";
+import CtaBannerComponent from "@/components/cta-banner/cta-banner.component";
 import DsadOutlineComponent from "@/components/dsad-outline/dsad-outline.component";
 import DsadRoadmapComponent from "@/components/dsad-roadmap/dsad-roadmap.component";
-import CtaBannerComponent from "@/components/cta-banner/cta-banner.component";
-import FaqComponent from "@/components/faq/faq.component";
 import FaqItemComponent from "@/components/faq-item/faq-item.component";
+import FaqComponent from "@/components/faq/faq.component";
+import HeroComponent from "@/components/hero/hero.component";
+import PrerequisitesComponent from "@/components/prerequisites/prerequisites.component";
+import SimpleFeaturesComponent from "@/components/simple-features/simple-features.component";
+import TutorComponent from "@/components/tutor/tutor.component";
+import TypescriptDocComponent from "@/components/typescript-doc/typescript-doc.component";
 
 import DsadLogo from "@/logo/dsad.logo";
 

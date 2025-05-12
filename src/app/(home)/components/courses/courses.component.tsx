@@ -1,9 +1,8 @@
 import { ReactElement } from "react";
 
 import CourseComponent from "@/app/(home)/components/course/course.component";
-
-import { CourseType } from "@/app/(home)/types/course.type";
 import { CourseStatusType } from "@/app/(home)/types/course-status.type";
+import { CourseType } from "@/app/(home)/types/course.type";
 
 import styles from "./courses.module.css";
 

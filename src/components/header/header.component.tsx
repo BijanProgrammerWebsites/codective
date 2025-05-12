@@ -4,12 +4,11 @@ import { ReactElement, useCallback, useEffect, useState } from "react";
 
 import Link from "next/link";
 
-import MingcuteMenuLine from "@/icons/MingcuteMenuLine";
-
 import GhostIconButtonComponent from "@/components/header/components/ghost-icon-button/ghost-icon-button.component";
 import MenuComponent from "@/components/header/components/menu/menu.component";
-
 import { NavItemType } from "@/components/header/types/nav-item.type";
+
+import MingcuteMenuLine from "@/icons/MingcuteMenuLine";
 
 import styles from "./header.module.css";
 

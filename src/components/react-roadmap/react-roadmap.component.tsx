@@ -2,8 +2,8 @@
 
 import { ReactElement } from "react";
 
-import CustomAccordionComponent from "@/components/custom-accordion/custom-accordion.component";
 import CustomAccordionItemComponent from "@/components/custom-accordion-item/custom-accordion-item.component";
+import CustomAccordionComponent from "@/components/custom-accordion/custom-accordion.component";
 import WeekComponent from "@/components/week/week.component";
 
 import styles from "./react-roadmap.module.css";

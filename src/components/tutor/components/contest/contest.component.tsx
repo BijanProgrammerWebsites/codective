@@ -5,10 +5,10 @@ import Link from "next/link";
 
 import clsx from "clsx";
 
+import { ContestType } from "@/components/tutor/types/contest.type";
+
 import FluentEmoji1stPlaceMedal from "@/icons/FluentEmoji1stPlaceMedal";
 import FluentEmoji2ndPlaceMedal from "@/icons/FluentEmoji2ndPlaceMedal";
-
-import { ContestType } from "@/components/tutor/types/contest.type";
 
 import styles from "./contest.module.css";
 
