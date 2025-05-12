@@ -81,10 +81,10 @@ export default function Page() {
         <li>درک عمیق JavaScript</li>
         <li>درک عمیق React</li>
         <li>Clean Code</li>
-        <li>SOLID</li>
+        <li>Tip of the Day</li>
         <li>شبیه‌سازی مصاحبه</li>
-        <li>تکنیک‌های محصابه فنی</li>
-        <li>تکنیک‌های محصابه منابع انسانی</li>
+        <li>تکنیک‌های مصاحبه فنی</li>
+        <li>تکنیک‌های مصاحبه منابع انسانی</li>
         <li>کارگاه‌های متنوع و متعدد</li>
         <li>رزومه‌نویسی</li>
         <li>نمونه‌کار قوی</li>
