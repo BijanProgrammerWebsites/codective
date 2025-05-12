@@ -9,12 +9,14 @@ import styles from "./cta-priceless-banner.module.css";
 type Props = {
   title: string;
   subtitle: string;
+  link: string;
   expired?: boolean;
 };
 
 export default function CtaPricelessBannerComponent({
   title,
   subtitle,
+  link,
   expired = false,
 }: Props): ReactElement {
   return (
@@ -30,7 +32,7 @@ export default function CtaPricelessBannerComponent({
         <p className={styles.cta}>
           برای ثبت‌نام
           <span> </span>
-          <Link href="#" target="_blank">
+          <Link href={link} target="_blank">
             این پرسشنامه
           </Link>
           <span> </span>

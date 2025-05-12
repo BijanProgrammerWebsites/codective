@@ -102,6 +102,7 @@ export default function Page() {
       <CtaPricelessBannerComponent
         title="کاملاً رایگان!"
         subtitle="از آموزش تا استخدام"
+        link="https://survey.porsline.ir/s/IVjBStc4"
       />
       <FaqComponent rules={<ShahidRulesComponent />} trimEnd>
         <FaqItemComponent question="این بوت‌کمپ برای چه افرادی مناسبه؟">
