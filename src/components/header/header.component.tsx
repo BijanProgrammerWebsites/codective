@@ -3,6 +3,7 @@
 import { ReactElement, useCallback, useEffect, useState } from "react";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import GhostIconButtonComponent from "@/components/header/components/ghost-icon-button/ghost-icon-button.component";
 import MenuComponent from "@/components/header/components/menu/menu.component";
@@ -12,7 +13,7 @@ import MingcuteMenuLine from "@/icons/MingcuteMenuLine";
 
 import styles from "./header.module.css";
 
-const navItems: NavItemType[] = [
+let navItems: NavItemType[] = [
   { href: "#tutor", title: "مدرس", className: "md" },
   { href: "#features", title: "ویژگی‌ها", className: "lg" },
   { href: "#prerequisites", title: "پیش‌نیازها", className: "md" },
@@ -22,6 +23,13 @@ const navItems: NavItemType[] = [
 ];
 
 export default function HeaderComponent(): ReactElement {
+  const pathname = usePathname();
+  if (pathname.startsWith("/shahid")) {
+    navItems = navItems.filter((x) => {
+      return !(x.href === "#outline" || x.href === "#roadmap");
+    });
+  }
+
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   const closeHandler = useCallback(() => setIsVisible(false), []);
