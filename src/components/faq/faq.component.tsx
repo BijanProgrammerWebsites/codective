@@ -9,19 +9,21 @@ import RulesComponent from "@/components/rules/rules.component";
 import styles from "./faq.module.css";
 
 type Props = {
+  rules?: ReactElement;
   children?:
     | ReactElement<typeof FaqItemComponent>
     | ReactElement<typeof FaqItemComponent>[];
 };
 
-export default function FaqComponent({ children }: Props): ReactElement {
+export default function FaqComponent({
+  rules = <RulesComponent />,
+  children,
+}: Props): ReactElement {
   return (
     <section id="faq" className={styles.faq}>
       <h2>قوانین و سوالات متداول</h2>
       <CustomAccordionComponent>
-        <FaqItemComponent question="قوانین و مقررات">
-          <RulesComponent />
-        </FaqItemComponent>
+        <FaqItemComponent question="قوانین و مقررات">{rules}</FaqItemComponent>
         {children}
         <FaqItemComponent question="کلاس‌ها به‌صورت آنلاین برگزار میشن یا ضبط‌شده هستن؟">
           <p>

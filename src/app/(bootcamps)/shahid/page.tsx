@@ -2,17 +2,15 @@ import clsx from "clsx";
 
 import ShahidRaisiPortrait from "@/assets/portraits/shahid-raisi.png";
 
-import CtaBannerComponent from "@/components/cta-banner/cta-banner.component";
+import CtaPricelessBannerComponent from "@/components/cta-priceless-banner/cta-priceless-banner.component";
 import FaqItemComponent from "@/components/faq-item/faq-item.component";
 import FaqComponent from "@/components/faq/faq.component";
 import HeroComponent from "@/components/hero/hero.component";
 import LogoImageComponent from "@/components/logo-image/logo-image.component";
 import PrerequisitesComponent from "@/components/prerequisites/prerequisites.component";
-// import ShahidOutlineComponent from "@/components/shahid-outline/shahid-outline.component";
-// import ShahidRoadmapComponent from "@/components/shahid-roadmap/shahid-roadmap.component";
+import ShahidRulesComponent from "@/components/shahid-rules/shahid-rules.component";
 import SimpleFeaturesComponent from "@/components/simple-features/simple-features.component";
 import TutorComponent from "@/components/tutor/tutor.component";
-import TypescriptDocComponent from "@/components/typescript-doc/typescript-doc.component";
 
 import styles from "./page.module.css";
 
@@ -101,61 +99,37 @@ export default function Page() {
           "دانشجو یا فارغ‌التحصیل دانشگاهی",
         ]}
       />
-      {/*<ShahidOutlineComponent />*/}
-      {/*<ShahidRoadmapComponent />*/}
-      <CtaBannerComponent
-        title="تنها در 10 روز!"
-        subtitle={
-          <>
-            <div>از مفاهیم پایه</div>
-            <div>تا تکنیک‌های حرفه‌ای</div>
-          </>
-        }
-        price={480_000}
+      <CtaPricelessBannerComponent
+        title="کاملاً رایگان!"
+        subtitle="از آموزش تا استخدام"
       />
-      <FaqComponent>
+      <FaqComponent rules={<ShahidRulesComponent />}>
         <FaqItemComponent question="این دوره برای چه افرادی مناسبه؟">
           <p>
-            این دوره برای افرادی که برنامه‌نویسی بلدن و می‌خوان ساختمان داده و
-            طراحی الگوریتم یاد بگیرن مناسبه. سطح برنامه‌نویسی شما باید در حدی
-            باشه که مفاهیمی مثل آرایه‌ها، حلقه‌ها، توابع و کلاس‌ها رو بلد باشید
-            و بتونید به خوبی ازشون استفاده کنید.
+            این دوره برای افرادی مناسبه که تسلط خوبی روی مفاهیم اصلی و React
+            دارن اما نمیتونن کار پیدا کنن. علت این مشکل می‌تونه رزومه‌ی نامناسب،
+            نداشتن نمونه‌کار قوی، عدم شبکه‌سازی و مسائلی از این قبیل باشه.
           </p>
         </FaqItemComponent>
-        <FaqItemComponent question="محتوای دوره به‌صورت تئوریه یا عملی هم هست؟">
+        <FaqItemComponent question="این بوت‌کمپ چند روز طول میکشه؟">
           <p>
-            تو هر جلسه، مباحث تئوری رو مطرح می‌کنیم و بعد در قالب چندین مثال در
-            عمل پیاده‌سازیشون می‌کنیم.
-          </p>
-        </FaqItemComponent>
-        <FaqItemComponent question="مزیت اصلی این دوره چیه؟">
-          <p>
-            مزیت اصلی دوره تمرین‌هاییه که بعد از هر جلسه بهتون داده میشه و با
-            داوری خودکار امتیازدهی میشه. بنابراین شما می‌تونید در هر ساعتی از
-            شبانه‌روز و حتی بعد از اتمام دوره، تمرین‌ها رو ارسال کنید.
-          </p>
-        </FaqItemComponent>
-        <FaqItemComponent question="چرا گفته شده باید زبان‌های TypeScript یا Java یا #C رو بلد باشم؟">
-          <p>
-            ما تو دوره قراره از زبان TypeScript برای پیاده‌سازی الگوریتم‌ها
-            استفاده کنیم؛ با توجه به فشردگی دوره و زمان محدود، نمی‌تونیم جداگانه
-            این زبان رو تدریس کنیم؛ بنابراین باید از قبل باهاش کار کرده باشید.
+            در ابتدا شما باید تعهد بدید حداقل 40 روز تو این بوت‌کمپ شرکت کنید و
+            تسک‌هایی که بهتون تخصیص داده میشه رو انجام بدید. همچنین باید تو تمام
+            جلسات و کارگاه‌ها شرکت کنید و حضور فعالی داشته باشید.
           </p>
           <p>
-            زبان‌های Java و #C سینتکس مشابهی با زبان TypeScript دارن و خیلی از
-            مفاهیمی که تو TypeScript وجود داره و قراره تو دوره ازشون استفاده
-            کنیم، تو این دو زبان هم هست. بنابراین اگه TypeScript بلد نیستید اما
-            یکی از زبان‌های Java یا #C رو بلدید، مشکلی پیش نمیاد.
+            بعد از این 40 روز، اختیار با خودتونه که ادامه بدید یا بوت‌کمپ رو ترک
+            کنید.
           </p>
         </FaqItemComponent>
-        <FaqItemComponent question="کلاس‌ها چه زمانی برگزار میشن؟">
-          <p>از تاریخ 2 تا 12 فروردین، هر روز ساعت 8 تا 10 شب کلاس داریم.</p>
+        <FaqItemComponent question="چند ساعت در روز باید وقت بذارم؟">
+          <p>مثل شغل عادی باید از ساعت 8 تا 16 در دسترس و مشغول کار باشید.</p>
         </FaqItemComponent>
-        <FaqItemComponent question="با توجه به ایام عید، بهتر نیست کلاس‌ها در روز برگزار بشن؟">
+        <FaqItemComponent question="اگه زودتر از موعد مقرر دوره رو ترک کنم، چی میشه؟">
           <p>
-            بله بهتر بود. اما به علت مصادف شدن این ایام با ماه مبارک رمضان،
-            تدریس در طول روز سخته؛ بنابراین زمان کلاس‌ها به بعد از افطار منتقل
-            شده.
+            اگه به هر دلیلی وظایف خودتون رو انجام ندید یا دوره رو زودتر از 40
+            روز ترک کنید، تمام پولی که به عنوان وثیقه در اختیار من گذاشتید ضبط
+            میشه و من میتونم هر طور که خواستم اون پول رو خرج کنم.
           </p>
         </FaqItemComponent>
       </FaqComponent>
