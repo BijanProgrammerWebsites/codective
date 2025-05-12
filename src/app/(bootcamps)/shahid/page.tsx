@@ -95,12 +95,11 @@ export default function Page() {
       </SimpleFeaturesComponent>
       <PrerequisitesComponent
         technicalItems={[
-          "ریاضیات دبیرستان",
-          "برنامه‌نویسی نیمه‌پیشرفته (معادل ترم 2 دانشگاه)",
-          "برنامه‌نویسی شیءگرا (OOP)",
-          "آشنایی با یکی از زبان‌های TypeScript یا Java یا #C",
+          "تسلط به HTML و CSS و JavaScript",
+          "تسلط به React",
+          "آشنایی با Next.js",
+          "دانشجو یا فارغ‌التحصیل دانشگاهی",
         ]}
-        extraElement={<TypescriptDocComponent />}
       />
       {/*<ShahidOutlineComponent />*/}
       {/*<ShahidRoadmapComponent />*/}
