@@ -23,8 +23,9 @@ export default function TutorComponent(): ReactElement {
             <div className={styles.role}>(مدرس و منتور)</div>
           </div>
           <ul className={styles.experiences + " " + styles.chiz}>
-            <li>بیش از 4 سال سابقه‌ی کار حرفه‌ای در زمینه‌ی Web Development</li>
+            <li>بیش از 5 سال سابقه‌ی کار حرفه‌ای در زمینه‌ی Web Development</li>
             <li>بیش از 6 سال سابقه‌ی تدریس</li>
+            <li>سابقه‌ی منتورینگ، Team Leading و مدیریت اجرایی</li>
             <li>کسب رتبه‌های برتر در چند مسابقه‌ی برنامه‌نویسی</li>
             <li>دارای مدرک کارشناسی مهندسی کامپیوتر</li>
             <li>فارغ‌التحصیل از دانشگاه دولتی خوارزمی</li>
