@@ -2,9 +2,7 @@ import { ReactElement } from "react";
 
 import Link from "next/link";
 
-import clsx from "clsx";
-
-import ExpiredComponent from "@/components/expired/expired.component";
+import GoldCardComponent from "@/components/gold-card/gold-card.component";
 
 import FluentEmojiFire from "@/icons/FluentEmojiFire";
 
@@ -24,11 +22,11 @@ export default function CtaBannerComponent({
   expired = false,
 }: Props): ReactElement {
   return (
-    <section
-      id="register"
-      className={clsx(styles["cta-banner"], expired && styles.expired)}
-    >
-      <div className={styles.card}>
+    <section id="register" className={styles["cta-banner"]}>
+      <GoldCardComponent
+        cardContentClassName={styles["card-content"]}
+        expired={expired}
+      >
         <div className={styles.info}>
           <div className={styles.subtitle}>{subtitle}</div>
           <div className={styles.title}>{title}</div>
@@ -62,8 +60,7 @@ export default function CtaBannerComponent({
           ثبت‌نام در دوره به منزله‌ی پذیرش تمام قوانینی است که در ادامه مطرح
           شده‌اند.
         </p>
-      </div>
-      {expired && <ExpiredComponent />}
+      </GoldCardComponent>
     </section>
   );
 }

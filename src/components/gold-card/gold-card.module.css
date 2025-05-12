@@ -1,0 +1,88 @@
+.gold-card {
+  filter: url("#ambient-filter");
+
+  .card {
+    background-image: linear-gradient(
+      135deg,
+      var(--color-gold) 0%,
+      var(--color-gold) 40%,
+      var(--color-gold-shiny) 45%,
+      var(--color-gold) 60%,
+      var(--color-gold) 100%
+    );
+    background-size: 400% 100%;
+    background-clip: padding-box;
+
+    color: var(--color-gold-opposite);
+
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    padding: 2rem 1rem;
+
+    border: 16px dashed transparent;
+    border-radius: 2.5rem;
+
+    outline: 4px dashed var(--color-text-1);
+    outline-offset: -4px;
+
+    text-align: center;
+
+    animation: shiny-animation 2s ease-in-out infinite;
+
+    &::before {
+      content: "";
+
+      background-image: linear-gradient(
+        135deg,
+        hsl(0deg 0% 0%),
+        hsl(0deg 0% 100%) 30%,
+        hsl(0deg 0% 100%) 70%,
+        hsl(0deg 0% 0%)
+      );
+      mix-blend-mode: overlay;
+      opacity: 0.5;
+
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+
+      user-select: none;
+      pointer-events: none;
+    }
+  }
+
+  &.expired {
+    filter: none;
+
+    position: relative;
+    isolation: isolate;
+
+    .card {
+      animation: none;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .gold-card {
+    filter: none;
+
+    .card {
+      border-width: 8px;
+      outline-width: 2px;
+      outline-offset: -2px;
+    }
+  }
+}
+
+@keyframes shiny-animation {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}

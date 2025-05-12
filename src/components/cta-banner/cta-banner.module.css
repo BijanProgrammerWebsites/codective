@@ -1,62 +1,10 @@
 .cta-banner {
-  filter: url("#ambient-filter");
-
   margin-block: calc(var(--section-margin-block) + 2rem);
 
-  .card {
-    background-image: linear-gradient(
-      135deg,
-      var(--color-gold) 0%,
-      var(--color-gold) 40%,
-      var(--color-gold-shiny) 45%,
-      var(--color-gold) 60%,
-      var(--color-gold) 100%
-    );
-    background-size: 400% 100%;
-    background-clip: padding-box;
-
-    color: var(--color-primary-opposite);
-
-    position: relative;
-    overflow: hidden;
-    isolation: isolate;
-
+  .card-content {
     display: grid;
     justify-items: center;
     gap: 2rem;
-
-    padding: 2rem 1rem;
-
-    border: 16px dashed transparent;
-    border-radius: 2.5rem;
-
-    outline: 4px dashed var(--color-text-1);
-    outline-offset: -4px;
-
-    text-align: center;
-
-    animation: shiny-animation 2s ease-in-out infinite;
-
-    &::before {
-      content: "";
-
-      background-image: linear-gradient(
-        135deg,
-        hsl(0deg 0% 0%),
-        hsl(0deg 0% 100%) 30%,
-        hsl(0deg 0% 100%) 70%,
-        hsl(0deg 0% 0%)
-      );
-      mix-blend-mode: overlay;
-      opacity: 0.5;
-
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-
-      user-select: none;
-      pointer-events: none;
-    }
 
     .mobile-only {
       display: none;
@@ -113,32 +61,15 @@
       font-size: var(--fz-300);
     }
   }
-
-  &.expired {
-    filter: none;
-
-    position: relative;
-    isolation: isolate;
-
-    .card {
-      animation: none;
-    }
-  }
 }
 
 @media (max-width: 1000px) {
   .cta-banner {
-    filter: none;
-
     .mobile-only {
       display: revert;
     }
 
-    .card {
-      border-width: 8px;
-      outline-width: 2px;
-      outline-offset: -2px;
-
+    .card-content {
       .info {
         display: grid;
         gap: inherit;
@@ -163,15 +94,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes shiny-animation {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 100% 100%;
   }
 }
