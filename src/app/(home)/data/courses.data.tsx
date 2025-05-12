@@ -1,10 +1,22 @@
-import NextTransparentLogo from "@/logo/next-transparent.logo";
-import ReactLogo from "@/logo/react.logo";
-import DsadLogo from "@/logo/dsad.logo";
-
 import { CourseType } from "@/app/(home)/types/course.type";
 
-export const upcomingCoursesData: CourseType[] = [];
+import ShahidRaisiPortrait from "@/assets/portraits/shahid-raisi.png";
+
+import LogoImageComponent from "@/components/logo-image/logo-image.component";
+
+import DsadLogo from "@/logo/dsad.logo";
+import NextTransparentLogo from "@/logo/next-transparent.logo";
+import ReactLogo from "@/logo/react.logo";
+
+export const upcomingCoursesData: CourseType[] = [
+  {
+    title: "بوت‌کمپ صلواتی شهید رئیسی",
+    category: "shahid",
+    logo: <LogoImageComponent src={ShahidRaisiPortrait.src} alt="شهید رئیسی" />,
+    date: "شروع از خرداد 1404",
+    link: "/shahid",
+  },
+];
 
 export const ongoingCoursesData: CourseType[] = [];
 
