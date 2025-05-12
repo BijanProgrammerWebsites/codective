@@ -26,6 +26,7 @@
     grid-area: logo;
 
     display: grid;
+    grid-template-rows: minmax(0, 1fr);
     place-items: center;
 
     min-block-size: 100%;
@@ -77,6 +78,12 @@
   &.dsad {
     .logo {
       background-color: var(--color-dsad);
+    }
+  }
+
+  &.shahid {
+    .logo {
+      background-color: var(--color-shahid);
     }
   }
 

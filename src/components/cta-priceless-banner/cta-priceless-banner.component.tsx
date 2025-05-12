@@ -34,7 +34,7 @@ export default function CtaPricelessBannerComponent({
             این پرسشنامه
           </Link>
           <span> </span>
-          رو پر کنید.
+          رو پر کن.
         </p>
         <p className={styles.rules}>
           ثبت‌نام در دوره به منزله‌ی پذیرش تمام قوانینی است که در ادامه مطرح
