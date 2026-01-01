@@ -9,4 +9,5 @@ jobs:
     uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-nextjs.yml@master
     with:
       process-name: codective
+      port: 3003
     secrets: inherit
